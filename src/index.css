@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+  opacity: 0.8;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(15, 15, 20) 0%,
+    rgb(40, 30, 50) 25%,
+    rgb(50, 40, 60) 50%,
+    rgb(40, 30, 50) 75%,
+    rgb(15, 15, 20) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* For a more interesting effect, you can use this alternative gradient */
+.bg-gradient-alt {
+  background: linear-gradient(
+    135deg,
+    rgb(20, 20, 20) 0%,
+    rgb(30, 25, 35) 25%,
+    rgb(25, 25, 30) 50%,
+    rgb(30, 25, 35) 75%,
+    rgb(20, 20, 20) 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+.bg-amber-900\/10 {
+  background-color: rgb(120, 80, 0, 0.3);
+}
+
+.bg-purple-900\/10 {
+  background-color: rgb(80, 0, 120, 0.3);
+}
+
+.bg-pink-900\/10 {
+  background-color: rgb(120, 0, 80, 0.3);
+}
+
+.bg-blue-900\/10 {
+  background-color: rgb(0, 40, 120, 0.3);
+}

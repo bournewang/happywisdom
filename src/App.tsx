@@ -1,159 +1,150 @@
-import { useState, useEffect, useRef } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react'
+import { BuddhismPlayer } from './components/BuddhismPlayer'
+import { VocabularyPlayer } from './components/VocabularyPlayer'
+import { PoemPlayer } from './components/PoemPlayer'
 
-interface ChantTrack {
-  id: number;
-  title: string;
-  audioUrl: string;
+interface Category {
+  id: string;
+  name: string;
   description: string;
-  imageUrl: string;
+  icon: string;
 }
 
 function App() {
-  const [currentTrack, setCurrentTrack] = useState<ChantTrack | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isFirstVisit, setIsFirstVisit] = useState(true);
-  const audioRef = useRef<HTMLAudioElement>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const chants: ChantTrack[] = [
+  const categories: Category[] = [
     {
-      id: 1,
-      title: "唵嘛呢叭咪吽大明咒",
-      audioUrl: "/唵嘛呢叭咪吽大明咒.mp3",
-      description: "六字大明咒，是观世音菩萨的心咒，具有无量功德",
-      imageUrl: "/images/om-mani.jpg"
+      id: 'buddhism',
+      name: '佛教音乐',
+      description: '禅修冥想，净化心灵',
+      icon: '🕉️'
     },
     {
-      id: 2,
-      title: "梵音大悲咒",
-      audioUrl: "/梵音大悲咒.mp3",
-      description: "大悲咒是观世音菩萨的根本咒语，具有不可思议的力量",
-      imageUrl: "/images/avalokiteshvara.jpg"
+      id: 'vocabulary',
+      name: '英语词汇',
+      description: '轻松记忆英语单词',
+      icon: '📚'
     },
     {
-      id: 3,
-      title: "地藏王菩萨超度心咒",
-      audioUrl: "/地藏王菩萨超度心咒.mp3",
-      description: "地藏菩萨的心咒，大愿地藏王，誓度众生",
-      imageUrl: "/images/ksitigarbha.jpg"
-    },
-    {
-      id: 4,
-      title: "消灾吉祥神咒",
-      audioUrl: "/消灾吉祥神咒.mp3",
-      description: "消除灾难，带来吉祥的佛教咒语",
-      imageUrl: "/images/auspicious.jpg"
-    },
-    {
-      id: 5,
-      title: "文殊师利祈请颂",
-      audioUrl: "/文殊师利祈请颂-莫尔根.mp3",
-      description: "祈请大智文殊师利菩萨的庄严颂词",
-      imageUrl: "/images/manjushri.jpg"
-    },
-    {
-      id: 6,
-      title: "般若波罗蜜多心经",
-      audioUrl: "/般若菠萝蜜多心经诵读.mp3",
-      description: "佛教最精髓的经典之一，诠释空性智慧",
-      imageUrl: "/images/heart-sutra.jpg"
+      id: 'poems',
+      name: '唐诗宋词',
+      description: '感受古典诗词之美',
+      icon: '📜'
     }
   ];
 
   useEffect(() => {
-    if (chants.length > 0) {
-      const randomTrack = chants[Math.floor(Math.random() * chants.length)];
-      setCurrentTrack(randomTrack);
-      if (audioRef.current) {
-        audioRef.current.play().catch(error => {
-          console.log("Autoplay prevented:", error);
-          setIsPlaying(false);
-        });
-      }
+    const savedCategory = localStorage.getItem('selectedCategory');
+    if (savedCategory) {
+      setSelectedCategory(savedCategory);
     }
   }, []);
 
-  const handleEnded = () => {
-    const nextTrack = chants[Math.floor(Math.random() * chants.length)];
-    setCurrentTrack(nextTrack);
+  const selectCategory = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    localStorage.setItem('selectedCategory', categoryId);
   };
 
-  const togglePlay = () => {
-    if (isFirstVisit) {
-      setIsFirstVisit(false);
-    }
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play().catch(error => {
-          console.error("Playback failed:", error);
-        });
-      }
-      setIsPlaying(!isPlaying);
+  const renderPlayer = () => {
+    switch (selectedCategory) {
+      case 'buddhism':
+        return <BuddhismPlayer />;
+      case 'vocabulary':
+        return <VocabularyPlayer />;
+      case 'poems':
+        return <PoemPlayer />;
+      default:
+        return null;
     }
   };
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-fixed flex flex-col justify-end p-4 md:p-8 transition-all duration-1000"
-      style={{
-        backgroundImage: currentTrack 
-          ? `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('${currentTrack.imageUrl}')`
-          : 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))'
-      }}
+      className={`min-h-screen relative overflow-hidden bg-green-300`}
     >
-      {currentTrack && (
-        <audio
-          ref={audioRef}
-          src={currentTrack.audioUrl}
-          autoPlay
-          playsInline
-          muted={false}
-          onCanPlay={() => {
-            console.log("onCanPlay === ");
-            if (audioRef.current) {
-              audioRef.current.play().catch(console.error);
-            }
-          }}
-          onEnded={handleEnded}
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
-          controls
-          className="fixed bottom-0 left-0 w-full hidden"
-        />
+      {/* Animated background gradients */}
+      {!selectedCategory && (
+        <>
+          <div className="absolute inset-0">
+            <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-amber-900/10 rounded-full blur-3xl animate-blob"></div>
+            <div className="absolute top-1/4 -right-1/4 w-1/2 h-1/2 bg-purple-900/10 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-1/4 left-1/4 w-1/2 h-1/2 bg-pink-900/10 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+            <div className="absolute top-1/3 left-1/3 w-1/2 h-1/2 bg-blue-900/10 rounded-full blur-3xl animate-blob animation-delay-6000"></div>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+        </>
       )}
 
-      <div className="w-full max-w-3xl mx-auto mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-yellow-400">
-          佛教音乐
-        </h1>
-        
-        {currentTrack && (
-          <div className="backdrop-blur-sm bg-black/20 rounded-xl p-6 md:p-8 shadow-2xl">
-            <h2 className="text-xl md:text-2xl font-semibold mb-6 text-amber-200">
-              {currentTrack.title}
-            </h2>
+      {/* Category Switcher */}
+      {selectedCategory && (
+        <div className="fixed top-0 right-0 z-50">
+          <button
+            onClick={() => {
+              setSelectedCategory(null);
+              localStorage.removeItem('selectedCategory');
+            }}
+            className="group px-4 py-2 rounded-full 
+                     backdrop-blur-md bg-black/30
+                     border border-white/10 hover:border-amber-500/50
+                     text-amber-200 hover:text-amber-400 
+                     transform hover:scale-105 
+                     transition-all duration-300
+                     flex items-center gap-2"
+          >
+            {/* <span>切换类别</span> */}
+            {/* show the icon bigger */}
+            <span className="text-3xl">☰</span>
+          </button>
+        </div>
+      )}
+
+      {!selectedCategory ? (
+        // Category Selection Menu with enhanced backdrop
+        <div className="relative z-10 w-full min-h-screen flex items-center justify-center p-4 md:p-8">
+          <div className="w-full max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-yellow-400">
+                智慧之声
+              </span>
+              <div className="text-lg md:text-xl text-gray-300 mt-4 font-normal">
+                选择您想聆听的内容
+              </div>
+            </h1>
             
-            <div className="mb-6">
-              <button
-                onClick={togglePlay}
-                className="w-full md:w-auto px-8 py-3 rounded-full bg-amber-500 hover:bg-amber-600 
-                         text-gray-900 font-medium transition-all duration-300 
-                         transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
-              >
-                {isFirstVisit ? '开始聆听' : (isPlaying ? '⏸️ 暂停' : '▶️ 播放')}
-              </button>
-            </div>
-            
-            <div className="text-gray-100 leading-relaxed">
-              <p className="text-base md:text-lg">{currentTrack.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {categories.map(category => (
+                <button
+                  key={category.id}
+                  onClick={() => selectCategory(category.id)}
+                  className="group backdrop-blur-md bg-white/5 rounded-xl p-8 
+                           border border-white/10 hover:border-amber-500/50
+                           transform hover:scale-105 transition-all duration-300
+                           hover:bg-white/10"
+                >
+                  <div className="text-5xl mb-6 transform group-hover:scale-110 
+                               transition-transform duration-300">
+                    {category.icon}
+                  </div>
+                  <h2 className="text-xl font-semibold text-amber-200 mb-3">
+                    {category.name}
+                  </h2>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {category.description}
+                  </p>
+                </button>
+              ))}
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      ) : (
+        // Render selected category player
+        <div>
+          {renderPlayer()}
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
 export default App
