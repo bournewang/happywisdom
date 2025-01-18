@@ -40,20 +40,12 @@ export function ChristPlayer() {
             }}>
             <div className="w-full max-w-3xl mx-auto mb-12">
                 <div className="bg-black/20 rounded-3xl p-6 md:p-8">
-                    <h2 className="text-2xl md:text-2xl font-semibold text-center mb-6"
-                        style={{
-                            color: 'white',
-                            WebkitTextStroke: '1px black'
-                        }}>
+                    <h2 className="text-2xl md:text-2xl font-semibold text-center text-white mb-6">
                         {currentVerse.verse}
                     </h2>
                     
                     <div className="rounded-2xl p-5">
-                        <p className="leading-relaxed text-2xl md:text-3xl bold"
-                            style={{
-                                color: 'white',
-                                WebkitTextStroke: '1px black'
-                            }}>
+                        <p className="leading-relaxed text-2xl md:text-3xl text-white">
                             {currentVerse.content}
                         </p>
                     </div>
