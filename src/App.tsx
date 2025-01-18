@@ -71,12 +71,8 @@ function App() {
           <button
             onClick={() => {
               setSelectedCategory(null);
-              localStorage.removeItem('selectedCategory');
             }}
-            className="p-2 rounded-full 
-                     backdrop-blur-md bg-white/10
-                     border border-white/10 hover:border-amber-500/50
-                     text-white hover:text-amber-400 
+            className="text-white hover:text-amber-400 
                      transform hover:scale-105 
                      transition-all duration-300"
           >
