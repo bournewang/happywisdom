@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { dict } from '../api/dict';
+import { Audio } from './common/Audio';
 
 interface Word {
     word: string;
@@ -25,23 +26,12 @@ function Vocabulary({ words }: { words: Word[] }) {
     });
     const currentWord = words[currentIndex];
     const [phonetics, setPhonetics] = useState<Phonetic[]>([]);
-    // const [audioUrl, setAudioUrl] = useState<string>('');
 
     useEffect(() => {
         dict(currentWord.word).then((data: DictResponse[]) => {
             setPhonetics(data[0]?.phonetics?.filter((p: Phonetic) => p.audio) || []);
-            const audio = data[0]?.phonetics?.find((p: Phonetic) => p.audio)?.audio || '';
-            console.log(audio);
-            // setAudioUrl(audio);
-            playAudio(audio);
         });
     }, [currentWord.word]);
-
-    const playAudio = (audioUrl: string) => {
-        if (audioUrl) {
-            new Audio(audioUrl).play();
-        }
-    };
 
     const handleNext = () => {
         if (currentIndex < words.length - 1) {
@@ -62,18 +52,15 @@ function Vocabulary({ words }: { words: Word[] }) {
     };
 
     return (
-        <div className="min-h-screen w-full relative overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0">
-                <div className="absolute top-0 -left-4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-                <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-                <div className="absolute -bottom-8 left-20 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-                <div className="absolute -bottom-8 right-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
-            </div>
-
-            {/* Content */}
+        <div className="min-h-screen w-full relative overflow-hidden"
+            style={{
+                backgroundImage: `url('/images/english.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
             <div className="relative max-w-4xl mx-auto p-8">
-                <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-8 md:p-12">
+                <div className="bg-white/80 rounded-2xl shadow-xl p-8 md:p-12">
                     <div className="flex flex-col items-center justify-between min-h-[60vh]">
                         {/* Progress Bar */}
                         <div className="w-full mb-8">
@@ -90,28 +77,25 @@ function Vocabulary({ words }: { words: Word[] }) {
 
                         {/* Word Content */}
                         <div className="flex-1 flex flex-col items-center justify-center w-full space-y-8">
-                            <h2 className="text-6xl font-bold text-gray-800 mb-4 tracking-tight">
+                            <h2 className="text-3xl font-bold text-gray-800 mb-4 tracking-tight">
                                 {currentWord.word}
                             </h2>
                             
                             <div className="flex items-center justify-center gap-4 flex-wrap">
                                 {phonetics.map((phonetic) => (
                                     <div key={phonetic.text} 
-                                        className="flex items-center gap-2 bg-blue-200 px-4 py-2 rounded-full">
+                                        className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
                                         {phonetic.audio && (
-                                            <button
-                                                onClick={() => playAudio(phonetic.audio)}
-                                                className="hover:bg-blue-200 p-2 rounded-full transition-all"
-                                            >
+                                            <>
                                                 <p className="text-xl text-gray-600">{phonetic.text}</p>
-                                                <span className="text-xl">🔊</span>
-                                            </button>
+                                                <Audio source={phonetic.audio} />
+                                            </>
                                         )}
                                     </div>
                                 ))}
                             </div>
 
-                            <p className="text-2xl text-gray-700 max-w-2xl text-center leading-relaxed">
+                            <p className="text-xl text-gray-700 max-w-2xl text-center leading-relaxed">
                                 {currentWord.definition}
                             </p>
                         </div>
@@ -121,20 +105,36 @@ function Vocabulary({ words }: { words: Word[] }) {
                             <button
                                 onClick={handlePrev}
                                 disabled={currentIndex === 0}
-                                className="flex-1 px-8 py-4 bg-blue-600 text-white rounded-xl disabled:opacity-50 
-                                disabled:cursor-not-allowed hover:bg-blue-700 transition-all transform hover:-translate-y-0.5
-                                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                className="flex-1 px-8 py-4 rounded-xl 
+                                    bg-gradient-to-r from-blue-500/80 to-cyan-400/80
+                                    hover:from-blue-400 hover:to-cyan-300
+                                    text-white font-medium
+                                    transform hover:scale-105 active:scale-95
+                                    transition-all duration-300 ease-in-out
+                                    shadow-lg hover:shadow-cyan-500/30
+                                    backdrop-blur-sm
+                                    disabled:opacity-50 disabled:cursor-not-allowed
+                                    disabled:hover:scale-100
+                                    group"
                             >
-                                上一个
+                                <span className="text-xl group-hover:scale-110 transition-transform duration-300">⬅️</span>
                             </button>
                             <button
                                 onClick={handleNext}
                                 disabled={currentIndex === words.length - 1}
-                                className="flex-1 px-8 py-4 bg-blue-600 text-white rounded-xl disabled:opacity-50 
-                                disabled:cursor-not-allowed hover:bg-blue-700 transition-all transform hover:-translate-y-0.5
-                                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                className="flex-1 px-8 py-4 rounded-xl
+                                    bg-gradient-to-r from-blue-500/80 to-cyan-400/80
+                                    hover:from-blue-400 hover:to-cyan-300
+                                    text-white font-medium
+                                    transform hover:scale-105 active:scale-95
+                                    transition-all duration-300 ease-in-out
+                                    shadow-lg hover:shadow-cyan-500/30
+                                    backdrop-blur-sm
+                                    disabled:opacity-50 disabled:cursor-not-allowed
+                                    disabled:hover:scale-100
+                                    group"
                             >
-                                下一个
+                                <span className="text-xl group-hover:scale-110 transition-transform duration-300">➡️</span>
                             </button>
                         </div>
                     </div>
