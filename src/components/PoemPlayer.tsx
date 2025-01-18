@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { config } from '../config'
+import { textToSpeech } from '../api/tts'
 
 interface Poem {
   id?: number;
@@ -15,6 +16,8 @@ export function PoemPlayer() {
     // const [currentIndex, setCurrentIndex] = useState(0);
   const [currentPoem, setCurrentPoem] = useState<Poem | null>(null);
   const [poems, setPoems] = useState<Poem[]>([]);
+  const [isTTSPlaying, setIsTTSPlaying] = useState(false);
+
 //   const [isPlaying, setIsPlaying] = useState(false);
 //   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -40,6 +43,48 @@ export function PoemPlayer() {
   const refreshPoem = () => nextPoem();
 
   const defaultBackgroundImage = "/images/common-bg.jpg";
+
+  const getFullText = (track: Poem) => {
+    const parts = [
+        track.title,
+        `${track.dynasty || ''} ${track.author || ''}`.trim(),
+        ...(track.paragraphs || []),
+        // track.description
+    ];
+    
+    // Filter out empty strings and join with proper spacing
+    return parts
+        .filter(part => part && part.trim().length > 0)
+        .join('。');
+};
+
+const playTTS = async () => {
+    if (!currentPoem) return;
+    
+    try {
+        setIsTTSPlaying(true);
+        const fullText = getFullText(currentPoem);
+        const audioBlob = await textToSpeech(fullText);
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        
+        audio.onended = () => {
+            setIsTTSPlaying(false);
+            URL.revokeObjectURL(audioUrl);
+        };
+
+        audio.onerror = () => {
+            console.error('Audio playback error');
+            setIsTTSPlaying(false);
+            URL.revokeObjectURL(audioUrl);
+        };
+        
+        await audio.play();
+    } catch (error) {
+        console.error('TTS error:', error);
+        setIsTTSPlaying(false);
+    }
+};
 
   return (
     <div 
@@ -103,6 +148,22 @@ export function PoemPlayer() {
           <span>换一首</span>
           <span className="text-xl">🔄</span>
         </button>
+
+        <button
+            onClick={playTTS}
+            disabled={isTTSPlaying}
+            className="p-3 rounded-full 
+                    bg-white/50 hover:bg-white/70
+                    transform hover:scale-105 active:scale-95
+                    transition-all duration-300 ease-in-out
+                    shadow-lg hover:shadow-amber-500/20
+                    flex items-center justify-center
+                    w-12 h-12
+                    disabled:opacity-50 disabled:cursor-not-allowed"
+            title="朗读文本"
+        >
+            <span className="text-xl">🔊</span>
+        </button>        
       </div>
     </div>
   );

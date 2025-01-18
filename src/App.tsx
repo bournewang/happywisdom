@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { BuddhismPlayer } from './components/BuddhismPlayer'
 import { VocabularyPlayer } from './components/VocabularyPlayer'
 import { PoemPlayer } from './components/PoemPlayer'
+import { ChristPlayer } from './components/ChristPlayer'
 
 interface Category {
   id: string;
@@ -31,6 +32,12 @@ function App() {
       name: '唐诗宋词',
       description: '感受古典诗词之美',
       icon: '📜'
+    },
+    {
+      id: 'christ',
+      name: '圣经经文',
+      description: '聆听圣经经文',
+      icon: '📖'
     }
   ];
 
@@ -54,6 +61,8 @@ function App() {
         return <VocabularyPlayer />;
       case 'poems':
         return <PoemPlayer />;
+      case 'christ':
+        return <ChristPlayer />;
       default:
         return null;
     }
