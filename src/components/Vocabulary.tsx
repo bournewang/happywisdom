@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { dict } from '../api/dict';
 import { Audio } from './common/Audio';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 interface Word {
     word: string;
@@ -88,7 +89,7 @@ function Vocabulary({ words }: { words: Word[] }) {
                                         {phonetic.audio && (
                                             <>
                                                 <p className="text-xl text-gray-600">{phonetic.text}</p>
-                                                <Audio source={phonetic.audio} />
+                                                <Audio source={phonetic.audio} size="small"/>
                                             </>
                                         )}
                                     </div>
@@ -105,7 +106,9 @@ function Vocabulary({ words }: { words: Word[] }) {
                             <button
                                 onClick={handlePrev}
                                 disabled={currentIndex === 0}
-                                className="flex-1 px-8 py-4 rounded-xl 
+                                // simplify the button style
+                                
+                                className="flex-1 px-8 py-4 rounded-xl flex items-center justify-center
                                     bg-gradient-to-r from-blue-500/80 to-cyan-400/80
                                     hover:from-blue-400 hover:to-cyan-300
                                     text-white font-medium
@@ -117,12 +120,12 @@ function Vocabulary({ words }: { words: Word[] }) {
                                     disabled:hover:scale-100
                                     group"
                             >
-                                <span className="text-xl group-hover:scale-110 transition-transform duration-300">⬅️</span>
+                                <FaArrowLeft className="text-2xl"/>
                             </button>
                             <button
                                 onClick={handleNext}
                                 disabled={currentIndex === words.length - 1}
-                                className="flex-1 px-8 py-4 rounded-xl
+                                className="flex-1 px-8 py-4 rounded-xl flex items-center justify-center
                                     bg-gradient-to-r from-blue-500/80 to-cyan-400/80
                                     hover:from-blue-400 hover:to-cyan-300
                                     text-white font-medium
@@ -134,7 +137,7 @@ function Vocabulary({ words }: { words: Word[] }) {
                                     disabled:hover:scale-100
                                     group"
                             >
-                                <span className="text-xl group-hover:scale-110 transition-transform duration-300">➡️</span>
+                                <FaArrowRight className="text-2xl"/>
                             </button>
                         </div>
                     </div>

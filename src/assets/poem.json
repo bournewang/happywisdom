@@ -8,7 +8,7 @@
       "早知潮有信，嫁与弄潮儿。"
     ], 
     "dynasty": "唐代",
-    "imageUrl": "/assets/poem/江南曲.jpg"
+    "imageUrl": "/images/poem/江南曲.jpg"
   }, 
   {
     "title": "感遇·江南有丹橘", 
@@ -21,7 +21,7 @@
       "运命惟所遇，循环不可寻。", 
       "徒言树桃李，此木岂无阴？"
     ], 
-    "imageUrl": "/assets/poem/江南有丹橘.jpg",
+    "imageUrl": "/images/poem/江南有丹橘.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -32,7 +32,7 @@
       "终南阴岭秀，积雪浮云端。", 
       "林表明霁色，城中增暮寒。"
     ], 
-    "imageUrl": "/assets/poem/终南望余雪.jpg",
+    "imageUrl": "/images/poem/终南望余雪.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -48,7 +48,7 @@
       "长歌吟松风，曲尽河星稀。", 
       "我醉君复乐，陶然共忘机。"
     ], 
-    "imageUrl": "/assets/poem/下终南山过斛斯山人宿置酒.jpg",
+    "imageUrl": "/images/poem/下终南山过斛斯山人宿置酒.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -59,7 +59,7 @@
       "故国三千里，深宫二十年。", 
       "一声何满子，双泪落君前。"
     ], 
-    "imageUrl": "/assets/poem/故国三千里.jpg",
+    "imageUrl": "/images/poem/故国三千里.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -119,7 +119,7 @@
       "凄凄不似向前声，满座重闻皆掩泣。", 
       "座中泣下谁最多？江州司马青衫湿。"
     ], 
-    "imageUrl": "/assets/poem/琵琶行.jpg",
+    "imageUrl": "/images/poem/琵琶行.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -132,7 +132,7 @@
       "隔座送钩春酒暖，分曹射覆蜡灯红。", 
       "嗟余听鼓应官去，走马兰台类转蓬。"
     ], 
-    "imageUrl": "/assets/poem/昨夜星辰昨夜风.jpg",
+    "imageUrl": "/images/poem/昨夜星辰昨夜风.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -166,7 +166,7 @@
       "别君去兮何时还？且放白鹿青崖间，须行即骑访名山。", 
       "安能摧眉折腰事权贵，使我不得开心颜!"
     ], 
-    "imageUrl": "/assets/poem/梦游天姥吟留别.jpg",
+    "imageUrl": "/images/poem/梦游天姥吟留别.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -190,7 +190,7 @@
       "愿得燕弓射大将，耻令越甲鸣吾君。", 
       "莫嫌旧日云中守，犹堪一战取功勋。"
     ], 
-    "imageUrl": "/assets/poem/老将行.jpg",
+    "imageUrl": "/images/poem/老将行.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -203,7 +203,7 @@
       "少妇今春意，良人昨夜情。", 
       "谁能将旗鼓，一为取龙城。"
     ], 
-    "imageUrl": "/assets/poem/闻道黄龙戍.jpg",
+    "imageUrl": "/images/poem/闻道黄龙戍.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -216,7 +216,7 @@
       "岭猿同旦暮，江柳共风烟。", 
       "已似长沙傅，从今又几年。"
     ], 
-    "imageUrl": "/assets/poem/乡心新岁切.jpg",
+    "imageUrl": "/images/poem/乡心新岁切.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -229,7 +229,7 @@
       "汉女输橦布，巴人讼芋田。", 
       "文翁翻教授，不敢倚先贤。"
     ], 
-    "imageUrl": "/assets/poem/万壑树参天.jpg",
+    "imageUrl": "/images/poem/万壑树参天.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -310,7 +310,7 @@
       "在天愿作比翼鸟，在地愿为连理枝。", 
       "天长地久有时尽，此恨绵绵无绝期。"
     ], 
-    "imageUrl": "/assets/poem/长恨歌.jpg",
+    "imageUrl": "/images/poem/长恨歌.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -323,6 +323,7 @@
       "于今腐草无萤火，终古垂杨有暮鸦。", 
       "地下若逢陈后主，岂宜重问后庭花。"
     ], 
+    "imageUrl": "/images/poem/隋宫.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -335,6 +336,7 @@
       "茅亭宿花影，药院滋苔纹。", 
       "余亦谢时去，西山鸾鹤群。"
     ], 
+    "imageUrl": "/images/poem/宿王昌龄隐居.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -363,6 +365,7 @@
       "途穷反遭俗眼白，世上未有如公贫。", 
       "但看古来盛名下，终日坎壈缠其身。"
     ], 
+    "imageUrl": "/images/poem/丹青引赠曹将军霸.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -373,6 +376,7 @@
       "金陵津渡小山楼，一宿行人自可愁。", 
       "潮落夜江斜月里，两三星火是瓜州。"
     ], 
+    "imageUrl": "/images/poem/题金陵渡.jpg",
     "dynasty": "唐代"
   }, 
   {
@@ -383,6 +387,7 @@
       "乘兴南游不戒严，九重谁省谏书函。", 
       "春风举国裁宫锦，半作障泥半作帆。"
     ], 
+    "imageUrl": "/images/poem/隋宫-2.jpg",
     "dynasty": "唐代"
   }, 
   {
