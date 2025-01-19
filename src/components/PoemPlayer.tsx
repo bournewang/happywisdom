@@ -51,7 +51,8 @@ export function PoemPlayer() {
       isTTS={true}
       content={
         <>
-          <div>
+        {/* if a line is too long, set a smaller font size */}
+          <div className={`${currentPoem.paragraphs[0].length > 14 ? 'text-lg' : ''}`}>
             {currentPoem.paragraphs.map((line: string, index: number) => (
               <p key={index} >{line}</p>
             ))}
