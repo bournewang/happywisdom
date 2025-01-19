@@ -26,5 +26,5 @@ export const ttsUrl = (text: string) => {
     text: encodeURIComponent(text),
     // voice: encodeURIComponent(voice)
   });
-  return `https://azure-tts-worker.xiaopei0206.workers.dev/?${params}`;
+  return `https://tts.englishreader.org?${params}`;
 }
