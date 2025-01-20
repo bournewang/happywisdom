@@ -4,6 +4,7 @@ import { Player } from './common/Player'
 interface BuddhismVerse {
     title: string;
     content: string;
+    paragraphs: string[];
     audioUrl: string;
     image?: string;
 }
@@ -28,7 +29,10 @@ export function BuddhismPlayer() {
                 title: verse.title,
                 // subtitle: verse.source,
                 content: <>
-                    <div className="text-center">{verse.content}</div>
+                    {verse.content && <div className="text-center">{verse.content}</div>}
+                    {verse.paragraphs && <div className="text-center text-lg">{verse.paragraphs.map((paragraph, index) => (
+                        <div key={index}>{paragraph}</div>
+                    ))}</div>}
                 </>,
                 audioSource: verse.audioUrl,
                 backgroundImage: verse.image || '/images/buddhism.jpg'

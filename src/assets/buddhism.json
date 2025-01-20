@@ -40,5 +40,31 @@
     "audioUrl": "https://img.happywisdom.org/般若菠萝蜜多心经诵读.mp3",
     "content": "佛教最精髓的经典之一，诠释空性智慧",
     "image": "/images/buddhism/heart-sutra.jpg"
+  },
+  {
+    "id": 7,
+    "title": "般若心经",
+    "audioUrl": "https://img.happywisdom.org/般若心经.mp3",
+    "paragraphs":[
+      "观自在菩萨 行深般若波罗蜜多时",
+      "照见五蕴皆空 度一切苦厄",  
+      "舍利子 色不异空 空不异色"
+    ],
+    "image": "/images/buddhism/heart-sutra.jpg"
+  },
+  {
+    "id": 8,
+    "title": "南无阿弥陀佛",
+    "audioUrl": "https://img.happywisdom.org/南无阿弥陀佛.mp3",
+    "content": "南无阿弥陀佛，是西方极乐世界的阿弥陀佛",
+    "image": "/images/buddhism/namo-amitabha.jpg"
+  },
+  {
+    "id": 9,
+    "title": "南无观世音菩萨",
+    "audioUrl": "https://img.happywisdom.org/南无观世音菩萨.mp3",
+    "content": "南无观世音菩萨，是观世音菩萨的称号",
+    "image": "/images/buddhism/namo-avatamsaka.jpg"
   }
+
 ]
