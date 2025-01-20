@@ -6,10 +6,9 @@ interface Poem {
   id?: number;
   title: string;
   author: string;
-  dynasty: string;
   paragraphs: string[];
-  notes: string[];
-  imageUrl?: string;
+//   notes: string[];
+  image?: string;
 }
 
 export function PoemPlayer() {
@@ -18,7 +17,7 @@ export function PoemPlayer() {
 //   const [poems, setPoems] = useState<Poem[]>([]);
 
   useEffect(() => {
-    import('../assets/poem.json')
+    import('../assets/poems.json')
       .then(module => {
         const poemList: Poem[] = module.default;
         // setPoems(poemList);
@@ -34,7 +33,7 @@ export function PoemPlayer() {
   const getFullText = (poem: Poem) => {
     const parts = [
       poem.title,
-      `${poem.dynasty || ''} ${poem.author || ''}`.trim(),
+      `${poem.author || ''}`.trim(),
       ...(poem.paragraphs || []),
     ];
     return parts
@@ -45,28 +44,18 @@ export function PoemPlayer() {
   return (
     currentPoem && <Player
       title={currentPoem.title}
-      subtitle={`${currentPoem.dynasty} · ${currentPoem.author}`}
-      backgroundImage={currentPoem.imageUrl || '/images/poem.jpg'}
+      subtitle={`${currentPoem.author}`}
+      backgroundImage={currentPoem.image || '/images/poem.jpg'}
       audioSource={getFullText(currentPoem)}
       isTTS={true}
       content={
         <>
         {/* if a line is too long, set a smaller font size */}
-          <div className={`${currentPoem.paragraphs[0].length > 14 ? 'text-lg' : ''}`}>
+          <div className={`${currentPoem.paragraphs[0].length > 10 ? 'text-xl' : ''}`}>
             {currentPoem.paragraphs.map((line: string, index: number) => (
               <p key={index} >{line}</p>
             ))}
           </div>
-          {currentPoem.notes?.length > 0 && (
-            <div className="mt-6 pt-6 border-t border-white/10">
-              <h3 className="text-amber-200 mb-2">注释：</h3>
-              <ul className="space-y-1 text-sm text-gray-300">
-                {currentPoem.notes.map((note: string, index: number) => (
-                  <li key={index}>{note}</li>
-                ))}
-              </ul>
-            </div>
-          )}
         </>
       }
     />
