@@ -3,6 +3,7 @@ import { BuddhismPlayer } from './components/BuddhismPlayer'
 import { VocabularyPlayer } from './components/VocabularyPlayer'
 import { PoemPlayer } from './components/PoemPlayer'
 import { ChristPlayer } from './components/ChristPlayer'
+import { NurseryRhymePlayer } from './components/NurseryRhymePlayer'
 
 interface Category {
   id: string;
@@ -36,6 +37,12 @@ function App() {
       icon: '📜'
     },
     {
+      id: 'nursery-rhyme',
+      name: '儿歌童谣',
+      description: '聆听儿歌童谣',
+      icon: '🎶'
+    },
+    {
       id: 'christ',
       name: '圣经经文',
       description: '聆听圣经经文',
@@ -56,6 +63,8 @@ function App() {
         return <VocabularyPlayer />;
       case 'poems':
         return <PoemPlayer />;
+      case 'nursery-rhyme':
+        return <NurseryRhymePlayer />;
       case 'christ':
         return <ChristPlayer />;
       default:

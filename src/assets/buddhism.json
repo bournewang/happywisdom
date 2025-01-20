@@ -45,11 +45,7 @@
     "id": 7,
     "title": "般若心经",
     "audioUrl": "https://img.happywisdom.org/般若心经.mp3",
-    "paragraphs":[
-      "观自在菩萨 行深般若波罗蜜多时",
-      "照见五蕴皆空 度一切苦厄",  
-      "舍利子 色不异空 空不异色"
-    ],
+    "content": "般若心经是佛教最精髓的经典之一，诠释空性智慧.\n 观自在菩萨 行深般若波罗蜜多时。照见五蕴皆空 度一切苦厄。 舍利子 色不异空 空不异色",
     "image": "/images/buddhism/heart-sutra.jpg"
   },
   {
