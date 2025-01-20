@@ -2,49 +2,49 @@
   {
     "id": 1,
     "title": "唵嘛呢叭咪吽大明咒",
-    "audioUrl": "/唵嘛呢叭咪吽大明咒.mp3",
+    "audioUrl": "https://img.happywisdom.org/唵嘛呢叭咪吽大明咒.mp3",
     "description": "六字大明咒，是观世音菩萨的心咒，具有无量功德",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/om-mani.jpg"
+    "image": "/images/buddhism/om-mani.jpg"
   },
   {
     "id": 2,
     "title": "梵音大悲咒",
-    "audioUrl": "/梵音大悲咒.mp3",
+    "audioUrl": "https://img.happywisdom.org/梵音大悲咒.mp3",
     "description": "大悲咒是观世音菩萨的根本咒语，具有不可思议的力量",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/avalokiteshvara.jpg"
+    "image": "/images/buddhism/avalokiteshvara.jpg"
   },
   {
     "id": 3,
     "title": "地藏王菩萨超度心咒",
-    "audioUrl": "/地藏王菩萨超度心咒.mp3",
+    "audioUrl": "https://img.happywisdom.org/地藏王菩萨超度心咒.mp3",
     "description": "地藏菩萨的心咒，大愿地藏王，誓度众生",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/ksitigarbha.jpg"
+    "image": "/images/buddhism/ksitigarbha.jpg"
   },
   {
     "id": 4,
     "title": "消灾吉祥神咒",
-    "audioUrl": "/消灾吉祥神咒.mp3",
+    "audioUrl": "https://img.happywisdom.org/消灾吉祥神咒.mp3",
     "description": "消除灾难，带来吉祥的佛教咒语",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/auspicious.jpg"
+    "image": "/images/buddhism/auspicious.jpg"
   },
   {
     "id": 5,
     "title": "文殊师利祈请颂",
-    "audioUrl": "/文殊师利祈请颂-莫尔根.mp3",
+    "audioUrl": "https://img.happywisdom.org/文殊师利祈请颂-莫尔根.mp3",
     "description": "祈请大智文殊师利菩萨的庄严颂词",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/manjushri.jpg"
+    "image": "/images/buddhism/manjushri.jpg"
   },
   {
     "id": 6,
     "title": "般若波罗蜜多心经",
-    "audioUrl": "/般若菠萝蜜多心经诵读.mp3",
+    "audioUrl": "https://img.happywisdom.org/般若菠萝蜜多心经诵读.mp3",
     "description": "佛教最精髓的经典之一，诠释空性智慧",
     "category": "buddhism",
-    "imageUrl": "/images/buddhism/heart-sutra.jpg"
+    "image": "/images/buddhism/heart-sutra.jpg"
   }
 ]

@@ -1,48 +1,42 @@
 import { useState, useEffect } from 'react'
-import { config } from '../config'
 import { Player } from './common/Player'
 
-interface BuddhismTrack {
-  id: number;
-  title: string;
-  audioUrl: string;
-  description: string;
-  imageUrl: string;
+interface BuddhismVerse {
+    title: string;
+    source: string;
+    content: string;
+    audioUrl: string;
+    image?: string;
 }
 
 export function BuddhismPlayer() {
-  const [currentTrack, setCurrentTrack] = useState<BuddhismTrack | null>(null);
-//   const [tracks, setTracks] = useState<BuddhismTrack[]>([]);
+    const [verseList, setVerseList] = useState<BuddhismVerse[]>([]);
 
-  useEffect(() => {
-    import('../assets/buddhism.json')
-      .then(module => {
-        const buddhismTracks: BuddhismTrack[] = module.default;
-        const index = Math.floor(Math.random() * buddhismTracks.length)
-        const audioUrl = `${config.audioUrl}${buddhismTracks[index].audioUrl}`
-        const track = {
-            ...buddhismTracks[index],
-            audioUrl
-        }
-        setCurrentTrack(track);
-      })
-      .catch(error => {
-        console.error('Error loading buddhism tracks:', error);
-      });
-  }, []);
+    useEffect(() => {
+        import('../assets/buddhism.json')
+            .then(module => {
+                setVerseList(module.default);
+            })
+            .catch(error => {
+                console.error('Error loading buddhism verses:', error);
+            });
+    }, []);
 
-  return (
-    currentTrack && (
-    <Player
-      title={currentTrack.title}
-      backgroundImage={currentTrack.imageUrl}
-      audioSource={currentTrack.audioUrl}
-      content={
-        <>  
-            {currentTrack.description}
-        </>
-      }
-    />
-    )
-  );
+    return verseList.length > 0 && (
+        <Player
+            itemList={verseList}
+            renderItem={(verse) => ({
+                title: verse.title,
+                subtitle: verse.source,
+                content: <>
+                    <div className="text-center">{verse.description}</div>
+                    <div className="text-center">{verse.content}</div>
+                </>,
+                audioSource: verse.audioUrl,
+                backgroundImage: verse.image || '/images/buddhism.jpg'
+            })}
+            isTTS={false}
+            size="medium"
+        />
+    );
 } 

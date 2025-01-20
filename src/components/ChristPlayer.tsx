@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Player } from './common/Player';
-import bibleVerses from '../assets/bible.json';
 
 interface BibleVerse {
     chapter: string;
@@ -10,15 +9,7 @@ interface BibleVerse {
 }
 
 export function ChristPlayer() {
-    const [currentVerse] = useState<BibleVerse>(() => {
-        const verse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
-        return {
-            chapter: verse.chapter,
-            verse: verse.verse,
-            content: verse.content,
-            image: verse.image || undefined
-        };
-    });
+    const [verseList, setVerseList] = useState<BibleVerse[]>([]);
 
     const images = ['/images/bible/耶稣.jpg', 
             '/images/bible/耶稣2.jpg',
@@ -26,18 +17,27 @@ export function ChristPlayer() {
              "/images/bible/耶稣4.jpg"
         ]
 
-    return (
+    useEffect(() => {
+        import('../assets/bible.json')
+            .then(module => {
+                setVerseList(module.default);
+            })
+            .catch(error => {
+                console.error('Error loading bible verses:', error);
+            });
+    }, []);
+
+    return verseList.length > 0 && (
         <Player
-            title={currentVerse.chapter}
-            subtitle={currentVerse.verse}
-            backgroundImage={currentVerse.image || images[Math.floor(Math.random() * images.length)]}
-            audioSource={currentVerse.content}
+            itemList={verseList}
+            renderItem={(verse) => ({
+                title: verse.chapter,
+                subtitle: verse.verse,
+                content: <>{verse.content}</>,
+                audioSource: verse.content,
+                backgroundImage: verse.image || images[Math.floor(Math.random() * images.length)]
+            })}
             isTTS={true}
-            content={
-                <>
-                    {currentVerse.content}
-                </>
-            }
         />
     );
 } 

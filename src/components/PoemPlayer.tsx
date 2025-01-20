@@ -12,52 +12,47 @@ interface Poem {
 }
 
 export function PoemPlayer() {
-  const [currentPoem, setCurrentPoem] = useState<Poem | null>(null);
-//   const [currentIndex, setCurrentIndex] = useState<number>(0);
-//   const [poems, setPoems] = useState<Poem[]>([]);
+  const [poemList, setPoemList] = useState<Poem[]>([]);
 
   useEffect(() => {
     import('../assets/poems.json')
       .then(module => {
-        const poemList: Poem[] = module.default;
-        // setPoems(poemList);
-        const index = Math.floor(Math.random() * poemList.length)
-        // setCurrentIndex(index);
-        setCurrentPoem(poemList[index]);
+        setPoemList(module.default);
       })
       .catch(error => {
-        console.error('Error loading poem:', error);
+        console.error('Error loading poems:', error);
       });
   }, []);
 
-  const getFullText = (poem: Poem) => {
-    const parts = [
-      poem.title,
-      `${poem.author || ''}`.trim(),
-      ...(poem.paragraphs || []),
-    ];
-    return parts
-      .filter(part => part && part.trim().length > 0)
-      .join('。');
-  };
-
-  return (
-    currentPoem && <Player
-      title={currentPoem.title}
-      subtitle={`${currentPoem.author}`}
-      backgroundImage={currentPoem.image || '/images/poem.jpg'}
-      audioSource={getFullText(currentPoem)}
+  return poemList.length > 0 && (
+    <Player
+      itemList={poemList}
+      renderItem={(poem) => ({
+        title: poem.title,
+        subtitle: `${poem.author}`,
+        content: (
+          <>
+            <div className={`${poem.paragraphs[0].length > 10 ? 'text-xl' : ''}`}>
+              {poem.paragraphs.map((line: string, index: number) => (
+                <p key={index}>{line}</p>
+              ))}
+            </div>
+            {poem.notes?.length > 0 && (
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <h3 className="text-amber-200 mb-2">注释：</h3>
+                <ul className="space-y-1 text-sm text-gray-300">
+                  {poem.notes.map((note: string, index: number) => (
+                    <li key={index}>{note}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </>
+        ),
+        audioSource: poem.paragraphs.join('。'),
+        backgroundImage: poem.image || '/images/poem.jpg'
+      })}
       isTTS={true}
-      content={
-        <>
-        {/* if a line is too long, set a smaller font size */}
-          <div className={`${currentPoem.paragraphs[0].length > 10 ? 'text-xl' : ''}`}>
-            {currentPoem.paragraphs.map((line: string, index: number) => (
-              <p key={index} >{line}</p>
-            ))}
-          </div>
-        </>
-      }
     />
   );
 } 
