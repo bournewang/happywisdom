@@ -80,12 +80,14 @@ export function Player({
                     alt="background"
                     className="w-full h-full object-cover"
                 />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent"></div>
             </div>
 
             {/* Content Section - Overlay */}
-            <div className="relative z-10 min-h-screen flex flex-col justify-start mt-20 pt-2">
+            <div className="relative z-10 min-h-screen flex flex-col justify-start pt-2">
                 <div className={`max-w-3xl ${className}`}>
-                    <div className="bg-black/30 rounded-xl p-2 md:p-8 shadow-2xl border-white/10">
+                    <div className=" rounded-xl p-2 md:p-8 ">
                         {(rendered.title || rendered.subtitle) && (
                             <div className="mb-2 text-center">
                                 {rendered.title && (
