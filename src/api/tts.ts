@@ -21,10 +21,10 @@ export const textToSpeech = async (text: string, voice: string = 'zh-CN-Xiaoxiao
 };
 
 
-export const ttsUrl = (text: string) => {
+export const ttsUrl = (text: string, voice: string = 'zh-CN-XiaoxiaoNeural') => {
   const params = new URLSearchParams({
     text: encodeURIComponent(text),
-    // voice: encodeURIComponent(voice)
+    voice: encodeURIComponent(voice)
   });
   return `https://tts.englishreader.org?${params}`;
 }

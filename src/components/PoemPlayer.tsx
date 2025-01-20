@@ -24,6 +24,11 @@ export function PoemPlayer() {
       });
   }, []);
 
+  const getFullText = (poem: Poem) => {
+    // addd title and author
+    return `${poem.title} ${poem.author} ${poem.paragraphs.join('。')}`;
+  }
+
   return poemList.length > 0 && (
     <Player
       itemList={poemList}
@@ -49,10 +54,11 @@ export function PoemPlayer() {
             )}
           </>
         ),
-        audioSource: poem.paragraphs.join('。'),
+        audioSource: getFullText(poem),
         backgroundImage: poem.image || '/images/poem.jpg'
       })}
       isTTS={true}
+      voice='zh-CN-XiaoshuangNeural'
     />
   );
 } 

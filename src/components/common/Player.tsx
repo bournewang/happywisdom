@@ -12,6 +12,7 @@ interface PlayerProps {
         backgroundImage?: string;
     };
     isTTS?: boolean;
+    voice?: string;
     className?: string;
     size?: 'small' | 'medium' | 'large';
     actions?: ReactNode;
@@ -21,6 +22,7 @@ export function Player({
     itemList,
     renderItem,
     isTTS = false,
+    voice = 'zh-CN-XiaoxiaoNeural',
     className = '',
     size = 'medium',
     actions
@@ -38,7 +40,7 @@ export function Player({
 
     useEffect(() => {
         if (audioRef.current) {
-            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '') : (rendered.audioSource || '');
+            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (rendered.audioSource || '');
         }
     }, [rendered.audioSource, isTTS]);
 

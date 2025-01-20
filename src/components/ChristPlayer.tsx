@@ -38,6 +38,7 @@ export function ChristPlayer() {
                 backgroundImage: verse.image || images[Math.floor(Math.random() * images.length)]
             })}
             isTTS={true}
+            voice="zh-CN-YunjianNeural"
         />
     );
 } 
