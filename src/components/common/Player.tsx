@@ -72,11 +72,20 @@ export function Player({
     }
 
     return (
-        <div className="relative flex flex-col min-h-screen">
-            {/* Content Section - Top */}
-            <div className=" relative z-10 flex-1 flex flex-col justify-start pt-2">
-                <div className={` max-w-3xl ${className}`}>
-                    <div className="bg-black/10 rounded-xl p-2 md:p-8 shadow-2xl  border-white/10">
+        <div className="relative min-h-screen">
+            {/* Background Image - Full Screen */}
+            <div className="fixed inset-0 w-full h-full">
+                <img 
+                    src={rendered.backgroundImage}
+                    alt="background"
+                    className="w-full h-full object-cover"
+                />
+            </div>
+
+            {/* Content Section - Overlay */}
+            <div className="relative z-10 min-h-screen flex flex-col justify-start mt-20 pt-2">
+                <div className={`max-w-3xl ${className}`}>
+                    <div className="bg-black/30 rounded-xl p-2 md:p-8 shadow-2xl border-white/10">
                         {(rendered.title || rendered.subtitle) && (
                             <div className="mb-2 text-center">
                                 {rendered.title && (
@@ -86,7 +95,7 @@ export function Player({
                                     </h1>
                                 )}
                                 {rendered.subtitle && (
-                                    <h2 className="text-lg md:text-xl text-gray-300 
+                                    <h2 className="text-lg md:text-xl text-white
                                         tracking-wider font-medium">
                                         {rendered.subtitle}
                                     </h2>
@@ -128,8 +137,8 @@ export function Player({
                                         </button>
 
                                         <audio
-                                            autoPlay={true}
                                             ref={audioRef}
+                                            autoPlay={true}
                                             onPlay={() => setIsPlaying(true)}
                                             onEnded={() => setIsPlaying(false)}
                                             onError={() => setIsPlaying(false)}
@@ -150,23 +159,13 @@ export function Player({
                                     onClick={refreshContent}
                                 >
                                     <span className={`relative ${iconSizeClasses[size]} group-hover:scale-110 transition-transform duration-300`}>
-                                        <FaSync className={iconSizeClasses[size]} />
+                                        <FaSync />
                                     </span>
                                 </button>
                             </div>
                         )}
-                        
                     </div>
                 </div>
-            </div>
-
-            {/* Background Image - Bottom 2/3 */}
-            <div className="absolute bottom-0 left-0 w-full h-2/3">
-                <img 
-                    src={rendered.backgroundImage}
-                    alt="background"
-                    className="w-full h-full object-cover"
-                />
             </div>
         </div>
     );

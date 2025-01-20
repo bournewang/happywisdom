@@ -3,7 +3,6 @@ import { Player } from './common/Player'
 
 interface BuddhismVerse {
     title: string;
-    source: string;
     content: string;
     audioUrl: string;
     image?: string;
@@ -27,9 +26,8 @@ export function BuddhismPlayer() {
             itemList={verseList}
             renderItem={(verse) => ({
                 title: verse.title,
-                subtitle: verse.source,
+                // subtitle: verse.source,
                 content: <>
-                    <div className="text-center">{verse.description}</div>
                     <div className="text-center">{verse.content}</div>
                 </>,
                 audioSource: verse.audioUrl,
