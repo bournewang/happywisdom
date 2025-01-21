@@ -25,7 +25,7 @@ function Vocabulary({ words }: { words: Word[] }) {
         const initialValue = saved ? parseInt(saved, 10) : 0;
         return initialValue >= 0 && initialValue < words.length ? initialValue : 0;
     });
-    const currentWord = words[currentIndex];
+    const [currentWord, setCurrentWord] = useState<Word>(words[currentIndex]);
     const [phonetics, setPhonetics] = useState<Phonetic[]>([]);
 
     useEffect(() => {
@@ -40,15 +40,17 @@ function Vocabulary({ words }: { words: Word[] }) {
             setCurrentIndex(newIndex);
             localStorage.setItem('vocabularyIndex', newIndex.toString());
             setPhonetics([]);
+            setCurrentWord(words[newIndex]);
         }
     };
 
     const handlePrev = () => {
         if (currentIndex > 0) {
             const newIndex = currentIndex - 1;
-            setCurrentIndex(currentIndex - 1);
+            setCurrentIndex(newIndex);
             localStorage.setItem('vocabularyIndex', newIndex.toString());
             setPhonetics([]);
+            setCurrentWord(words[newIndex]);
         }
     };
 

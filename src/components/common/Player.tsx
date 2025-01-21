@@ -86,8 +86,8 @@ export function Player({
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div>
                 
                 {/* Bottom Bar */}
-                <div className="fixed bottom-0 left-0 right-0 h-10 bg-black/80 border border-white/10">
-                </div>
+                {/* <div className="fixed bottom-0 left-0 right-0 h-5 bg-black/80 border border-white/10">
+                </div> */}
             </div>
 
             {/* Content Section - Overlay */}
