@@ -15,7 +15,9 @@ interface PlayerProps {
     voice?: string;
     className?: string;
     size?: 'small' | 'medium' | 'large';
+    position?: 'top' | 'middle' | 'bottom';
     actions?: ReactNode;
+    showRefresh?: boolean;
 }
 
 export function Player({ 
@@ -25,7 +27,9 @@ export function Player({
     voice = 'zh-CN-XiaoxiaoNeural',
     className = '',
     size = 'medium',
-    actions
+    position = 'top',
+    actions,
+    showRefresh = true
 }: PlayerProps) {
     const [currentItem, setCurrentItem] = useState(itemList[Math.floor(Math.random() * itemList.length)]);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -91,7 +95,11 @@ export function Player({
             </div>
 
             {/* Content Section - Overlay */}
-            <div className="relative z-10 min-h-screen flex flex-col justify-start pt-2">
+            <div className={`relative z-10 min-h-screen flex flex-col ${
+                position === 'top' ? 'justify-start pt-2' : 
+                position === 'middle' ? 'justify-center' : 
+                'justify-end pb-2'
+            }`}>
                 <div className={`max-w-3xl ${className}`}>
                     <div className=" rounded-xl p-2 md:p-8 ">
                         {(rendered.title || rendered.subtitle) && (
@@ -154,9 +162,10 @@ export function Player({
                                     </>
                                 )}
                                 {actions}
-                                <button 
-                                    className={`relative rounded-full pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 
-                                        transform hover:scale-105 active:scale-95 
+                                {showRefresh && (
+                                    <button 
+                                        className={`relative rounded-full pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 
+                                            transform hover:scale-105 active:scale-95 
                                         transition-all duration-300 ease-in-out 
                                         shadow-lg hover:shadow-cyan-500/30 hover:from-blue-400 hover:to-cyan-300 
                                         text-white font-medium
@@ -169,7 +178,8 @@ export function Player({
                                     <span className={`relative ${iconSizeClasses[size]} group-hover:scale-110 transition-transform duration-300`}>
                                         <FaSync />
                                     </span>
-                                </button>
+                                    </button>
+                                )}
                             </div>
                         )}
                     </div>

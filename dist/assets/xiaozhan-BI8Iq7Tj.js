@@ -1,1 +1,0 @@
-const o=[{video:"https://img.happywisdom.org/xiaozhan1.mp4"},{video:"https://img.happywisdom.org/xiaozhan2.mp4"},{video:"https://img.happywisdom.org/xiaozhan3.mp4"},{video:"https://img.happywisdom.org/xiaozhan4.mp4"}];export{o as default};
