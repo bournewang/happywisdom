@@ -29,8 +29,15 @@ function Vocabulary({ words }: { words: Word[] }) {
     const [phonetics, setPhonetics] = useState<Phonetic[]>([]);
 
     useEffect(() => {
+        // Clear previous phonetics first
+        setPhonetics([]);
+        
+        // Then fetch new ones
         dict(currentWord.word).then((data: DictResponse[]) => {
-            setPhonetics(data[0]?.phonetics?.filter((p: Phonetic) => p.audio) || []);
+            if (data[0]?.phonetics) {
+                const validPhonetics = data[0].phonetics.filter((p: Phonetic) => p.audio && p.text);
+                setPhonetics(validPhonetics);
+            }
         });
     }, [currentWord.word]);
 
@@ -39,7 +46,7 @@ function Vocabulary({ words }: { words: Word[] }) {
             const newIndex = currentIndex + 1;
             setCurrentIndex(newIndex);
             localStorage.setItem('vocabularyIndex', newIndex.toString());
-            setPhonetics([]);
+            setPhonetics([]); // Clear phonetics immediately
             setCurrentWord(words[newIndex]);
         }
     };
@@ -49,7 +56,7 @@ function Vocabulary({ words }: { words: Word[] }) {
             const newIndex = currentIndex - 1;
             setCurrentIndex(newIndex);
             localStorage.setItem('vocabularyIndex', newIndex.toString());
-            setPhonetics([]);
+            setPhonetics([]); // Clear phonetics immediately
             setCurrentWord(words[newIndex]);
         }
     };
