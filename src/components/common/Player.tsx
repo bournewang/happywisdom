@@ -27,7 +27,7 @@ export function Player({
     voice = 'zh-CN-XiaoxiaoNeural',
     className = '',
     size = 'medium',
-    position = 'top',
+    position = 'middle',
     actions,
     showRefresh = true
 }: PlayerProps) {
@@ -87,7 +87,7 @@ export function Player({
                     className="w-full h-full object-cover"
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div> */}
                 
                 {/* Bottom Bar */}
                 {/* <div className="fixed bottom-0 left-0 right-0 h-5 bg-black/80 border border-white/10">
@@ -101,7 +101,7 @@ export function Player({
                 'justify-end pb-2'
             }`}>
                 <div className={`max-w-3xl ${className}`}>
-                    <div className=" rounded-xl p-2 md:p-8 ">
+                    <div className=" rounded-xl p-2 md:p-8 bg-gradient-to-b from-black/20 via-black/30 to-black/40">
                         {(rendered.title || rendered.subtitle) && (
                             <div className="mb-2 text-center">
                                 {rendered.title && (

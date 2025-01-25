@@ -62,13 +62,14 @@ function Vocabulary({ words }: { words: Word[] }) {
     };
 
     return (
-        <div className="min-h-screen w-full relative overflow-hidden"
-            style={{
-                backgroundImage: `url('/images/english.jpg')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-            }}
-        >
+        <div className="min-h-screen w-full relative overflow-hidden">
+            <div className="fixed inset-0 w-full h-full">
+                <img 
+                    src="/images/english.jpg"
+                    alt="background"
+                    className="w-full h-full object-cover"
+                />
+            </div>
             <div className="relative max-w-4xl mx-auto p-8">
                 <div className="bg-white/80 rounded-2xl shadow-xl p-8 md:p-12">
                     <div className="flex flex-col items-center justify-between min-h-[60vh]">

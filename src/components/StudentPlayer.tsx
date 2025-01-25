@@ -28,19 +28,19 @@ export function StudentPlayer() {
                 <div className="flex justify-center gap-4 p-2">
                     <button 
                         onClick={() => handleViewChange('poem')}
-                        className={`px-4 py-2 rounded ${studentView === 'poem' ? 'bg-blue-500' : 'bg-gray-500'}`}
+                        className={`px-4 py-2 rounded text-white ${studentView === 'poem' ? 'bg-blue-500' : 'bg-gray-500'}`}
                     >
                         诗词
                     </button>
                     <button 
                         onClick={() => handleViewChange('nursery')}
-                        className={`px-4 py-2 rounded ${studentView === 'nursery' ? 'bg-blue-500' : 'bg-gray-500'}`}
+                        className={`px-4 py-2 rounded text-white ${studentView === 'nursery' ? 'bg-blue-500' : 'bg-gray-500'}`}
                     >
                         儿歌
                     </button>
                     <button 
                         onClick={() => handleViewChange('vocabulary')}
-                        className={`px-4 py-2 rounded ${studentView === 'vocabulary' ? 'bg-blue-500' : 'bg-gray-500'}`}
+                        className={`px-4 py-2 rounded text-white ${studentView === 'vocabulary' ? 'bg-blue-500' : 'bg-gray-500'}`}
                     >
                         单词
                     </button>
