@@ -29,11 +29,12 @@ export function Player({
     size = 'medium',
     position = 'middle',
     actions,
-    showRefresh = true
+    showRefresh = true,
 }: PlayerProps) {
     const [currentItem, setCurrentItem] = useState(itemList[Math.floor(Math.random() * itemList.length)]);
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
+    const contentRef = useRef<HTMLDivElement>(null);
 
     const refreshContent = () => {
         const newItem = itemList[Math.floor(Math.random() * itemList.length)];
@@ -47,6 +48,41 @@ export function Player({
             audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (rendered.audioSource || '');
         }
     }, [rendered.audioSource, isTTS]);
+
+    useEffect(() => {
+        if (!audioRef.current) return;
+
+        const handleTimeUpdate = () => {
+            if (!audioRef.current || !contentRef.current) return;
+            
+            const currentTime = audioRef.current.currentTime;
+            const scrollDelay = currentItem.scrollDelay || 0;  // Get delay from current item
+            
+            // Don't scroll before the delay
+            if (currentTime < scrollDelay) {
+                contentRef.current.scrollTop = 0;
+                return;
+            }
+            
+            const duration = audioRef.current.duration - scrollDelay;
+            const adjustedCurrentTime = currentTime - scrollDelay;
+            
+            // Calculate progress after delay
+            const progress = Math.min(adjustedCurrentTime / duration, 1);
+            const contentHeight = contentRef.current.scrollHeight - contentRef.current.clientHeight;
+            const newScrollTop = contentHeight * progress;
+            
+            contentRef.current.scrollTo({
+                top: newScrollTop,
+                behavior: 'smooth'
+            });
+        };
+
+        audioRef.current.addEventListener('timeupdate', handleTimeUpdate);
+        return () => {
+            audioRef.current?.removeEventListener('timeupdate', handleTimeUpdate);
+        };
+    }, [currentItem]); // Add currentItem to dependency array
 
     const togglePlay = async () => {
         if (!audioRef.current) return;
@@ -119,12 +155,16 @@ export function Player({
                             </div>
                         )}
                         
-                        <div className="text-white text-2xl md:text-xl leading-relaxed text-center space-y-2">
+                        <div 
+                            ref={contentRef}
+                            className="text-white text-2xl md:text-xl leading-relaxed text-center space-y-2 
+                                h-[calc(1.5em*6)] overflow-y-auto scrollbar-hide"
+                        >
                             {rendered.content}
                         </div>
 
                         {(rendered.audioSource || actions) && (
-                            <div className="flex items-center justify-center gap-4 mt-2">
+                            <div className="flex items-center justify-center gap-4 mt-6">
                                 {rendered.audioSource && (
                                     <>
                                         <button
