@@ -66,33 +66,33 @@ export function SeniorPlayer() {
                     <VideosPlayer
                         key={`opera_${operaType}`}
                         category={`opera_${operaType}`}
-                        jsonPath={`../../assets/opera/${operaType}.json`}
+                        jsonPath={`/assets/opera/${operaType}.json`}
                     />
                 )}
                 {seniorView === 'dance' && <AudioPlayer
-                    jsonPath="../../assets/dj.json"
+                    jsonPath="/assets/dj.json"
                     renderItem={(poem) => ({
                         title: poem?.title,
                         // subtitle: poem?.author,
                         content: null,
-                        audioSource: poem?.audioUrl,
+                        audioSource: config.meidaPrefix + poem?.audioUrl,
                         backgroundImage: config.imagePrefix + (poem?.image || 'dj1.jpg')
                     })}
                     isTTS={false}
                 />}
-                {seniorView === 'buddhism' && <VideosPlayer category="buddhism" jsonPath='../../assets/buddhism.json' />}
+                {seniorView === 'buddhism' && <VideosPlayer category="buddhism" jsonPath='/assets/buddhism.json' />}
                 {seniorView === 'health' && <AudioPlayer
-                    jsonPath="../../assets/health-tips.json"
+                    jsonPath="/assets/health-tips.json"
                     renderItem={(poem) => ({
                         title: poem?.title,
                         // subtitle: poem?.author,
                         content: poem?.content,
                         audioSource: poem?.content,
-                        backgroundImage: config.imagePrefix + poem?.image || '/images/poem.jpg'
+                        backgroundImage: config.imagePrefix + poem?.image || 'poem.jpg'
                     })}
                     isTTS={true}
                 />}
-                {seniorView === 'exercise' && <VideosPlayer category="exercise" jsonPath='../../assets/exercise.json' />}
+                {seniorView === 'exercise' && <VideosPlayer category="exercise" jsonPath='/assets/exercise.json' />}
             </div>
         </div>
     );

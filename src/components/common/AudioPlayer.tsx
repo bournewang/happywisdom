@@ -4,6 +4,8 @@ import { ttsUrl } from '../../api/tts';
 import { useSwipeable } from 'react-swipeable';
 import { config } from '../../config';
 import type { AudioVerse } from './types';
+import { loadJson } from '../../utils/loadJson';
+
 interface PlayerProps {
     // itemList: any[];
     jsonPath: string;
@@ -41,15 +43,14 @@ export function AudioPlayer({
     // const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        import(jsonPath)
-            .then(module => {
-                const items = module.default;
-                setItemList(items);
-                setCurrentItem(items[Math.floor(Math.random() * items.length)]);
+        loadJson(jsonPath)
+            .then(data => {
+                setItemList(data);
+                setCurrentItem(data[Math.floor(Math.random() * data.length)]);
             })
             .catch(error => {
                 console.error('Error loading items:', error);
-            });
+            });            
     }, [jsonPath]);
 
     useEffect(() => {

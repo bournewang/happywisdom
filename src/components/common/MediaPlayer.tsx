@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, ReactNode } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { loadJson } from '../../utils/loadJson';
 
 export interface MediaItem {
     title: string;
@@ -26,17 +27,17 @@ export function MediaPlayer({ category, jsonPath, renderMedia }: MediaPlayerProp
     const mediaRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        import(jsonPath)
-            .then(module => {
-                setMediaList(module.default);
+        loadJson(jsonPath)
+            .then(data => {
+                setMediaList(data);
                 const savedIndex = localStorage.getItem(`currentVideoIndex_${category}`);
                 if (savedIndex) {
                     setCurrentIndex(parseInt(savedIndex, 10));
                 }
             })
             .catch(error => {
-                console.error('Error loading media list:', error);
-            });
+                console.error('Error loading items:', error);
+            });   
     }, [jsonPath, category]);
 
     useEffect(() => {

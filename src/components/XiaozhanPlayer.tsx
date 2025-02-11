@@ -64,7 +64,7 @@ export function XiaozhanPlayer() {
                     title: item?.title,
                     content: <div className="text-center">{item?.content}</div>,
                     audioSource: item?.audioUrl,
-                    backgroundImage: item?.image || '/images/nursery-rhyme.jpg'
+                    backgroundImage: item?.image || 'nursery-rhyme.jpg'
                 })}
                 showRefresh={false}
                 // position="middle"

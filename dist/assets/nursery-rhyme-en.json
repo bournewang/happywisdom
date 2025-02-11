@@ -4,49 +4,49 @@
         "id": 2,
         "title": "ABC Song",
         "image": "nursery-rhyme-en:abc_song.jpg",
-        "audioUrl": "nursery-rhyme-en:abc_song.mp3",
+        "audioUrl": "abc_song.mp3",
         "content": "A-B-C-D-E-F-G, H-I-J-K-LMNOP, Q-R-S, T-U-V, W-X, Y and Z, Now I know my ABCs, Next time won't you sing with me."
     },
     {
         "id": 33,
         "title": "The Wheels on the Bus",
         "image": "nursery-rhyme-en:the_wheels_on_the_bus.jpg",
-        "audioUrl": "nursery-rhyme-en:the_wheels_on_the_bus.mp3",
+        "audioUrl": "the_wheels_on_the_bus.mp3",
         "content": "The wheels on the bus go round and round, round and round, round and round. The wheels on the bus go round and round, all through the town."
     },
     {
         "id": 4,
         "title": "Bingo was his name",
         "image": "nursery-rhyme-en:bingo.jpg",
-        "audioUrl": "nursery-rhyme-en:bingo.mp3",
+        "audioUrl": "bingo.mp3",
         "content": "There was a farmer had a dog, and Bingo was his name-o, B-I-N-G-O, B-I-N-G-O, B-I-N-G-O, And Bingo was his name-o."
     },
     {
         "id": 5,
         "title": "Five little Monkeys jumping on the bed",
         "image": "nursery-rhyme-en:five_little_monkeys_jumping_on_the_bed.jpg",
-        "audioUrl": "nursery-rhyme-en:five_little_monkeys_jumping_on_the_bed.mp3",
+        "audioUrl": "five_little_monkeys_jumping_on_the_bed.mp3",
         "content": "5 Little Monkeys Jumping on the bed, 1 fell off and bumped its head, Mama called the doctor and the doctor said, No more monkeys jumping on the bed!"
     },
     {
         "id": 6,
         "title": "Eency Weency Spider",
         "image": "nursery-rhyme-en:eency_weency_spider.jpg",
-        "audioUrl": "nursery-rhyme-en:eency_weency_spider.mp3",
+        "audioUrl": "eency_weency_spider.mp3",
         "content": "Eency weency spider, climbed up the water spout. Down came the rain and washed the spider out. Out came the sun and dried up all the rain, and the eency weency spider climbed up the spout again."
     },
     {
         "id": 36,
         "title": "Twinkle, Twinkle, Little Star",
         "image": "/images/nursery-rhyme/小星星.jpg",
-        "audioUrl": "nursery-rhyme-en:twinkle_twinkle_little_star.mp3",
+        "audioUrl": "twinkle_twinkle_little_star.mp3",
         "content": "Twinkle, twinkle, little star, how I wonder what you are. Up above the world so high, like a diamond in the sky. Twinkle, twinkle, little star, how I wonder what you are."
     },
     {
         "id": 16,
         "title": "London Bridge is Falling Down",
         "image": "nursery-rhyme-en:london_bridge.jpg",
-        "audioUrl": "nursery-rhyme-en:london_bridge.mp3",
+        "audioUrl": "london_bridge.mp3",
         "content": "London Bridge is falling down, falling down, falling down. London Bridge is falling down, my fair lady."
     },    
 
@@ -54,7 +54,7 @@
         "id": 20,
         "title": "Old MacDonald Had a Farm",
         "image": "nursery-rhyme-en:old_macdonald.jpg",
-        "audioUrl": "nursery-rhyme-en:old_macdonald.mp3",
+        "audioUrl": "old_macdonald.mp3",
         "content": "Old MacDonald had a farm, E-I-E-I-O. And on that farm he had a cow, E-I-E-I-O. With a moo moo here and a moo moo there, here a moo, there a moo, everywhere a moo moo. Old MacDonald had a farm, E-I-E-I-O."
     },
 
@@ -62,20 +62,20 @@
         "id": 26,
         "title": "Row, Row, Row Your Boat",
         "image": "nursery-rhyme-en:row_row_row_your_boat.jpg",
-        "audioUrl": "nursery-rhyme-en:row_row_row_your_boat.mp3",
+        "audioUrl": "row_row_row_your_boat.mp3",
         "content": "Row, row, row your boat, gently down the stream. Merrily, merrily, merrily, merrily, life is but a dream."
     },    
     {
         "id": 27,
         "title": "Hello Action" ,
         "image": "nursery-rhyme-en:hello_action.jpg",
-        "audioUrl": "nursery-rhyme-en:hello_action.mp3",
+        "audioUrl": "hello_action.mp3",
         "content": "Hello! Here we go!\n\nWalk, walk, walk, and say hello\nHello, hello\n\nRun, run, run, and say hello\nHello, hello\n\nJump, jump, jump, and say hello\nHello, hello\n\nSpin, spin, spin, and say hello\nHello, hello\n\nStomp, stomp, stomp, and say hello\nHello, hello\n\nDance, dance, dance, and say hello\nHello, hello\n\nHello, hello, hello, hello\nHello!"
     },
     {
         "id": 28,
         "title": "What can you do",
-        "audioUrl": "nursery-rhyme-en:what_can_you_do.mp3",
+        "audioUrl": "what_can_you_do.mp3",
         "content": "How about you? How about you? How about you?\nWhat can you do?\nJump, I can jump\nSwim, I can swim\nRide a bike, I can ride a bike\n\nHow about you? How about you? How about you?\nWhat can you do?\n\nRead, I can read\nPlay guitar, I can play guitar\nSing a song, I can sing a song\n\n\nHow about you? How about you? How about you?\nWhat can you do?"
     },
     {
@@ -106,7 +106,7 @@
         "id": 13,
         "title": "If You're Happy and You Know It",
         "image": "nursery-rhyme-en:if_youre_happy.jpg",
-        "audioUrl": "nursery-rhyme-en:if_youre_happy.mp3",
+        "audioUrl": "if_youre_happy.mp3",
         "content": "If you're happy and you know it clap your hands\nif you're happy and you know it clap your hands\nif you're happy and you know it then your face will surely show it\nif you're happy and you know it clap your hands"
     },
     {
@@ -121,20 +121,20 @@
     },
     {
         "title": "Jump! Stop!",
-        "audioUrl": "nursery-rhyme-en:jump_stop.mp3",
+        "audioUrl": "jump_stop.mp3",
         "content": "Jump! (x14) Stop!\n\nJump! (x14) Stop!\n\nI'm tired, and I'm hot\nI'm tired, and I'm hot\nBut I can jump some more,\nYes, I can jump some more!\n\nJump! (x14) Stop!\n\nJump! (x14) Stop!\n\nGreat Job!"
     },
     {
         "id": 31,
         "title": "The Hokey Pokey",
-        "audioUrl": "nursery-rhyme-en:the_hokey_pokey.mp3",
+        "audioUrl": "the_hokey_pokey.mp3",
         "content": "It’s time for the hokey pokey, here we go!\nPut your head in, put your head out, put your head in and you wiggle, wiggle, wiggle.\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nYou put your ears in, put your ears out, you put your ears in and wiggle, wiggle, wiggle\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nYou do the hokey pokey, hands up, hands down\nDo the hokey pokey, hands in front and hands behind\nJump in, jump out, jump in and wiggle, wiggle, wiggle\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nPut your hands in, put your hands out, put your hands in and wiggle….\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nYou do the hokey pokey, hands up, hands down\nDo the hokey pokey, hands in front and hands behind\nYou put your knees in, put your knees out, put your knees in and wiggle….\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nOk, now sit down\nPut your feet in, put your feet out, put your feet in and wiggle…\nYou do the hokey pokey spin around , clap, clap, clap, clap.\nYou do the hokey pokey, hands up, hands down\nDo the hokey pokey, hands in front and hands behind\nYou do the hokey pokey, hands up, hands down\nDo the hokey pokey, ‘cause that’s what its all about!\n\nHave any game or teaching ideas? Please send me an email and let me know!\nIf you like this page and song, please tell a friend!\nAlso, feel free to email me with any questions!\nemail: matt (at) dreamenglish.com\nchange (at) with @"
     },
     {
         "id": 11,
         "title": "Head, Shoulders, Knees and Toes",
         "image": "nursery-rhyme-en:head_shoulders_knees_and_toes.jpg",
-        "audioUrl": "nursery-rhyme-en:head_shoulders_knees_and_toes.mp3",
+        "audioUrl": "head_shoulders_knees_and_toes.mp3",
         "content": "Head, shoulders, knees and toes, knees and toes. Head, shoulders, knees and toes, knees and toes. And eyes, and ears, and mouth, and nose. Head, shoulders, knees and toes, knees and toes."
     },
     {
@@ -159,12 +159,12 @@
     },
     {
         "title": "My Family",
-        "audioUrl": "nursery-rhyme-en:my_family.mp3",
+        "audioUrl": "my_family.mp3",
         "content": "This is my mom.\nThis is my dad.\nThis is my brother.\nThis is my sister.\n\nThis, this, is, is\nmy, my, family\nMy family!\n\nThis is my mom.\nThis is my dad.\nThis is my brother.\nThis is my sister.\n\nThis, this, is, is\nmy, my, family\nMy family!\n\nmom, dad, brother sister (x3)\n\nThis is my mom.\nThis is my dad.\nThis is my brother.\nThis is my sister.\n\nThis, this, is, is\nmy, my, family\nMy family!"
     },
     {
         "title": "I Am Hungry",
-        "audioUrl": "nursery-rhyme-en:i_am_hungry.mp3",
+        "audioUrl": "i_am_hungry.mp3",
         "content": "I'm hungry!\nDo you like bread? Yes, I do!\nDo you like cheese? No, I don't!\nDo you like cookies? Yes, I do!\nDo you like eggs? No, I don't!\n\nI'm hungry (repeat)\n\nDo you like fruit? Yes, I do!\nDo you like ham? No, I don't!\nDo you like vegetables? Yes, I do!\nDo you like juice? No, I don't!\n\nI'm hungry (repeat)\n\nDo you like milk? Yes, I do!\nDo you like tuna? No, I don't!\nDo you like water? Yes, I do!\nDo you like soda? No, I don't!\n\nI'm hungry (repeat)\n\nLet's go get something to eat!"
     },
     {
@@ -190,7 +190,7 @@
     {
         "title": "Jingle Bells",
         "image": "nursery-rhyme-en:jingle_bells.jpg",
-        "audioUrl": "nursery-rhyme-en:jingle_bells.mp3",
+        "audioUrl": "jingle_bells.mp3",
         "content": "Dashing through the snow,\nIn a one horse open sleigh,\nO'er the fields we go,\nLaughing all the way;\nBells on the bob-tail ring,\nMaking spirits bright;\nWhat fun it is to ride and sing\nA sleighing song tonight!\n\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\n\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!"
     },
     {
@@ -204,7 +204,7 @@
     {
         "title": "Planets",
         "image": "nursery-rhyme-en:planets.jpg",
-        "audioUrl": "nursery-rhyme-en:planets.mp3"
+        "audioUrl": "planets.mp3"
     },
     {
         "title": "Five Senses",

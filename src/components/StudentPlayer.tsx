@@ -29,7 +29,7 @@ export function StudentPlayer() {
     const menuItems = [
         { value: 'poem', label: '诗词' },
         { value: 'nursery', label: '儿歌' },
-        { value: 'nursery-en', label: '英文歌' },
+        // { value: 'nursery-en', label: '英文歌' },
         { value: 'vocabulary', label: '单词' },
         // Uncomment if you want to include deepseek
         { value: 'deepseek', label: 'DeepSeek' }
@@ -49,7 +49,7 @@ export function StudentPlayer() {
             </div>
             <div className="flex-1 overflow-hidden">
                 {studentView === 'poem' && <AudioPlayer
-                    jsonPath="../../assets/poems.json"
+                    jsonPath="/assets/poems.json"
                     renderItem={(poem: AudioVerse) => ({
                         title: poem?.title,
                         subtitle: poem?.author,
@@ -68,7 +68,7 @@ export function StudentPlayer() {
 
                 {studentView === 'nursery' &&
                     <AudioPlayer
-                        jsonPath="../../assets/nursery-rhyme.json"
+                        jsonPath="/assets/nursery-rhyme.json"
                         renderItem={(poem: AudioVerse) => ({
                             title: poem?.title,
                             //   subtitle: poem?.author,
@@ -84,7 +84,7 @@ export function StudentPlayer() {
                     />
                 }
                 {studentView === 'nursery-en' && <AudioPlayer
-                    jsonPath="../../assets/nursery-rhyme-en.json"
+                    jsonPath="/assets/nursery-rhyme-en.json"
                     renderItem={(poem: AudioVerse) => ({
                         title: poem?.title,
                         //   subtitle: poem?.author,
