@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { dict } from '../api/dict';
 import { Audio } from './common/Audio';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -7,46 +6,30 @@ interface Word {
     word: string;
     phonetic: string;
     definition: string;
+    audioUrl?: string;
 }
 
-interface Phonetic {
-    text: string;
-    audio: string;
-}
+function Vocabulary({ words, grade, semester }: { words: Word[], grade: string, semester: string }) {
+    const storageKey = `vocabularyIndex-${grade}-${semester}`;
 
-interface DictResponse {
-    word: string;
-    phonetics: Phonetic[];
-}
-
-function Vocabulary({ words }: { words: Word[] }) {
     const [currentIndex, setCurrentIndex] = useState(() => {
-        const saved = localStorage.getItem('vocabularyIndex');
+        const saved = localStorage.getItem(storageKey);
         const initialValue = saved ? parseInt(saved, 10) : 0;
         return initialValue >= 0 && initialValue < words.length ? initialValue : 0;
     });
     const [currentWord, setCurrentWord] = useState<Word>(words[currentIndex]);
-    const [phonetics, setPhonetics] = useState<Phonetic[]>([]);
+    // const [phonetics, setPhonetics] = useState<Phonetic[]>([]);
 
     useEffect(() => {
-        // Clear previous phonetics first
-        setPhonetics([]);
-        
-        // Then fetch new ones
-        dict(currentWord.word).then((data: DictResponse[]) => {
-            if (data[0]?.phonetics) {
-                const validPhonetics = data[0].phonetics.filter((p: Phonetic) => p.audio && p.text);
-                setPhonetics(validPhonetics);
-            }
-        });
-    }, [currentWord.word]);
+        setCurrentWord(words[currentIndex]);
+    }, [words, currentIndex]);
 
     const handleNext = () => {
         if (currentIndex < words.length - 1) {
             const newIndex = currentIndex + 1;
             setCurrentIndex(newIndex);
-            localStorage.setItem('vocabularyIndex', newIndex.toString());
-            setPhonetics([]); // Clear phonetics immediately
+            localStorage.setItem(storageKey, newIndex.toString());
+            // setPhonetics([]); // Clear phonetics immediately
             setCurrentWord(words[newIndex]);
         }
     };
@@ -55,15 +38,15 @@ function Vocabulary({ words }: { words: Word[] }) {
         if (currentIndex > 0) {
             const newIndex = currentIndex - 1;
             setCurrentIndex(newIndex);
-            localStorage.setItem('vocabularyIndex', newIndex.toString());
-            setPhonetics([]); // Clear phonetics immediately
+            localStorage.setItem(storageKey, newIndex.toString());
+            // setPhonetics([]); // Clear phonetics immediately
             setCurrentWord(words[newIndex]);
         }
     };
 
     return (
         <div className="min-h-screen w-full relative overflow-hidden">
-            <div className="fixed inset-0 w-full h-full">
+            <div className="fixed w-full h-full">
                 <img 
                     src="/images/english.jpg"
                     alt="background"
@@ -93,17 +76,12 @@ function Vocabulary({ words }: { words: Word[] }) {
                             </h2>
                             
                             <div className="flex items-center justify-center gap-4 flex-wrap">
-                                {phonetics.map((phonetic) => (
-                                    <div key={phonetic.text} 
-                                        className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
-                                        {phonetic.audio && (
-                                            <>
-                                                <p className="text-xl text-gray-600">{phonetic.text}</p>
-                                                <Audio source={phonetic.audio} size="small"/>
-                                            </>
-                                        )}
+                                {currentWord.audioUrl && (
+                                    <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
+                                        <p className="text-xl text-gray-600">{currentWord.phonetic}</p>
+                                        <Audio source={currentWord.audioUrl} size="small"/>
                                     </div>
-                                ))}
+                                )}
                             </div>
 
                             <p className="text-xl text-gray-700 max-w-2xl text-center leading-relaxed">

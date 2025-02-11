@@ -1,0 +1,84 @@
+import { useState, useEffect, useRef } from 'react'
+import { useSwipeable } from 'react-swipeable'
+import type { VideoVerse } from './types'
+
+interface VideosPlayerProps {
+    category: string;
+    jsonPath: string;
+}
+
+export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [videoList, setVideoList] = useState<VideoVerse[]>([]);
+    const [currentVideo, setCurrentVideo] = useState<VideoVerse | null>(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        const savedIndex = localStorage.getItem(`currentVideoIndex_${category}`);
+        setCurrentIndex(savedIndex ? parseInt(savedIndex, 10) : 0);
+
+        import(jsonPath)
+            .then(module => {
+                setVideoList(module.default);
+            })
+            .catch(error => {
+                console.error('Error loading video list:', error);
+            });
+    }, [jsonPath, category]);
+
+    useEffect(() => {
+        if (videoList.length > 0) {
+            localStorage.setItem(`currentVideoIndex_${category}`, currentIndex.toString());
+            setCurrentVideo(videoList[currentIndex]);
+            console.log(`set video currentVideoIndex_${category}: `, currentIndex);
+        }
+    }, [currentIndex, category, videoList]);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.load();
+        }
+    }, [currentIndex]);
+
+    const handleSwipeDown = () => {
+        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : videoList.length - 1));
+    };
+
+    const handleSwipeUp = () => {
+        setCurrentIndex((prevIndex) => (prevIndex < videoList.length - 1 ? prevIndex + 1 : 0));
+    };
+
+    const swipeHandlers = useSwipeable({
+        onSwipedUp: handleSwipeUp,
+        onSwipedDown: handleSwipeDown,
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
+
+    if (videoList.length === 0) {
+        return <div>No videos available</div>;
+    }
+
+    return (
+        <div {...swipeHandlers} className="flex flex-col items-center justify-center h-full">
+            {currentVideo && <div className="flex flex-col justify-center w-full max-w-3xl">
+                <div className="flex-grow flex items-center justify-center">
+                    <video
+                        ref={videoRef}
+                        controls
+                        className="w-full h-full object-contain"
+                        playsInline={true}
+                        autoPlay={true}
+                    >
+                        <source src={currentVideo.videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className="flex-none text-center p-4">
+                    <h1 className="text-2xl font-bold mb-2">{currentVideo.title}</h1>
+                    <p className="text-gray-500">上下滑动可切换</p>
+                </div>
+            </div>}
+        </div>
+    );
+} 

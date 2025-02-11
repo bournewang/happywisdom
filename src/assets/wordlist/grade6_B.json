@@ -1,0 +1,548 @@
+[
+  {
+    "word": "younger",
+    "definition": "adj.更年轻的（young的比较级）",
+    "phonetic": "/ˈjʌŋɡɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/younger-us.mp3"
+  },
+  {
+    "word": "older",
+    "definition": "adj.更年长的（old的比较级）",
+    "phonetic": "/ˈoʊldɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/older-us.mp3"
+  },
+  {
+    "word": "taller",
+    "definition": "adj.更高的（tall的比较级）",
+    "phonetic": "/ˈtɔlɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/taller-us.mp3"
+  },
+  {
+    "word": "shorter",
+    "definition": "adj.更矮的；更短的（short的比较级）",
+    "phonetic": "/ˈʃɔɹtɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/shorter-us.mp3"
+  },
+  {
+    "word": "longer",
+    "definition": "adj.更长的（long的比较级）",
+    "phonetic": "/ˈlɔŋ.ɡɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/longer-us.mp3"
+  },
+  {
+    "word": "thinner",
+    "definition": "adj.更瘦的（thin的比较级）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "heavier",
+    "definition": "adj.更重的（heavy的比较级）",
+    "phonetic": "/ˈhɛviɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/heavier-us.mp3"
+  },
+  {
+    "word": "bigger",
+    "definition": "adj.更大的（big的比较级）",
+    "phonetic": "/ˈbɪɡɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bigger-us.mp3"
+  },
+  {
+    "word": "smaller",
+    "definition": "adj.更小的（small的比较级）",
+    "phonetic": "/ˈsmɔlɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/smaller-us.mp3"
+  },
+  {
+    "word": "stronger",
+    "definition": "adj.更强壮的（strong的比较级）",
+    "phonetic": "/stɹɔŋɡɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stronger-us.mp3"
+  },
+  {
+    "word": "dinosaur",
+    "definition": "n.恐龙",
+    "phonetic": "/ˈdaɪnəsɔː(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dinosaur-uk.mp3"
+  },
+  {
+    "word": "hall",
+    "definition": "n.大厅",
+    "phonetic": "/hɔl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hall-us.mp3"
+  },
+  {
+    "word": "metre",
+    "definition": "n.米（美式英语：meter)",
+    "phonetic": "/ˈmiːtə/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/metre-uk.mp3"
+  },
+  {
+    "word": "than",
+    "definition": "conj.比",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "both",
+    "definition": "pron.两个都",
+    "phonetic": "/boʊθ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/both-us.mp3"
+  },
+  {
+    "word": "kilogram",
+    "definition": "n.千克；公斤",
+    "phonetic": "/ˈkɪləɡɹæm/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/kilogram-us.mp3"
+  },
+  {
+    "word": "countryside",
+    "definition": "n.乡村",
+    "phonetic": "/ˈkʌn.tɹiˌsaɪd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/countryside-uk.mp3"
+  },
+  {
+    "word": "lower",
+    "definition": "adj.更低的（low的比较级）",
+    "phonetic": "/ˈloʊɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/lower-1-us.mp3"
+  },
+  {
+    "word": "shadow",
+    "definition": "n.阴影；影子",
+    "phonetic": "/ˈʃædoʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/shadow-us.mp3"
+  },
+  {
+    "word": "smarter",
+    "definition": "adj.更聪明的（smart的比较级）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "become",
+    "definition": "v.开始变得；变成",
+    "phonetic": "/biˈkʌm/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/become-us.mp3"
+  },
+  {
+    "word": "cleaned",
+    "definition": "adj.打扫（clean的过去式）",
+    "phonetic": "/kliːnd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cleaned-us.mp3"
+  },
+  {
+    "word": "stayed",
+    "definition": "v.停留；待（stay的过去式）",
+    "phonetic": "/steɪd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stayed-us.mp3"
+  },
+  {
+    "word": "washed",
+    "definition": "adj.洗（wash的过去式）",
+    "phonetic": "/wɒʃt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/washed-uk.mp3"
+  },
+  {
+    "word": "watched",
+    "definition": "v.看（watch的过去式）",
+    "phonetic": "/wɑtʃt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/watched-us.mp3"
+  },
+  {
+    "word": "had",
+    "definition": "v.患病；得病（have的过去式）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "had a cold",
+    "definition": "undefined.感冒",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "slept",
+    "definition": "v.睡觉（sleep的过去式）",
+    "phonetic": "/slɛpt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/slept-us.mp3"
+  },
+  {
+    "word": "read",
+    "definition": "v.读（read的过去式）",
+    "phonetic": "/ɹiːd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/read-1-uk.mp3"
+  },
+  {
+    "word": "saw",
+    "definition": "v.看见（see的过去式）",
+    "phonetic": "/sɔ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/saw-us.mp3"
+  },
+  {
+    "word": "last",
+    "definition": "adj.最近；上一个的",
+    "phonetic": "/læst/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/last-us.mp3"
+  },
+  {
+    "word": "yesterday",
+    "definition": "n.昨天",
+    "phonetic": "/ˈjɛstədeɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/yesterday-uk.mp3"
+  },
+  {
+    "word": "before",
+    "definition": "prep.在……之前",
+    "phonetic": "/biˈfɔɹ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/before-us.mp3"
+  },
+  {
+    "word": "drank",
+    "definition": "v.喝（drink的过去式）",
+    "phonetic": "/dɹæŋk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/drank-us.mp3"
+  },
+  {
+    "word": "show",
+    "definition": "n.演出",
+    "phonetic": "/ʃəʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/show-uk.mp3"
+  },
+  {
+    "word": "magazine",
+    "definition": "n.杂志",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "better",
+    "definition": "adj.更好的（well的比较级）",
+    "phonetic": "[ˈbɛɾɚ]",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/better-us.mp3"
+  },
+  {
+    "word": "faster",
+    "definition": "adj.更快的（fast的比较级）",
+    "phonetic": "/ˈfæstɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/faster-us.mp3"
+  },
+  {
+    "word": "hotel",
+    "definition": "n.旅馆",
+    "phonetic": "/hoʊˈtɛl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hotel-us.mp3"
+  },
+  {
+    "word": "fixed",
+    "definition": "adj.修理（fix的过去式）",
+    "phonetic": "/fɪkst/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fixed-us.mp3"
+  },
+  {
+    "word": "broken",
+    "definition": "adj.破损的",
+    "phonetic": "/ˈbɹəʊkən/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/broken-us.mp3"
+  },
+  {
+    "word": "lamp",
+    "definition": "n.台灯",
+    "phonetic": "/læmp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/lamp-uk.mp3"
+  },
+  {
+    "word": "loud",
+    "definition": "adj.大声的；喧闹的",
+    "phonetic": "/laʊd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/loud-us.mp3"
+  },
+  {
+    "word": "enjoy",
+    "definition": "v.享受......乐趣；喜爱",
+    "phonetic": "/ənˈd͡ʒɔɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/enjoy-us.mp3"
+  },
+  {
+    "word": "stay",
+    "definition": "v.暂住；停留",
+    "phonetic": "/steɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stay-us.mp3"
+  },
+  {
+    "word": "went",
+    "definition": "v.去（go的过去式）",
+    "phonetic": "/wɛnt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/went-us.mp3"
+  },
+  {
+    "word": "camp",
+    "definition": "n.野���",
+    "phonetic": "[kʰɛəmp]",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/camp-us.mp3"
+  },
+  {
+    "word": "went camping",
+    "definition": "undefined.（尤指在假日）野营",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "fish",
+    "definition": "vt.钓鱼，捕鱼",
+    "phonetic": "/fɪʃ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fish-au.mp3"
+  },
+  {
+    "word": "went fishing",
+    "definition": "undefined.去钓鱼",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "rode",
+    "definition": "v.骑（马；自行车）(ride的过去式)",
+    "phonetic": "/ˈɹoʊd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/rode-us.mp3"
+  },
+  {
+    "word": "hurt",
+    "definition": "v.（使）受伤",
+    "phonetic": "/hɝt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hurt-us.mp3"
+  },
+  {
+    "word": "ate",
+    "definition": "v.吃（eat的过去式）",
+    "phonetic": "/eɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ate-us.mp3"
+  },
+  {
+    "word": "took",
+    "definition": "v.拍照（take的过去式）",
+    "phonetic": "/tuːk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/took-us.mp3"
+  },
+  {
+    "word": "took pictures",
+    "definition": "undefined.照相",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "bought",
+    "definition": "v.买（buy的过去式）",
+    "phonetic": "/bɔt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bought-us.mp3"
+  },
+  {
+    "word": "gift",
+    "definition": "n.礼物",
+    "phonetic": "/ɡɪft/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/gift-us.mp3"
+  },
+  {
+    "word": "fell",
+    "definition": "v.摔倒（fall的过去式）",
+    "phonetic": "/fɛl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fell-us.mp3"
+  },
+  {
+    "word": "off",
+    "definition": "prep.从（某处）落下",
+    "phonetic": "/ɔːf/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/off-au.mp3"
+  },
+  {
+    "word": "Labour Day",
+    "definition": "undefined.劳动节",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "mule",
+    "definition": "n.骡子",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "Turpan",
+    "definition": "n.吐鲁番",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "could",
+    "definition": "aux.能（can的过去式）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "till",
+    "definition": "prep.直到",
+    "phonetic": "/tɪl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/till-us.mp3"
+  },
+  {
+    "word": "beach",
+    "definition": "n.海滩；沙滩",
+    "phonetic": "/biːt͡ʃ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/beach-uk.mp3"
+  },
+  {
+    "word": "basket",
+    "definition": "n.篮；框",
+    "phonetic": "/ˈbæskɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/basket-us.mp3"
+  },
+  {
+    "word": "part",
+    "definition": "n.角色",
+    "phonetic": "/pɑɹt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/part-us.mp3"
+  },
+  {
+    "word": "licked",
+    "definition": "vt.舔（lick的过去式）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "laughed",
+    "definition": "v.笑（laugh的过去式）",
+    "phonetic": "/læft/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/laughed-us.mp3"
+  },
+  {
+    "word": "dining hall",
+    "definition": "n.饭厅",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "grass",
+    "definition": "n.草坪",
+    "phonetic": "[ɡɹ̠ɑːs]",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/grass-uk.mp3"
+  },
+  {
+    "word": "gym",
+    "definition": "n.体育馆",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "ago",
+    "definition": "adv.以前",
+    "phonetic": "/əˈɡoʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ago-us.mp3"
+  },
+  {
+    "word": "cycling",
+    "definition": "n.骑自行车运动（或活动）",
+    "phonetic": "/ˈsaɪk(ə)lɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cycling-us.mp3"
+  },
+  {
+    "word": "go cycling",
+    "definition": "undefined.去骑自行车",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "ice-skate",
+    "definition": "v.滑冰",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "badminton",
+    "definition": "n.羽毛球运动",
+    "phonetic": "/ˈbæd.mɪn.tən/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/badminton-us.mp3"
+  },
+  {
+    "word": "star",
+    "definition": "n.星",
+    "phonetic": "/stɑː(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/star-uk.mp3"
+  },
+  {
+    "word": "easy",
+    "definition": "adj.容易的",
+    "phonetic": "/ˈiːzi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/easy-uk.mp3"
+  },
+  {
+    "word": "look up",
+    "definition": "undefined.查阅",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "internet",
+    "definition": "n.互联网",
+    "phonetic": "/ˈɪntɚˌnɛt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/internet-us.mp3"
+  },
+  {
+    "word": "different",
+    "definition": "adj.不同的",
+    "phonetic": "/ˈdɪf.(ə)ɹ.ənt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/different-us.mp3"
+  },
+  {
+    "word": "active",
+    "definition": "adj.积极的；活跃的",
+    "phonetic": "/ˈæk.tɪv/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/active-us.mp3"
+  },
+  {
+    "word": "race",
+    "definition": "v.赛跑",
+    "phonetic": "/ɹeɪs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/race-us.mp3"
+  },
+  {
+    "word": "nothing",
+    "definition": "pron.没有什么",
+    "phonetic": "/ˈnʌθɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/nothing-us.mp3"
+  },
+  {
+    "word": "thought",
+    "definition": "v.想（think的过去式）",
+    "phonetic": "/θɔt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/thought-us.mp3"
+  },
+  {
+    "word": "felt",
+    "definition": "v.感觉（feel的过去式）",
+    "phonetic": "/fɛlt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/felt-us.mp3"
+  },
+  {
+    "word": "cheetah",
+    "definition": "n.猎豹",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "trip",
+    "definition": "vt.绊倒",
+    "phonetic": "/tɹɪp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/trip-1-uk.mp3"
+  },
+  {
+    "word": "woke",
+    "definition": "v.醒（wake的过去式）",
+    "phonetic": "/woʊk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/woke-us.mp3"
+  },
+  {
+    "word": "dream",
+    "definition": "n.梦",
+    "phonetic": "/dɹim/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dream-us.mp3"
+  }
+]

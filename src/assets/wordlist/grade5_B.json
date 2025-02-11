@@ -1,0 +1,782 @@
+[
+  {
+    "word": "eat breakfast",
+    "definition": "undefined.吃早饭",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "have class",
+    "definition": "undefined.上......课",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "play sports",
+    "definition": "undefined.进行体育运动",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "exercise",
+    "definition": "n.活动；运动",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/exercise-us.mp3"
+  },
+  {
+    "word": "do morning exercises",
+    "definition": "undefined.做早操",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "eat dinner",
+    "definition": "undefined.吃晚饭",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "clean my room",
+    "definition": "undefined.打扫我的房间",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "go for a walk",
+    "definition": "undefined.散步",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "go shopping",
+    "definition": "undefined.去买东西；购物",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "take",
+    "definition": "v.学习；上（课）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/take-au.mp3"
+  },
+  {
+    "word": "dancing",
+    "definition": "n.跳舞；舞蹈",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dancing-us.mp3"
+  },
+  {
+    "word": "take a dancing class",
+    "definition": "undefined.上舞蹈课",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "when",
+    "definition": "adv.什么时候；何时",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/when-uk.mp3"
+  },
+  {
+    "word": "after",
+    "definition": "prep.在（时间）后",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/after-us.mp3"
+  },
+  {
+    "word": "start",
+    "definition": "n.开始",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/start-uk.mp3"
+  },
+  {
+    "word": "usually",
+    "definition": "adv.通常地；惯常地",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/usually-us.mp3"
+  },
+  {
+    "word": "Spain",
+    "definition": "n.西班牙",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "late",
+    "definition": "adj.晚；迟",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/late-uk.mp3"
+  },
+  {
+    "word": "a.m.",
+    "definition": "abbr.午前；上午",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/a.m.-us.mp3"
+  },
+  {
+    "word": "p.m.",
+    "definition": "abbr.午后；下午",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/p.m.-us.mp3"
+  },
+  {
+    "word": "why",
+    "definition": "adv.为什么",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/why-1-uk.mp3"
+  },
+  {
+    "word": "shop",
+    "definition": "n.去买东西；购物",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/shop-us.mp3"
+  },
+  {
+    "word": "work",
+    "definition": "v.工作",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/work-uk.mp3"
+  },
+  {
+    "word": "last",
+    "definition": "adj.上一个的；刚过去的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/last-us.mp3"
+  },
+  {
+    "word": "sound",
+    "definition": "v.听起来好像",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sound-us.mp3"
+  },
+  {
+    "word": "also",
+    "definition": "adv.还；也",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/also-us.mp3"
+  },
+  {
+    "word": "busy",
+    "definition": "adj.忙的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/busy-uk.mp3"
+  },
+  {
+    "word": "need",
+    "definition": "n.需要",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/need-us.mp3"
+  },
+  {
+    "word": "play",
+    "definition": "n.戏剧；剧本",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/play-us.mp3"
+  },
+  {
+    "word": "letter",
+    "definition": "n.信",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/letter-uk.mp3"
+  },
+  {
+    "word": "live",
+    "definition": "v.居住",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/live-1-us.mp3"
+  },
+  {
+    "word": "island",
+    "definition": "n.岛",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/island-uk.mp3"
+  },
+  {
+    "word": "always",
+    "definition": "adv.总是；一直",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/always-uk.mp3"
+  },
+  {
+    "word": "cave",
+    "definition": "n.山洞；洞穴",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cave-1-us.mp3"
+  },
+  {
+    "word": "go swimming",
+    "definition": "undefined.去游泳",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "win",
+    "definition": "v.获胜",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/win-uk.mp3"
+  },
+  {
+    "word": "spring",
+    "definition": "n.春天",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/spring-au.mp3"
+  },
+  {
+    "word": "summer",
+    "definition": "n.夏天",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/summer-us.mp3"
+  },
+  {
+    "word": "autumn",
+    "definition": "n.秋天",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/autumn-uk.mp3"
+  },
+  {
+    "word": "winter",
+    "definition": "n.冬天",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/winter-us.mp3"
+  },
+  {
+    "word": "season",
+    "definition": "n.季节",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/season-au.mp3"
+  },
+  {
+    "word": "picnic",
+    "definition": "n.野餐",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "go on a picnic",
+    "definition": "undefined.去野餐",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "pick",
+    "definition": "v.摘；采集",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pick-au.mp3"
+  },
+  {
+    "word": "pick apples",
+    "definition": "undefined.摘苹果",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "snowman",
+    "definition": "n.雪人",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/snowman-us.mp3"
+  },
+  {
+    "word": "make a snowman",
+    "definition": "undefined.堆雪人",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "go swimming",
+    "definition": "undefined.去游泳",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "which",
+    "definition": "adj.哪一个",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/which-uk.mp3"
+  },
+  {
+    "word": "best",
+    "definition": "adj.最；最高程度地",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/best-au.mp3"
+  },
+  {
+    "word": "snow",
+    "definition": "n.雪",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/snow-1-uk.mp3"
+  },
+  {
+    "word": "good job",
+    "definition": "undefined.做得好",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "because",
+    "definition": "conj.因为",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/because-us.mp3"
+  },
+  {
+    "word": "vacation",
+    "definition": "n.假期",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/vacation-us.mp3"
+  },
+  {
+    "word": "all",
+    "definition": "pron.全；完全",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/all-us.mp3"
+  },
+  {
+    "word": "pink",
+    "definition": "adj.粉色；粉色的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pink-uk.mp3"
+  },
+  {
+    "word": "lovely",
+    "definition": "adj.可爱的；美丽的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/lovely-us.mp3"
+  },
+  {
+    "word": "leaf",
+    "definition": "n.叶子（复数leaves）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/leaf-us.mp3"
+  },
+  {
+    "word": "fall",
+    "definition": "v.落下；【美】秋天",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fall-1-au.mp3"
+  },
+  {
+    "word": "paint",
+    "definition": "n.用颜料绘画",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/paint-us.mp3"
+  },
+  {
+    "word": "January",
+    "definition": "n.一月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "February",
+    "definition": "n.二月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "March",
+    "definition": "n.三月",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/march-us.mp3"
+  },
+  {
+    "word": "April",
+    "definition": "n.四月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "May",
+    "definition": "n.五月",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/may-us.mp3"
+  },
+  {
+    "word": "June",
+    "definition": "n.六月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "July",
+    "definition": "n.七月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "August",
+    "definition": "adj.八月",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/august-au.mp3"
+  },
+  {
+    "word": "September",
+    "definition": "n.九月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "October",
+    "definition": "n.十月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "November",
+    "definition": "n.十一月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "December",
+    "definition": "n.十二月",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "few",
+    "definition": "adj.不多；很少",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/few-uk.mp3"
+  },
+  {
+    "word": "a few",
+    "definition": "undefined.一些",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "thing",
+    "definition": "n.事情",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/thing-us.mp3"
+  },
+  {
+    "word": "meet",
+    "definition": "n.集会；开会",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/meet-uk.mp3"
+  },
+  {
+    "word": "sports meet",
+    "definition": "undefined.运动会",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "Easter",
+    "definition": "n.复活节",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/easter-us.mp3"
+  },
+  {
+    "word": "trip",
+    "definition": "n.旅行",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/trip-1-uk.mp3"
+  },
+  {
+    "word": "year",
+    "definition": "n.年",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/year-1-uk.mp3"
+  },
+  {
+    "word": "plant",
+    "definition": "vi.种植",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/plant-uk.mp3"
+  },
+  {
+    "word": "contest",
+    "definition": "n.比赛；竞赛",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/contest-us.mp3"
+  },
+  {
+    "word": "The Great Wall",
+    "definition": "undefined.长城",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "national",
+    "definition": "adj.国家的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/national-us.mp3"
+  },
+  {
+    "word": "National Day",
+    "definition": "undefined.国庆日",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "American",
+    "definition": "n.美国的",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "Thanksgiving",
+    "definition": "n.感恩节",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/thanksgiving-us.mp3"
+  },
+  {
+    "word": "Christmas",
+    "definition": "n.圣诞节",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "holiday",
+    "definition": "n.假日；节日",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/holiday-us.mp3"
+  },
+  {
+    "word": "game",
+    "definition": "n.游戏",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/game-us.mp3"
+  },
+  {
+    "word": "roll",
+    "definition": "n.滚动",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/roll-us.mp3"
+  },
+  {
+    "word": "look for",
+    "definition": "undefined.寻找",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "chocolate",
+    "definition": "n.巧克力",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/chocolate-au.mp3"
+  },
+  {
+    "word": "bunny",
+    "definition": "n.兔子（用作儿语）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bunny-uk.mp3"
+  },
+  {
+    "word": "RSVP",
+    "definition": "abbr.（尤用于请柬）请赐复",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/rsvp-uk.mp3"
+  },
+  {
+    "word": "by",
+    "definition": "prep.在……之前",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/by-us.mp3"
+  },
+  {
+    "word": "first",
+    "definition": "num.第一（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/first-us.mp3"
+  },
+  {
+    "word": "second",
+    "definition": "num.第二（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/second-1-us.mp3"
+  },
+  {
+    "word": "third",
+    "definition": "num.第三（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/third-us.mp3"
+  },
+  {
+    "word": "fourth",
+    "definition": "num.第四（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fourth-us.mp3"
+  },
+  {
+    "word": "fifth",
+    "definition": "num.第五（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fifth-us.mp3"
+  },
+  {
+    "word": "twelfth",
+    "definition": "num.第十二（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/twelfth-us.mp3"
+  },
+  {
+    "word": "twentieth",
+    "definition": "num.第二十（的）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/twentieth-us.mp3"
+  },
+  {
+    "word": "twenty-first",
+    "definition": "num.第二十一（的）",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "twenty-third",
+    "definition": "num.第二十三（的）",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "thirtieth",
+    "definition": "num.第三十（的）",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "special",
+    "definition": "adj.特殊的；特别的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/special-us.mp3"
+  },
+  {
+    "word": "fool",
+    "definition": "n.蠢人；傻瓜",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fool-uk.mp3"
+  },
+  {
+    "word": "kitten",
+    "definition": "n.小猫",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/kitten-uk.mp3"
+  },
+  {
+    "word": "diary",
+    "definition": "n.日记",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/diary-us.mp3"
+  },
+  {
+    "word": "still",
+    "definition": "adv.仍然；依旧；还是",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/still-uk.mp3"
+  },
+  {
+    "word": "noise",
+    "definition": "n.声音；噪音；响声",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/noise-uk.mp3"
+  },
+  {
+    "word": "fur",
+    "definition": "n.（某些动物的）浓密的；软毛",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fur-1-us.mp3"
+  },
+  {
+    "word": "open",
+    "definition": "adj.开着的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/open-au.mp3"
+  },
+  {
+    "word": "walk",
+    "definition": "v.行走",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/walk-au.mp3"
+  },
+  {
+    "word": "mine",
+    "definition": "pron.我的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/mine-us.mp3"
+  },
+  {
+    "word": "yours",
+    "definition": "pron.你（们）的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/yours-us.mp3"
+  },
+  {
+    "word": "his",
+    "definition": "pron.他的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/his-1-us.mp3"
+  },
+  {
+    "word": "hers",
+    "definition": "pron.她的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hers-us.mp3"
+  },
+  {
+    "word": "theirs",
+    "definition": "pron.他们的；她们的；它们的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/theirs-us.mp3"
+  },
+  {
+    "word": "ours",
+    "definition": "pron.我们的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ours-us.mp3"
+  },
+  {
+    "word": "climbing",
+    "definition": "adj.（climb的-ing形式）（正在）攀爬；攀登",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "eating",
+    "definition": "v.（正在）吃（eat的ing形式）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/eating-us.mp3"
+  },
+  {
+    "word": "playing",
+    "definition": "n.（play的-ing形式）（正在）玩耍",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/playing-us.mp3"
+  },
+  {
+    "word": "jumping",
+    "definition": "adj.（jump的-ing形式）（正在）跳",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "drinking",
+    "definition": "n.（drink的-ing形式）（正在）喝（水）",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/drinking-us.mp3"
+  },
+  {
+    "word": "sleeping",
+    "definition": "n.（sleep的-ing形式）（正在）睡觉",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sleeping-us.mp3"
+  },
+  {
+    "word": "each",
+    "definition": "pron.每一；各个",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/each-us.mp3"
+  },
+  {
+    "word": "other",
+    "definition": "adj.其他",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/other-uk.mp3"
+  },
+  {
+    "word": "each other",
+    "definition": "undefined.相互",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/each%20other-us.mp3"
+  },
+  {
+    "word": "excited",
+    "definition": "adj.兴奋的；激动的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/excited-us.mp3"
+  },
+  {
+    "word": "like",
+    "definition": "v.像`````那样",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/like-us.mp3"
+  },
+  {
+    "word": "doing morning exercises",
+    "definition": "undefined.（正在）做早操",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "having ... class",
+    "definition": "vt.（正在）上......课",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "eating lunch",
+    "definition": "v.（正在）吃午饭",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "reading a book",
+    "definition": "undefined.（正在）看书",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "listening to music",
+    "definition": "v.（正在）听音乐",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "keep",
+    "definition": "v.保持某种状态",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/keep-au.mp3"
+  },
+  {
+    "word": "keep to the right",
+    "definition": "undefined.靠右",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "keep your desk clean",
+    "definition": "undefined.保持你的课桌干净",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "talk quietly",
+    "definition": "undefined.小声讲话",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "turn",
+    "definition": "v.顺序",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/turn-au.mp3"
+  },
+  {
+    "word": "take turns",
+    "definition": "undefined.按顺序来",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "bamboo",
+    "definition": "n.竹子",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bamboo-us.mp3"
+  },
+  {
+    "word": "its",
+    "definition": "pron.（指事物、动物或幼儿）它的；他的；她的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/its-us.ogg"
+  },
+  {
+    "word": "show",
+    "definition": "vi.给人看；指引",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/show-uk.mp3"
+  },
+  {
+    "word": "anything",
+    "definition": "pron.任何事物",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/anything-us.mp3"
+  },
+  {
+    "word": "else",
+    "definition": "adj.另外；其他",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/else-us.mp3"
+  },
+  {
+    "word": "exhibition",
+    "definition": "n.展览",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/exhibition-us.mp3"
+  },
+  {
+    "word": "say",
+    "definition": "v.说，讲",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/say-us.mp3"
+  },
+  {
+    "word": "have a look",
+    "definition": "undefined.看一看",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "sushi",
+    "definition": "n.寿司",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "teach",
+    "definition": "v.教",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/teach-us.mp3"
+  },
+  {
+    "word": "sure",
+    "definition": "adj.（表示同意）当然",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sure-us.mp3"
+  },
+  {
+    "word": "Canadian",
+    "definition": "n.加拿大的",
+    "audioUrl": "No audio available"
+  },
+  {
+    "word": "Spanish",
+    "definition": "adj.西班牙的",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/spanish-us.mp3"
+  }
+]
