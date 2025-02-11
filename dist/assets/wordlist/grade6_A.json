@@ -1,0 +1,884 @@
+[
+  {
+    "word": "science",
+    "definition": "n.科学",
+    "phonetic": "/ˈsaɪəns/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/science-1-ca.mp3"
+  },
+  {
+    "word": "museum",
+    "definition": "n.博物馆",
+    "phonetic": "/mjuˈzi.əm/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/museum-us.mp3"
+  },
+  {
+    "word": "post office",
+    "definition": "n.邮局",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "bookstore",
+    "definition": "n.书店",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "cinema",
+    "definition": "n.电影院",
+    "phonetic": "/ˈsɪn.ɪ.mɑː/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cinema-uk.mp3"
+  },
+  {
+    "word": "hospital",
+    "definition": "n.医院",
+    "phonetic": "/ˈhɒs.pɪ.tl̩/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hospital-uk.mp3"
+  },
+  {
+    "word": "crossing",
+    "definition": "n.十字路口",
+    "phonetic": "/ˈkɹɔsɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/crossing-us.mp3"
+  },
+  {
+    "word": "turn",
+    "definition": "n.转弯",
+    "phonetic": "/tɝn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/turn-us.mp3"
+  },
+  {
+    "word": "left",
+    "definition": "n.左",
+    "phonetic": "/lɛft/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/left-1-uk.mp3"
+  },
+  {
+    "word": "straight",
+    "definition": "adj.笔直地",
+    "phonetic": "/stɹeɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/straight-au.mp3"
+  },
+  {
+    "word": "right",
+    "definition": "n.右",
+    "phonetic": "/ˈɹaɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/right-uk.mp3"
+  },
+  {
+    "word": "ask",
+    "definition": "v.问",
+    "phonetic": "/ˈask/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ask-uk.mp3"
+  },
+  {
+    "word": "sir",
+    "definition": "n.（对男子的礼貌称呼）先生",
+    "phonetic": "/ˈsɝ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sir-us.mp3"
+  },
+  {
+    "word": "interesting",
+    "definition": "adj.有趣的",
+    "phonetic": "/ˈɪnt(ʃ)ɹɛstɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/interesting-us.mp3"
+  },
+  {
+    "word": "Italian",
+    "definition": "n.意大利的",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "restaurant",
+    "definition": "n.餐馆",
+    "phonetic": "/ˈɹɛs.t(ə).ɹ(ə)nt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/restaurant-uk.mp3"
+  },
+  {
+    "word": "pizza",
+    "definition": "n.比萨饼",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "street",
+    "definition": "n.大街；街道",
+    "phonetic": "/stɹiːt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/street-uk.mp3"
+  },
+  {
+    "word": "get",
+    "definition": "v.到达",
+    "phonetic": "/ɡɛt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/get-us.mp3"
+  },
+  {
+    "word": "GPS",
+    "definition": "abbr.全球（卫星）定位系统",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "gave",
+    "definition": "v.提供；交给（give的过去时）",
+    "phonetic": "/ɡeɪv/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/gave-us.mp3"
+  },
+  {
+    "word": "feature",
+    "definition": "n.特点",
+    "phonetic": "/ˈfitʃɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/feature-us.mp3"
+  },
+  {
+    "word": "follow",
+    "definition": "v.跟着",
+    "phonetic": "/ˈfɑloʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/follow-us.mp3"
+  },
+  {
+    "word": "far",
+    "definition": "adv.较远的",
+    "phonetic": "/fɑː/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/far-1-uk.mp3"
+  },
+  {
+    "word": "tell",
+    "definition": "v.告诉",
+    "phonetic": "/tɛl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/tell-us.mp3"
+  },
+  {
+    "word": "on foot",
+    "definition": "undefined.步行",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "by",
+    "definition": "prep.(表示方式）乘",
+    "phonetic": "/baɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/by-us.mp3"
+  },
+  {
+    "word": "bus",
+    "definition": "n.公共汽车",
+    "phonetic": "/bɐs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bus-uk.mp3"
+  },
+  {
+    "word": "plane",
+    "definition": "n.飞机",
+    "phonetic": "/pleɪn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/plane-us.mp3"
+  },
+  {
+    "word": "taxi",
+    "definition": "n.出租汽车",
+    "phonetic": "/ˈtæk.si/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/taxi-uk.mp3"
+  },
+  {
+    "word": "ship",
+    "definition": "n.（大）船",
+    "phonetic": "/ʃɪp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ship-us.mp3"
+  },
+  {
+    "word": "subway",
+    "definition": "n.地铁",
+    "phonetic": "/ˈsʌbˌweɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/subway-us.mp3"
+  },
+  {
+    "word": "train",
+    "definition": "n.火���",
+    "phonetic": "/tɹeɪn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/train-1-au.mp3"
+  },
+  {
+    "word": "slow",
+    "definition": "adj.（使）放慢速度；慢的",
+    "phonetic": "/sləʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/slow-uk.mp3"
+  },
+  {
+    "word": "down",
+    "definition": "adv.减少；降低",
+    "phonetic": "/daʊn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/down-us.mp3"
+  },
+  {
+    "word": "slow down",
+    "definition": "undefined.慢下来",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "stop",
+    "definition": "v.停下",
+    "phonetic": "/stɒp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stop-uk.mp3"
+  },
+  {
+    "word": "Mrs",
+    "definition": "n.夫人",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "early",
+    "definition": "adj.早到的",
+    "phonetic": "/ˈɜː.li/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/early-uk.mp3"
+  },
+  {
+    "word": "helmet",
+    "definition": "n.头盔",
+    "phonetic": "/ˈhɛlmət/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/helmet.mp3"
+  },
+  {
+    "word": "must",
+    "definition": "aux.必须",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "wear",
+    "definition": "v.戴",
+    "phonetic": "/wɛə(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/wear-1-us.mp3"
+  },
+  {
+    "word": "attention",
+    "definition": "n.注意",
+    "phonetic": "/əˈtɛn.ʃən/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/attention-us.mp3"
+  },
+  {
+    "word": "pay attention to",
+    "definition": "undefined.注意",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "traffic",
+    "definition": "n.交通",
+    "phonetic": "/ˈtɹæfɪk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/traffic-us.mp3"
+  },
+  {
+    "word": "traffic lights",
+    "definition": "undefined.交通信号灯",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "Munich",
+    "definition": "n.慕尼黑（德国城市）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "Germany",
+    "definition": "n.德国",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "Alaska",
+    "definition": "n.阿拉斯加州（美国州名）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "sled",
+    "definition": "n.雪橇",
+    "phonetic": "/slɛd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sled-au.mp3"
+  },
+  {
+    "word": "fast",
+    "definition": "adj.快的",
+    "phonetic": "/fæst/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fast-uk.mp3"
+  },
+  {
+    "word": "ferry",
+    "definition": "n.轮渡",
+    "phonetic": "/ˈfɛɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ferry-us.mp3"
+  },
+  {
+    "word": "Papa Westray",
+    "definition": "undefined.帕帕韦斯特雷岛",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "Scotland",
+    "definition": "n.苏格兰",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "visit",
+    "definition": "v.拜访",
+    "phonetic": "/ˈvɪzɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/visit-us.mp3"
+  },
+  {
+    "word": "film",
+    "definition": "n.电影",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "see a film",
+    "definition": "v.看电影",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "trip",
+    "definition": "n.旅行",
+    "phonetic": "/tɹɪp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/trip-1-uk.mp3"
+  },
+  {
+    "word": "take a trip",
+    "definition": "undefined.去旅行",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "supermarket",
+    "definition": "n.超市",
+    "phonetic": "/ˌsuːpəˈmɑːkɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/supermarket-uk.mp3"
+  },
+  {
+    "word": "evening",
+    "definition": "n.晚上；傍晚",
+    "phonetic": "/ˈivnɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/evening-1-us.mp3"
+  },
+  {
+    "word": "tonight",
+    "definition": "n.在今晚",
+    "phonetic": "/təˈnaɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/tonight-us.mp3"
+  },
+  {
+    "word": "tomorrow",
+    "definition": "n.明天",
+    "phonetic": "/təˈmɒɹəʊ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/tomorrow-uk.mp3"
+  },
+  {
+    "word": "next week",
+    "definition": "undefined.下周",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "dictionary",
+    "definition": "n.词典",
+    "phonetic": "/ˈdɪkʃ(ə)n(ə)ɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dictionary-uk.mp3"
+  },
+  {
+    "word": "comic",
+    "definition": "n.滑稽的",
+    "phonetic": "/ˈkɑmɪk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/comic-us.mp3"
+  },
+  {
+    "word": "comic book",
+    "definition": "undefined.（儿童的）连环画册",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "word",
+    "definition": "n.单词",
+    "phonetic": "/wɝd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/word-us.mp3"
+  },
+  {
+    "word": "word book",
+    "definition": "n.单词书",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "postcard",
+    "definition": "n.明信片",
+    "phonetic": "/ˈpoʊstˌkɑɹd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/postcard-us.mp3"
+  },
+  {
+    "word": "lesson",
+    "definition": "n.课",
+    "phonetic": "/ˈlɛsn̩/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/lesson-uk.mp3"
+  },
+  {
+    "word": "space",
+    "definition": "n.太空",
+    "phonetic": "/speɪs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/space-us.mp3"
+  },
+  {
+    "word": "travel",
+    "definition": "v.（尤指长途）旅行",
+    "phonetic": "/ˈtɹævəl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/travel-us.mp3"
+  },
+  {
+    "word": "half",
+    "definition": "n.一半",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "price",
+    "definition": "n.价格",
+    "phonetic": "/pɹaɪs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/price-uk.mp3"
+  },
+  {
+    "word": "Mid-Autumn Festival",
+    "definition": "undefined.中秋节",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "together",
+    "definition": "adv.一起",
+    "phonetic": "/təˈɡɛð.ə(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/together-uk.mp3"
+  },
+  {
+    "word": "get together",
+    "definition": "undefined.聚会",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "mooncake",
+    "definition": "n.月饼",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "poem",
+    "definition": "n.诗",
+    "phonetic": "/ˈpəʊ̯ɪm/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/poem-uk.mp3"
+  },
+  {
+    "word": "moon",
+    "definition": "n.月亮",
+    "phonetic": "/muːn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/moon-uk.mp3"
+  },
+  {
+    "word": "studies",
+    "definition": "n.学习（study的第三人称单数形式）",
+    "phonetic": "/ˈstʌdiz/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/studies-us.mp3"
+  },
+  {
+    "word": "puzzle",
+    "definition": "n.谜",
+    "phonetic": "/ˈpʌzəl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/puzzle-ca.mp3"
+  },
+  {
+    "word": "hiking",
+    "definition": "n.远足",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "pen pal",
+    "definition": "undefined.笔友",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "hobby",
+    "definition": "n.业余爱好",
+    "phonetic": "/ˈhɒ.bi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hobby-uk.mp3"
+  },
+  {
+    "word": "jasmine",
+    "definition": "n.茉莉",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "idea",
+    "definition": "n.想法；主意",
+    "phonetic": "/aɪˈdi.ə/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/idea-us.mp3"
+  },
+  {
+    "word": "Canberra",
+    "definition": "n.堪培拉（澳大利亚首都）",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "amazing",
+    "definition": "adj.令人惊奇的",
+    "phonetic": "/əˈmeɪzɪŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/amazing-us.mp3"
+  },
+  {
+    "word": "shall",
+    "definition": "v.表示征求意见",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "goal",
+    "definition": "n.射门",
+    "phonetic": "/ɡoʊl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/goal-us.mp3"
+  },
+  {
+    "word": "join",
+    "definition": "v.加入",
+    "phonetic": "/ˈdʒɔɪn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/join-us.mp3"
+  },
+  {
+    "word": "club",
+    "definition": "n.俱乐部",
+    "phonetic": "/klʌb/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/club-us.mp3"
+  },
+  {
+    "word": "share",
+    "definition": "v.分享",
+    "phonetic": "/ʃɛəɹ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/share-us.mp3"
+  },
+  {
+    "word": "factory",
+    "definition": "n.工厂",
+    "phonetic": "/ˈfæktəɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/factory-uk.mp3"
+  },
+  {
+    "word": "worker",
+    "definition": "n.工人",
+    "phonetic": "/ˈwɜː.kə/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/worker-uk.mp3"
+  },
+  {
+    "word": "postman",
+    "definition": "n.邮递员",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "businessman",
+    "definition": "n.商人；企业家",
+    "phonetic": "/ˈbɪznəsmæn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/businessman-us.mp3"
+  },
+  {
+    "word": "police officer",
+    "definition": "n.警察",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "fisherman",
+    "definition": "n.渔民",
+    "phonetic": "/ˈfɪʃəmən/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fisherman-uk.mp3"
+  },
+  {
+    "word": "scientist",
+    "definition": "n.科学家",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "pilot",
+    "definition": "n.飞行员",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "coach",
+    "definition": "n.教练",
+    "phonetic": "/koʊtʃ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/coach-us.mp3"
+  },
+  {
+    "word": "country",
+    "definition": "n.国家",
+    "phonetic": "/ˈkʌntɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/country-uk.mp3"
+  },
+  {
+    "word": "head teacher",
+    "definition": "undefined.校长",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "sea",
+    "definition": "n.大海",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "stay",
+    "definition": "n.保持",
+    "phonetic": "/steɪ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stay-us.mp3"
+  },
+  {
+    "word": "university",
+    "definition": "n.大学",
+    "phonetic": "/juːnɪˈvɜːsətiː/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/university-uk.mp3"
+  },
+  {
+    "word": "gym",
+    "definition": "n.体育馆",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "if",
+    "definition": "conj.如果",
+    "phonetic": "/ɪf/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/if-us.mp3"
+  },
+  {
+    "word": "reporter",
+    "definition": "n.记者",
+    "phonetic": "/ɹɪˈpɔɹtɚ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/reporter-us.mp3"
+  },
+  {
+    "word": "use",
+    "definition": "v.使用",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "type",
+    "definition": "n.打字",
+    "phonetic": "/taɪp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/type-us.mp3"
+  },
+  {
+    "word": "quickly",
+    "definition": "adv.迅速地",
+    "phonetic": "/ˈkwɪkli/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/quickly-us.mp3"
+  },
+  {
+    "word": "secretary",
+    "definition": "n.秘书",
+    "phonetic": "/ˈsɛkɹəˌtɛɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/secretary-us.mp3"
+  },
+  {
+    "word": "angry",
+    "definition": "adj.生气的",
+    "phonetic": "/ˈæŋ.ɡɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/angry-us.mp3"
+  },
+  {
+    "word": "afraid",
+    "definition": "adj.害怕",
+    "phonetic": "/əˈfɹeɪd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/afraid-us.mp3"
+  },
+  {
+    "word": "sad",
+    "definition": "adj.难过的",
+    "phonetic": "/sæd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sad-1-us.mp3"
+  },
+  {
+    "word": "worried",
+    "definition": "adj.担心的；发愁的",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "happy",
+    "definition": "adj.高兴的",
+    "phonetic": "/ˈhæpiː/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/happy-uk.mp3"
+  },
+  {
+    "word": "see a doctor",
+    "definition": "v.看病",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "wear",
+    "definition": "v.穿",
+    "phonetic": "/wɛə(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/wear-1-us.mp3"
+  },
+  {
+    "word": "more",
+    "definition": "adj.更多的",
+    "phonetic": "/ˈmɔː/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/more-uk.mp3"
+  },
+  {
+    "word": "deep",
+    "definition": "adj.深的",
+    "phonetic": "/diːp/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/deep-au.mp3"
+  },
+  {
+    "word": "breath",
+    "definition": "n.呼吸",
+    "phonetic": "/bɹɛθ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/breath-us.mp3"
+  },
+  {
+    "word": "take a deep breath",
+    "definition": "undefined.深深吸一口气",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "count",
+    "definition": "v.数数",
+    "phonetic": "/kaʊnt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/count-us.mp3"
+  },
+  {
+    "word": "count to ten",
+    "definition": "undefined.数到十",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "chase",
+    "definition": "v.追赶",
+    "phonetic": "/tʃeɪs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/chase-au.mp3"
+  },
+  {
+    "word": "mice",
+    "definition": "n.老鼠（mouse的复数）",
+    "phonetic": "/maɪs/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/mice-uk.mp3"
+  },
+  {
+    "word": "bad",
+    "definition": "adj.邪恶的；坏的",
+    "phonetic": "/bæd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bad-uk.mp3"
+  },
+  {
+    "word": "hurt",
+    "definition": "v.（使）受伤",
+    "phonetic": "/hɝt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hurt-us.mp3"
+  },
+  {
+    "word": "ill",
+    "definition": "adj.有病；不舒服",
+    "phonetic": "/ɪl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ill-us.mp3"
+  },
+  {
+    "word": "wrong",
+    "definition": "adj.有毛病",
+    "phonetic": "/ɹɔŋ/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/wrong-us.mp3"
+  },
+  {
+    "word": "should",
+    "definition": "aux.应该",
+    "phonetic": "",
+    "audioUrl": ""
+  },
+  {
+    "word": "feel",
+    "definition": "v.觉得；感到",
+    "phonetic": "/fiːl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/feel-us.mp3"
+  },
+  {
+    "word": "well",
+    "definition": "n.健康；身体好",
+    "phonetic": "/wɛl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/well-uk.mp3"
+  },
+  {
+    "word": "sit",
+    "definition": "v.坐",
+    "phonetic": "/sɪt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sit-au.mp3"
+  },
+  {
+    "word": "grass",
+    "definition": "n.草坪",
+    "phonetic": "[ɡɹ̠ɑːs]",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/grass-uk.mp3"
+  },
+  {
+    "word": "hear",
+    "definition": "v.听见",
+    "phonetic": "/hɪə(ɹ)/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hear-uk.mp3"
+  },
+  {
+    "word": "ant",
+    "definition": "n.蚂蚁",
+    "phonetic": "/ænt/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ant-us.mp3"
+  },
+  {
+    "word": "worry",
+    "definition": "v.担心；担忧",
+    "phonetic": "/ˈwɝɹi/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/worry-us.mp3"
+  },
+  {
+    "word": "stuck",
+    "definition": "v.陷住；无法移动",
+    "phonetic": "/ˈstʌk/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/stuck-us.mp3"
+  },
+  {
+    "word": "mud",
+    "definition": "n.泥",
+    "phonetic": "/mʌd/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/mud-us.mp3"
+  },
+  {
+    "word": "pull",
+    "definition": "n.拉；拽",
+    "phonetic": "/pʊl/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pull-au.mp3"
+  },
+  {
+    "word": "everyone",
+    "definition": "pron.每人",
+    "phonetic": "/ˈɛv.ɹi.wʌn/",
+    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/everyone-us.mp3"
+  }
+]
