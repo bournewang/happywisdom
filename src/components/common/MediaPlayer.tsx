@@ -16,14 +16,14 @@ export interface MediaItem {
 interface MediaPlayerProps {
     category: string;
     jsonPath: string;
-    renderMedia: (currentMedia: MediaItem, mediaRef: React.RefObject<HTMLVideoElement | HTMLAudioElement>) => ReactNode;
-    type: 'video' | 'audio';
+    renderMedia: (currentMedia: MediaItem, mediaRef: React.RefObject<HTMLVideoElement>) => ReactNode;
+    // type: 'video' | 'audio';
 }
 
-export function MediaPlayer({ category, jsonPath, renderMedia, type }: MediaPlayerProps) {
+export function MediaPlayer({ category, jsonPath, renderMedia }: MediaPlayerProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mediaList, setMediaList] = useState<MediaItem[]>([]);
-    const mediaRef = useRef<HTMLVideoElement | HTMLAudioElement>(null);
+    const mediaRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
         import(jsonPath)
@@ -62,7 +62,7 @@ export function MediaPlayer({ category, jsonPath, renderMedia, type }: MediaPlay
     const swipeHandlers = useSwipeable({
         onSwipedUp: handleSwipeUp,
         onSwipedDown: handleSwipeDown,
-        preventDefaultTouchmoveEvent: true,
+        preventScrollOnSwipe: true,
         trackMouse: true
     });
 

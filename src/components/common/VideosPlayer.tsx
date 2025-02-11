@@ -1,5 +1,5 @@
 import { MediaPlayer, MediaItem } from './MediaPlayer';
-import type { VideoVerse } from './types';
+// import type { VideoVerse } from './types';
 import { config } from '../../config';
 
 interface VideosPlayerProps {
@@ -36,7 +36,6 @@ export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
             category={category}
             jsonPath={jsonPath}
             renderMedia={renderVideo}
-            type="video"
         />
     );
 } 

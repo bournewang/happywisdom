@@ -3,7 +3,7 @@ import { FaPlay, FaPause, FaSync } from 'react-icons/fa';
 import { ttsUrl } from '../../api/tts';
 import { useSwipeable } from 'react-swipeable';
 import { config } from '../../config';
-
+import type { AudioVerse } from './types';
 interface PlayerProps {
     // itemList: any[];
     jsonPath: string;
@@ -16,9 +16,8 @@ interface PlayerProps {
     };
     isTTS?: boolean;
     voice?: string;
-    className?: string;
     size?: 'small' | 'medium' | 'large';
-    position?: 'top' | 'middle' | 'bottom';
+    // position?: 'top' | 'middle' | 'bottom';
     actions?: ReactNode;
     showRefresh?: boolean;
 }
@@ -29,18 +28,17 @@ export function AudioPlayer({
     renderItem,
     isTTS = false,
     voice = 'zh-CN-XiaoxiaoNeural',
-    className = '',
     size = 'medium',
-    position = 'middle',
+    // position = 'middle',
     actions,
     showRefresh = true,
 }: PlayerProps) {
     const [itemList, setItemList] = useState([]);
-    const [currentItem, setCurrentItem] = useState(null);
+    const [currentItem, setCurrentItem] = useState<AudioVerse | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
-    const contentRef = useRef<HTMLDivElement>(null);
+    // const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         import(jsonPath)
@@ -113,7 +111,7 @@ export function AudioPlayer({
     const swipeHandlers = useSwipeable({
         onSwipedUp: handleSwipeUp,
         onSwipedDown: handleSwipeDown,
-        preventDefaultTouchmoveEvent: true,
+        preventScrollOnSwipe: true,
         trackMouse: true
     });
     return (
