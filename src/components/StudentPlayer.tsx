@@ -5,7 +5,6 @@ import { Menu } from './common/Menu';
 import { AudioPlayer } from './common/AudioPlayer';
 import { AudioVerse } from './common/types';
 import { DeepSeek } from './DeepSeek';
-import { config } from '../config';
 
 type StudentView = 'poem' | 'nursery' | 'nursery-en' | 'vocabulary' | 'deepseek';
 
@@ -32,7 +31,7 @@ export function StudentPlayer() {
         // { value: 'nursery-en', label: '英文歌' },
         { value: 'vocabulary', label: '单词' },
         // Uncomment if you want to include deepseek
-        // { value: 'deepseek', label: 'DeepSeek' }
+        { value: 'deepseek', label: 'DeepSeek' }
     ];
 
     const getFullText = (poem: AudioVerse) => {
@@ -61,7 +60,7 @@ export function StudentPlayer() {
                             </>
                         ),
                         audioSource: getFullText(poem),
-                        backgroundImage: config.imagePrefix + (poem?.image || 'poem.jpg')
+                        backgroundImage: poem?.image || 'poem.jpg'
                     })}
                     isTTS={true}
                 />}
@@ -77,8 +76,8 @@ export function StudentPlayer() {
                                     {poem?.content}
                                 </>
                             ),
-                            audioSource: config.meidaPrefix + poem?.audioUrl,
-                            backgroundImage: config.imagePrefix + (poem?.image || 'poem.jpg')
+                            audioSource: poem?.audioUrl,
+                            backgroundImage: poem?.image || 'poem.jpg'
                         })}
                         isTTS={false}
                     />
@@ -93,8 +92,8 @@ export function StudentPlayer() {
                                 {poem?.content}
                             </div>
                         ),
-                        audioSource: config.meidaPrefix + poem?.audioUrl,
-                        backgroundImage: config.imagePrefix + (poem?.image || 'poem.jpg')
+                        audioSource: poem?.audioUrl,
+                        backgroundImage: poem?.image || 'poem.jpg'
                     })}
                     isTTS={false}
                     showRefresh={true}
