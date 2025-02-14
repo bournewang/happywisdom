@@ -3,504 +3,504 @@
     "word": "classroom",
     "definition": "n.教室",
     "phonetic": "/ˈklɑːsɹʊm/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/classroom-uk.mp3"
+    "audioUrl": "classroom-uk.mp3"
   },
   {
     "word": "window",
     "definition": "n.窗户",
     "phonetic": "/ˈwɪndəʊ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/window-uk.mp3"
+    "audioUrl": "window-uk.mp3"
   },
   {
     "word": "blackboard",
     "definition": "n.黑板",
     "phonetic": "/ˈblækboɹd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/blackboard-us.mp3"
+    "audioUrl": "blackboard-us.mp3"
   },
   {
     "word": "light",
     "definition": "n.电灯",
     "phonetic": "/laɪt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/light-uk.mp3"
+    "audioUrl": "light-uk.mp3"
   },
   {
     "word": "picture",
     "definition": "n.图画",
     "phonetic": "/ˈpɪk(t)ʃɚ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/picture-us.mp3"
+    "audioUrl": "picture-us.mp3"
   },
   {
     "word": "door",
     "definition": "n.门",
     "phonetic": "/dɔː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/door-uk.mp3"
+    "audioUrl": "door-uk.mp3"
   },
   {
     "word": "teacher's desk",
     "definition": "undefined.讲台",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "teacher's-desk-uk.mp3"
   },
   {
     "word": "computer",
     "definition": "n.计算机",
     "phonetic": "/kəmˈpjuːtə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/computer-uk.mp3"
+    "audioUrl": "computer-uk.mp3"
   },
   {
     "word": "fan",
     "definition": "n.风扇",
     "phonetic": "/fæn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fan-uk.mp3"
+    "audioUrl": "fan-uk.mp3"
   },
   {
     "word": "wall",
     "definition": "n.墙壁",
     "phonetic": "/wɔːl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/wall-uk.mp3"
+    "audioUrl": "wall-uk.mp3"
   },
   {
     "word": "floor",
     "definition": "n.地板",
     "phonetic": "/flɔː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/floor-uk.mp3"
+    "audioUrl": "floor-uk.mp3"
   },
   {
     "word": "really",
     "definition": "adv.（表示兴趣或惊讶）真的",
     "phonetic": "/ˈɹi.əli/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/really-1-us.mp3"
+    "audioUrl": "really-1-us.mp3"
   },
   {
     "word": "near",
     "definition": "adj.距离近",
     "phonetic": "/nɪə(ɹ)/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/near-uk.mp3"
+    "audioUrl": "near-uk.mp3"
   },
   {
     "word": "TV",
     "definition": "abbr.电视",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "tv-uk.mp3"
   },
   {
     "word": "clean",
     "definition": "adj.打扫",
     "phonetic": "/kliːn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/clean-uk.mp3"
+    "audioUrl": "clean-uk.mp3"
   },
   {
     "word": "help",
     "definition": "v.帮助",
     "phonetic": "/hɛlp/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/help-us.mp3"
+    "audioUrl": "help-us.mp3"
   },
   {
     "word": "schoolbag",
     "definition": "n.书包",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "schoolbag-uk.mp3"
   },
   {
     "word": "maths book",
     "definition": "undefined.数学书",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "maths-book-uk.mp3"
   },
   {
     "word": "English book",
     "definition": "undefined.英语书",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "English-book-uk.mp3"
   },
   {
     "word": "Chinese book",
     "definition": "undefined.语文书",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "Chinese-book-uk.mp3"
   },
   {
     "word": "storybook",
     "definition": "n.故事书",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "storybook-uk.mp3"
   },
   {
     "word": "candy",
     "definition": "n.糖果",
     "phonetic": "/ˈkændi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/candy-us.mp3"
+    "audioUrl": "candy-us.mp3"
   },
   {
     "word": "notebook",
     "definition": "n.笔记本",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "notebook-uk.mp3"
   },
   {
     "word": "toy",
     "definition": "n.玩具",
     "phonetic": "/tɔɪ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/toy-us.mp3"
+    "audioUrl": "toy-us.mp3"
   },
   {
     "word": "key",
     "definition": "n.钥匙",
     "phonetic": "/kiː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/key-uk.mp3"
+    "audioUrl": "key-uk.mp3"
   },
   {
     "word": "wow",
     "definition": "int.哇；呀",
     "phonetic": "/waʊ̯/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/wow-1-us.mp3"
+    "audioUrl": "wow-1-us.mp3"
   },
   {
     "word": "lost",
     "definition": "adj.丢失（lose的过去形式）",
     "phonetic": "/lɒst/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/lost-uk.mp3"
+    "audioUrl": "lost-uk.mp3"
   },
   {
     "word": "so much",
     "definition": "undefined.非常地",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "so-much-uk.mp3"
   },
   {
     "word": "cute",
     "definition": "adj.可爱的",
     "phonetic": "/kjuːt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cute-us.mp3"
+    "audioUrl": "cute-us.mp3"
   },
   {
     "word": "strong",
     "definition": "adj.强壮的",
     "phonetic": "/stɹɒŋ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/strong-uk.mp3"
+    "audioUrl": "strong-uk.mp3"
   },
   {
     "word": "friendly",
     "definition": "adj.友好的",
     "phonetic": "/ˈfɹɛndli/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/friendly-us.mp3"
+    "audioUrl": "friendly-us.mp3"
   },
   {
     "word": "quiet",
     "definition": "adj.安静的",
     "phonetic": "/ˈkwaɪ.ət/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/quiet-us.mp3"
+    "audioUrl": "quiet-us.mp3"
   },
   {
     "word": "hair",
     "definition": "n.头发",
     "phonetic": "/hɛə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hair-uk.mp3"
+    "audioUrl": "hair-uk.mp3"
   },
   {
     "word": "shoe",
     "definition": "n.鞋",
     "phonetic": "/ʃuː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/shoe-us.mp3"
+    "audioUrl": "shoe-us.mp3"
   },
   {
     "word": "glasses",
     "definition": "n.眼镜",
     "phonetic": "/ˈɡlasɪz/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/glasses-uk.mp3"
+    "audioUrl": "glasses-uk.mp3"
   },
   {
     "word": "his",
     "definition": "pron.他的",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "his-uk.mp3"
   },
   {
     "word": "or",
     "definition": "conj.或者",
     "phonetic": "/ɔː(ɹ)/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/or-uk-stressed.mp3"
+    "audioUrl": "or-uk-stressed.mp3"
   },
   {
     "word": "right",
     "definition": "n.正确的；对的",
     "phonetic": "/ˈɹaɪt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/right-uk.mp3"
+    "audioUrl": "right-uk.mp3"
   },
   {
     "word": "hat",
     "definition": "n.帽子（常指带檐的）",
     "phonetic": "/hæt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hat-us.mp3"
+    "audioUrl": "hat-us.mp3"
   },
   {
     "word": "her",
     "definition": "pron.她的",
     "phonetic": "/ɚ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/her-us.mp3"
+    "audioUrl": "her-us.mp3"
   },
   {
     "word": "bedroom",
     "definition": "n.卧室",
     "phonetic": "/ˈbɛdɹʊm/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bedroom-us.mp3"
+    "audioUrl": "bedroom-us.mp3"
   },
   {
     "word": "living room",
     "definition": "undefined.客厅，���居室",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "living-room-uk.mp3"
   },
   {
     "word": "study",
     "definition": "n.书房",
     "phonetic": "/ˈstʌdi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/study-uk.mp3"
+    "audioUrl": "study-uk.mp3"
   },
   {
     "word": "kitchen",
     "definition": "n.厨房",
     "phonetic": "/ˈkɪt͡ʃən/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/kitchen-uk.mp3"
+    "audioUrl": "kitchen-uk.mp3"
   },
   {
     "word": "bathroom",
     "definition": "n.浴室；洗手间",
     "phonetic": "/ˈbæθ.ɹuːm/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bathroom-uk.mp3"
+    "audioUrl": "bathroom-uk.mp3"
   },
   {
     "word": "bed",
     "definition": "n.床",
     "phonetic": "/bɛd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bed-uk.mp3"
+    "audioUrl": "bed-uk.mp3"
   },
   {
     "word": "phone",
     "definition": "n.电话",
     "phonetic": "/fəʊ̯n/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/phone-uk.mp3"
+    "audioUrl": "phone-uk.mp3"
   },
   {
     "word": "table",
     "definition": "n.桌子",
     "phonetic": "/ˈteɪbəl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/table-uk.mp3"
+    "audioUrl": "table-uk.mp3"
   },
   {
     "word": "sofa",
     "definition": "n.长沙发",
     "phonetic": "/ˈsoʊfə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/sofa-us.mp3"
+    "audioUrl": "sofa-us.mp3"
   },
   {
     "word": "fridge",
     "definition": "n.冰箱",
     "phonetic": "/fɹɪd͡ʒ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fridge-uk.mp3"
+    "audioUrl": "fridge-uk.mp3"
   },
   {
     "word": "find",
     "definition": "v.找到",
     "phonetic": "/faɪnd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/find-uk.mp3"
+    "audioUrl": "find-uk.mp3"
   },
   {
     "word": "them",
     "definition": "pron.他（她、它）们",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "them-uk.mp3"
   },
   {
     "word": "beef",
     "definition": "n.牛肉",
     "phonetic": "/biːf/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/beef-uk.mp3"
+    "audioUrl": "beef-uk.mp3"
   },
   {
     "word": "chicken",
     "definition": "n.鸡肉",
     "phonetic": "/ˈt͡ʃɪkɪn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/chicken-uk.mp3"
+    "audioUrl": "chicken-uk.mp3"
   },
   {
     "word": "noodles",
     "definition": "n.面条",
     "phonetic": "/ˈnuːd(ə)lz/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/noodles-us.mp3"
+    "audioUrl": "noodles-us.mp3"
   },
   {
     "word": "soup",
     "definition": "n.汤",
     "phonetic": "/suːp/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/soup-uk.mp3"
+    "audioUrl": "soup-uk.mp3"
   },
   {
     "word": "vegetable",
     "definition": "n.蔬菜",
     "phonetic": "/ˈvɛd͡ʒtəbəl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/vegetable-uk.mp3"
+    "audioUrl": "vegetable-uk.mp3"
   },
   {
     "word": "chopsticks",
     "definition": "n.筷子",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "chopsticks-uk.mp3"
   },
   {
     "word": "bowl",
     "definition": "n.碗",
     "phonetic": "/boʊɫ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bowl-us.mp3"
+    "audioUrl": "bowl-us.mp3"
   },
   {
     "word": "fork",
     "definition": "n.餐叉",
     "phonetic": "/fɔːk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fork-uk.mp3"
+    "audioUrl": "fork-uk.mp3"
   },
   {
     "word": "knife",
     "definition": "n.刀",
     "phonetic": "/naɪf/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/knife-uk.mp3"
+    "audioUrl": "knife-uk.mp3"
   },
   {
     "word": "spoon",
     "definition": "n.勺",
     "phonetic": "/spuːn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/spoon-uk.mp3"
+    "audioUrl": "spoon-uk.mp3"
   },
   {
     "word": "dinner",
     "definition": "n.(中午或晚上吃的)正餐",
     "phonetic": "/ˈdɪnə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dinner-uk.mp3"
+    "audioUrl": "dinner-uk.mp3"
   },
   {
     "word": "ready",
     "definition": "adj.准备好",
     "phonetic": "/ˈɹɛdi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ready-uk.mp3"
+    "audioUrl": "ready-uk.mp3"
   },
   {
     "word": "help yourself",
     "definition": "undefined.为（自己）取用",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "help-yourself-uk.mp3"
   },
   {
     "word": "pass",
     "definition": "v.给；递",
     "phonetic": "[pʰaːs]",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pass-us.mp3"
+    "audioUrl": "pass-us.mp3"
   },
   {
     "word": "try",
     "definition": "v.试；尝试",
     "phonetic": "/tɹaɪ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/try-uk.mp3"
+    "audioUrl": "try-uk.mp3"
   },
   {
     "word": "parents",
     "definition": "n.父母",
     "phonetic": "/ˈpɛəɹənts/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/parents-uk.mp3"
+    "audioUrl": "parents-uk.mp3"
   },
   {
     "word": "cousin",
     "definition": "n.同辈表亲（或堂亲）",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "cousin-uk.mp3"
   },
   {
     "word": "uncle",
     "definition": "n.舅父；叔父；伯父；姑父；姨夫",
     "phonetic": "/ˈʌŋ.kəl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/uncle-uk.mp3"
+    "audioUrl": "uncle-uk.mp3"
   },
   {
     "word": "aunt",
     "definition": "n.姑母；姨母",
     "phonetic": "/eɪnt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/aunt-us.mp3"
+    "audioUrl": "aunt-us.mp3"
   },
   {
     "word": "baby",
     "definition": "n.婴儿小弟弟",
     "phonetic": "/ˈbeɪbi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/baby-uk.mp3"
+    "audioUrl": "baby-uk.mp3"
   },
   {
     "word": "doctor",
     "definition": "n.医生",
     "phonetic": "/ˈdɒktə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/doctor-uk.mp3"
+    "audioUrl": "doctor-uk.mp3"
   },
   {
     "word": "cook",
     "definition": "v.厨师",
     "phonetic": "/kuːk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cook-au.mp3"
+    "audioUrl": "cook-au.mp3"
   },
   {
     "word": "driver",
     "definition": "n.司机",
     "phonetic": "/ˈdɹaɪvɚ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/driver-us.mp3"
+    "audioUrl": "driver-us.mp3"
   },
   {
     "word": "farmer",
     "definition": "n.农民",
     "phonetic": "/fɑːmə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/farmer-uk.mp3"
+    "audioUrl": "farmer-uk.mp3"
   },
   {
     "word": "nurse",
     "definition": "n.护士",
     "phonetic": "/nɝs/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/nurse-us.mp3"
+    "audioUrl": "nurse-us.mp3"
   },
   {
     "word": "people",
     "definition": "n.人们",
     "phonetic": "/ˈpiːpəl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/people-uk.mp3"
+    "audioUrl": "people-uk.mp3"
   },
   {
     "word": "but",
     "definition": "conj.但是",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "but-uk.mp3"
   },
   {
     "word": "little",
     "definition": "adj.小的",
     "phonetic": "/ˈlɘtl̩/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/little-nz.mp3"
+    "audioUrl": "little-nz.mp3"
   },
   {
     "word": "puppy",
     "definition": "n.小狗",
     "phonetic": "/ˈpʌpi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/puppy-us.mp3"
+    "audioUrl": "puppy-us.mp3"
   },
   {
     "word": "football player",
     "definition": "undefined.足球运动员",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "football-player-uk.mp3"
   },
   {
     "word": "job",
     "definition": "n.工作",
     "phonetic": "/d͡ʒɒb/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/job-uk.mp3"
+    "audioUrl": "job-uk.mp3"
   },
   {
     "word": "basketball",
     "definition": "n.篮球",
     "phonetic": "/ˈbæs.kɪt.bɔːl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/basketball-us.mp3"
+    "audioUrl": "basketball-us.mp3"
   }
 ]

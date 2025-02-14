@@ -29,7 +29,7 @@ export function StudentPlayer() {
     const menuItems = [
         { value: 'poem', label: '诗词' },
         { value: 'nursery', label: '儿歌' },
-        { value: 'nursery-en', label: '英文歌' },
+        // { value: 'nursery-en', label: '英文歌' },
         { value: 'vocabulary', label: '单词' },
         // Uncomment if you want to include deepseek
         // { value: 'deepseek', label: 'DeepSeek' }
@@ -44,10 +44,10 @@ export function StudentPlayer() {
     }
     return (
         <div className="h-screen w-screen overflow-hidden flex flex-col">
-            <div className="h-15">
+            <div className="h-[7vh]">
                 <Menu items={menuItems} selectedItem={studentView} onSelect={handleViewChange} />
             </div>
-            <div className="flex-1 overflow-hidden">
+            <div className="h-[93vh] overflow-hidden">
                 {studentView === 'poem' && <AudioPlayer
                     jsonPath="/assets/poems.json"
                     renderItem={(poem: AudioVerse) => ({

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Audio } from './common/Audio';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { config } from '../config';
 
 interface Word {
     word: string;
@@ -79,7 +80,7 @@ function Vocabulary({ words, grade, semester }: { words: Word[], grade: string, 
                                 {currentWord.audioUrl && (
                                     <div className="flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full">
                                         <p className="text-xl text-gray-600">{currentWord.phonetic}</p>
-                                        <Audio source={currentWord.audioUrl} size="small"/>
+                                        <Audio source={currentWord.audioUrl ? config.dictAudioPrefix + currentWord.audioUrl : ''} size="small"/>
                                     </div>
                                 )}
                             </div>

@@ -3,384 +3,384 @@
     "word": "ruler",
     "definition": "n.尺子",
     "phonetic": "/ˈɹulɚ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ruler-us.mp3"
+    "audioUrl": "ruler-us.mp3"
   },
   {
     "word": "pencil",
     "definition": "n.铅笔",
     "phonetic": "/ˈpɛnsəl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pencil-us.mp3"
+    "audioUrl": "pencil-us.mp3"
   },
   {
     "word": "eraser",
     "definition": "n.橡皮",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "eraser-uk.mp3"
   },
   {
     "word": "crayon",
     "definition": "n.蜡笔",
     "phonetic": "/ˈkɹeɪ.ɒ̃/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/crayon-uk.mp3"
+    "audioUrl": "crayon-uk.mp3"
   },
   {
     "word": "bag",
     "definition": "n.包",
     "phonetic": "/ˈbæːɡ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bag-au.mp3"
+    "audioUrl": "bag-au.mp3"
   },
   {
     "word": "pen",
     "definition": "n.钢笔",
     "phonetic": "/pɛn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pen.mp3"
+    "audioUrl": "pen.mp3"
   },
   {
     "word": "pencil box",
     "definition": "n.铅笔盒",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "pencil-box-uk.mp3"
   },
   {
     "word": "book",
     "definition": "n.书",
     "phonetic": "/buːk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/book-uk.mp3"
+    "audioUrl": "book-uk.mp3"
   },
   {
     "word": "no",
     "definition": "adv.不",
     "phonetic": "/nəʊ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/no-uk.mp3"
+    "audioUrl": "no-uk.mp3"
   },
   {
     "word": "your",
     "definition": "pron.你（们）的",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "your-uk.mp3"
   },
   {
     "word": "red",
     "definition": "n.红色；adj.红色的",
     "phonetic": "/ɹɛd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/red-us.mp3"
+    "audioUrl": "red-us.mp3"
   },
   {
     "word": "green",
     "definition": "adj.绿色的；n.绿色",
     "phonetic": "/ɡɹiːn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/green-au.mp3"
+    "audioUrl": "green-au.mp3"
   },
   {
     "word": "yellow",
     "definition": "adj.黄色的；n.黄色",
     "phonetic": "/jɛlə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/yellow-au.mp3"
+    "audioUrl": "yellow-au.mp3"
   },
   {
     "word": "blue",
     "definition": "n.蓝色；adj.蓝色的",
     "phonetic": "/bluː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/blue-au.mp3"
+    "audioUrl": "blue-au.mp3"
   },
   {
     "word": "black",
     "definition": "n.黑色；adj.黑色的",
     "phonetic": "/blak/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/black-uk.mp3"
+    "audioUrl": "black-uk.mp3"
   },
   {
     "word": "brown",
     "definition": "adj.棕色的；n.棕色",
     "phonetic": "/bɹaʊn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/brown-uk.mp3"
+    "audioUrl": "brown-uk.mp3"
   },
   {
     "word": "white",
     "definition": "n.白色；adj.白色的",
     "phonetic": "/waɪt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/white-uk.mp3"
+    "audioUrl": "white-uk.mp3"
   },
   {
     "word": "orange",
     "definition": "n.橙色；adj.橙色的",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "orange-uk.mp3"
   },
   {
     "word": "OK",
     "definition": "adj.好；行",
     "phonetic": "",
-    "audioUrl": ""
+    "audioUrl": "ok-uk.mp3"
   },
   {
     "word": "mum",
     "definition": "n.妈妈",
     "phonetic": "/mʌm/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/mum-au.mp3"
+    "audioUrl": "mum-au.mp3"
   },
   {
     "word": "face",
     "definition": "n.脸",
     "phonetic": "/feɪs/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/face-au.mp3"
+    "audioUrl": "face-au.mp3"
   },
   {
     "word": "ear",
     "definition": "n.耳朵",
     "phonetic": "/ɪə̯/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ear-uk.mp3"
+    "audioUrl": "ear-uk.mp3"
   },
   {
     "word": "eye",
     "definition": "n.眼睛",
     "phonetic": "/aɪ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/eye-us.mp3"
+    "audioUrl": "eye-us.mp3"
   },
   {
     "word": "nose",
     "definition": "n.鼻子",
     "phonetic": "/nəʊz/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/nose-uk.mp3"
+    "audioUrl": "nose-uk.mp3"
   },
   {
     "word": "mouth",
     "definition": "n.嘴",
     "phonetic": "/maʊθ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/mouth-uk.mp3"
+    "audioUrl": "mouth-uk.mp3"
   },
   {
     "word": "arm",
     "definition": "n.胳膊",
     "phonetic": "/ɑɹm/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/arm-us.mp3"
+    "audioUrl": "arm-us.mp3"
   },
   {
     "word": "hand",
     "definition": "n.手",
     "phonetic": "/hænd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/hand-uk.mp3"
+    "audioUrl": "hand-uk.mp3"
   },
   {
     "word": "head",
     "definition": "n.头",
     "phonetic": "/hɛd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/head-uk.mp3"
+    "audioUrl": "head-uk.mp3"
   },
   {
     "word": "body",
     "definition": "n.身体",
     "phonetic": "/ˈbɒdi/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/body-uk.mp3"
+    "audioUrl": "body-uk.mp3"
   },
   {
     "word": "leg",
     "definition": "n.腿",
     "phonetic": "/leɪɡ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/leg-1-au.mp3"
+    "audioUrl": "leg-1-au.mp3"
   },
   {
     "word": "foot",
     "definition": "n.脚",
     "phonetic": "[fɵʔt]",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/foot-uk.mp3"
+    "audioUrl": "foot-uk.mp3"
   },
   {
     "word": "school",
     "definition": "n.学校",
     "phonetic": "/skuːl/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/school-uk.mp3"
+    "audioUrl": "school-uk.mp3"
   },
   {
     "word": "duck",
     "definition": "n.鸭子",
     "phonetic": "/dʌk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/duck-au.mp3"
+    "audioUrl": "duck-au.mp3"
   },
   {
     "word": "pig",
     "definition": "n.猪",
     "phonetic": "/ˈpɪɡ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/pig-1-au.mp3"
+    "audioUrl": "pig-1-au.mp3"
   },
   {
     "word": "cat",
     "definition": "n.猫",
     "phonetic": "/kat/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cat-uk.mp3"
+    "audioUrl": "cat-uk.mp3"
   },
   {
     "word": "bear",
     "definition": "n.熊",
     "phonetic": "/bɑɹ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bear-us.mp3"
+    "audioUrl": "bear-us.mp3"
   },
   {
     "word": "dog",
     "definition": "n.狗",
     "phonetic": "/dɒɡ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/dog-uk.mp3"
+    "audioUrl": "dog-uk.mp3"
   },
   {
     "word": "elephant",
     "definition": "n.大象",
     "phonetic": "/ˈɛləfənt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/elephant-us.mp3"
+    "audioUrl": "elephant-us.mp3"
   },
   {
     "word": "monkey",
     "definition": "n.猴子",
     "phonetic": "/ˈmʌŋki/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/monkey-us.mp3"
+    "audioUrl": "monkey-us.mp3"
   },
   {
     "word": "bird",
     "definition": "n.鸟",
     "phonetic": "/bɝd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bird-us.mp3"
+    "audioUrl": "bird-us.mp3"
   },
   {
     "word": "tiger",
     "definition": "n.老虎",
     "phonetic": "/ˈtaɪɡɚ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/tiger-1-us.mp3"
+    "audioUrl": "tiger-1-us.mp3"
   },
   {
     "word": "panda",
     "definition": "n.大熊猫",
     "phonetic": "/ˈpændə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/panda-1-us.mp3"
+    "audioUrl": "panda-1-us.mp3"
   },
   {
     "word": "zoo",
     "definition": "n.动物园",
     "phonetic": "/zuː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/zoo-us.mp3"
+    "audioUrl": "zoo-us.mp3"
   },
   {
     "word": "funny",
     "definition": "adj.滑稽的；好笑的",
     "phonetic": "/ˈfʌni/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/funny-uk.mp3"
+    "audioUrl": "funny-uk.mp3"
   },
   {
     "word": "bread",
     "definition": "n.面包",
     "phonetic": "/bɹɛd/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/bread-uk.mp3"
+    "audioUrl": "bread-uk.mp3"
   },
   {
     "word": "juice",
     "definition": "n.果汁",
     "phonetic": "/d͡ʒus/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/juice-1-us.mp3"
+    "audioUrl": "juice-1-us.mp3"
   },
   {
     "word": "egg",
     "definition": "n.蛋",
     "phonetic": "/eɪɡ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/egg-us.mp3"
+    "audioUrl": "egg-us.mp3"
   },
   {
     "word": "milk",
     "definition": "n.牛奶",
     "phonetic": "/mɪlk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/milk-uk.mp3"
+    "audioUrl": "milk-uk.mp3"
   },
   {
     "word": "water",
     "definition": "n.水",
     "phonetic": "/ˈwɔːtə/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/water-uk.mp3"
+    "audioUrl": "water-uk.mp3"
   },
   {
     "word": "cake",
     "definition": "n.蛋糕",
     "phonetic": "/keɪk/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/cake-1-uk.mp3"
+    "audioUrl": "cake-1-uk.mp3"
   },
   {
     "word": "fish",
     "definition": "n.鱼；鱼肉",
     "phonetic": "/fɪʃ/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/fish-au.mp3"
+    "audioUrl": "fish-au.mp3"
   },
   {
     "word": "rice",
     "definition": "n.米饭",
     "phonetic": "/ɹaɪs/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/rice-uk.mp3"
+    "audioUrl": "rice-uk.mp3"
   },
   {
     "word": "one",
     "definition": "num.一",
     "phonetic": "/wan/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/one-au.mp3"
+    "audioUrl": "one-au.mp3"
   },
   {
     "word": "two",
     "definition": "num.二",
     "phonetic": "/tuː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/two-uk.mp3"
+    "audioUrl": "two-uk.mp3"
   },
   {
     "word": "three",
     "definition": "num.三",
     "phonetic": "/θɹiː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/three-us.mp3"
+    "audioUrl": "three-us.mp3"
   },
   {
     "word": "four",
     "definition": "num.四",
     "phonetic": "/foː/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/four-au.mp3"
+    "audioUrl": "four-au.mp3"
   },
   {
     "word": "five",
     "definition": "num.五",
     "phonetic": "/faɪv/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/five-us.mp3"
+    "audioUrl": "five-us.mp3"
   },
   {
     "word": "six",
     "definition": "num.六",
     "phonetic": "/sɪks/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/six-us.mp3"
+    "audioUrl": "six-us.mp3"
   },
   {
     "word": "seven",
     "definition": "num.七",
     "phonetic": "/ˈsɛv.ən/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/seven-us.mp3"
+    "audioUrl": "seven-us.mp3"
   },
   {
     "word": "eight",
     "definition": "num.八",
     "phonetic": "/eɪt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/eight-1-us.mp3"
+    "audioUrl": "eight-1-us.mp3"
   },
   {
     "word": "nine",
     "definition": "num.九",
     "phonetic": "/naɪn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/nine-us.mp3"
+    "audioUrl": "nine-us.mp3"
   },
   {
     "word": "ten",
     "definition": "num.十",
     "phonetic": "/tɛn/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/ten-us.mp3"
+    "audioUrl": "ten-us.mp3"
   },
   {
     "word": "brother",
     "definition": "n.兄；弟",
     "phonetic": "/ˈbɹʌðə(ɹ)/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/brother-uk.mp3"
+    "audioUrl": "brother-uk.mp3"
   },
   {
     "word": "plate",
     "definition": "n.盘子",
     "phonetic": "/pleɪt/",
-    "audioUrl": "https://api.dictionaryapi.dev/media/pronunciations/en/plate-au.mp3"
+    "audioUrl": "plate-au.mp3"
   }
 ]
