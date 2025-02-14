@@ -3,35 +3,35 @@
     {
         "id": 2,
         "title": "ABC Song",
-        "image": "nursery-rhyme-en:abc_song.jpg",
+        "image": "nursery-rhyme-en-abc_song.jpg",
         "audioUrl": "abc_song.mp3",
         "content": "A-B-C-D-E-F-G, H-I-J-K-LMNOP, Q-R-S, T-U-V, W-X, Y and Z, Now I know my ABCs, Next time won't you sing with me."
     },
     {
         "id": 33,
         "title": "The Wheels on the Bus",
-        "image": "nursery-rhyme-en:the_wheels_on_the_bus.jpg",
+        "image": "nursery-rhyme-en-the_wheels_on_the_bus.jpg",
         "audioUrl": "the_wheels_on_the_bus.mp3",
         "content": "The wheels on the bus go round and round, round and round, round and round. The wheels on the bus go round and round, all through the town."
     },
     {
         "id": 4,
         "title": "Bingo was his name",
-        "image": "nursery-rhyme-en:bingo.jpg",
+        "image": "nursery-rhyme-en-bingo.jpg",
         "audioUrl": "bingo.mp3",
         "content": "There was a farmer had a dog, and Bingo was his name-o, B-I-N-G-O, B-I-N-G-O, B-I-N-G-O, And Bingo was his name-o."
     },
     {
         "id": 5,
         "title": "Five little Monkeys jumping on the bed",
-        "image": "nursery-rhyme-en:five_little_monkeys_jumping_on_the_bed.jpg",
+        "image": "nursery-rhyme-en-five_little_monkeys_jumping_on_the_bed.jpg",
         "audioUrl": "five_little_monkeys_jumping_on_the_bed.mp3",
         "content": "5 Little Monkeys Jumping on the bed, 1 fell off and bumped its head, Mama called the doctor and the doctor said, No more monkeys jumping on the bed!"
     },
     {
         "id": 6,
         "title": "Eency Weency Spider",
-        "image": "nursery-rhyme-en:eency_weency_spider.jpg",
+        "image": "nursery-rhyme-en-eency_weency_spider.jpg",
         "audioUrl": "eency_weency_spider.mp3",
         "content": "Eency weency spider, climbed up the water spout. Down came the rain and washed the spider out. Out came the sun and dried up all the rain, and the eency weency spider climbed up the spout again."
     },
@@ -45,7 +45,7 @@
     {
         "id": 16,
         "title": "London Bridge is Falling Down",
-        "image": "nursery-rhyme-en:london_bridge.jpg",
+        "image": "nursery-rhyme-en-london_bridge.jpg",
         "audioUrl": "london_bridge.mp3",
         "content": "London Bridge is falling down, falling down, falling down. London Bridge is falling down, my fair lady."
     },    
@@ -53,7 +53,7 @@
     {
         "id": 20,
         "title": "Old MacDonald Had a Farm",
-        "image": "nursery-rhyme-en:old_macdonald.jpg",
+        "image": "nursery-rhyme-en-old_macdonald.jpg",
         "audioUrl": "old_macdonald.mp3",
         "content": "Old MacDonald had a farm, E-I-E-I-O. And on that farm he had a cow, E-I-E-I-O. With a moo moo here and a moo moo there, here a moo, there a moo, everywhere a moo moo. Old MacDonald had a farm, E-I-E-I-O."
     },
@@ -61,14 +61,14 @@
     {
         "id": 26,
         "title": "Row, Row, Row Your Boat",
-        "image": "nursery-rhyme-en:row_row_row_your_boat.jpg",
+        "image": "nursery-rhyme-en-row_row_row_your_boat.jpg",
         "audioUrl": "row_row_row_your_boat.mp3",
         "content": "Row, row, row your boat, gently down the stream. Merrily, merrily, merrily, merrily, life is but a dream."
     },    
     {
         "id": 27,
         "title": "Hello Action" ,
-        "image": "nursery-rhyme-en:hello_action.jpg",
+        "image": "nursery-rhyme-en-hello_action.jpg",
         "audioUrl": "hello_action.mp3",
         "content": "Hello! Here we go!\n\nWalk, walk, walk, and say hello\nHello, hello\n\nRun, run, run, and say hello\nHello, hello\n\nJump, jump, jump, and say hello\nHello, hello\n\nSpin, spin, spin, and say hello\nHello, hello\n\nStomp, stomp, stomp, and say hello\nHello, hello\n\nDance, dance, dance, and say hello\nHello, hello\n\nHello, hello, hello, hello\nHello!"
     },
@@ -80,43 +80,43 @@
     },
     {
         "title": "A to Z Actions",
-        "videoUrl": "nursery-rhyme-en:a_to_z_actions.mp4"
+        "videoUrl": "nursery-rhyme-en-a_to_z_actions.mp4"
     },
     {
         "title": "Up Down Song",
-        "videoUrl": "nursery-rhyme-en:up_down_song.mp4",
+        "videoUrl": "nursery-rhyme-en-up_down_song.mp4",
         "content": "Up, up, up\nDown, down, down\nUp, up, up\nUp, up, up\nDown, down, down\nDown, down, down\nThe sky is up\nThe grass is down\nNow I'm spinning, round and round!"
     },
     {
         "title": "What Are You Doing",
-        "videoUrl": "nursery-rhyme-en:what_are_you_doing.mp4",
+        "videoUrl": "nursery-rhyme-en-what_are_you_doing.mp4",
         "content": "What are you doing?\nI'm walking.\nWhat are you doing?\nI’m running.\nWhat are you doing?\nI’m jumping.\nWhat are you doing?\nI’m dancing.\nWhat are you doing?\nI'm reading.\nWhat are you doing?\nI’m eating.\nWhat are you doing?\nI’m drinking.\nWhat are you doing?\nI’m sleeping.\nWhat are you doing?\nI’m putting on my shoes.\nWhat are you doing?\nI’m putting on my hat.\nWhat are you doing?\nI’m saying goodbye.\nGoodbye!"
     },
     {
         "title": "Open Shut Them",
-        "videoUrl": "nursery-rhyme-en:open_shut_them.mp4",
+        "videoUrl": "nursery-rhyme-en-open_shut_them.mp4",
         "content": "Clap, clap, clap\nStomp, stomp, stomp\ndance, dance, dance\nFreeze!\n\nOpen, shut them, open, shut them\nGive a little clap, clap, clap\nOpen, shut them, open, shut them\nPut them on your head!\n(Repeat with knees, ears, nose)"
     },
     {
         "title": "Directions",
-        "videoUrl": "nursery-rhyme-en:directions.mp4",
+        "videoUrl": "nursery-rhyme-en-directions.mp4",
         "content": "Are you ready?\nLet's go!\nLeft, left, left\nRight, right, right\nForward, forward, forward\nBack, back, back\n(repeat)\nSpin left, stop!\nSpin right, stop!\nLeft hand up\nRight hand up\nYay!!\nHere we go!\nMove left, move left\nMove right, move right\nMove forward, move forward\nMove back, move back\n(repeat)\nSpin left, stop!\nSpin right, stop!\nLeft hand up\nRight hand up\nYay!!"
     },
     {
         "id": 13,
         "title": "If You're Happy and You Know It",
-        "image": "nursery-rhyme-en:if_youre_happy.jpg",
+        "image": "nursery-rhyme-en-if_youre_happy.jpg",
         "audioUrl": "if_youre_happy.mp3",
         "content": "If you're happy and you know it clap your hands\nif you're happy and you know it clap your hands\nif you're happy and you know it then your face will surely show it\nif you're happy and you know it clap your hands"
     },
     {
         "title": "The Goodbye Song",
-        "videoUrl": "nursery-rhyme-en:the_goodbye_song.mp4",
+        "videoUrl": "nursery-rhyme-en-the_goodbye_song.mp4",
         "content": "Clap your hands\nSpin around\nJump up high\nOk!\nClap your hands\nSit down\nStand up\n1,2,3,4\n\nGoodbye, goodbye, see you again\nGoodbye, goodbye, see you my friends\nGoodbye, goodbye, I had fun today\nI had fun today\n\nStomp your feet\nShake your body\nStand still\nOk!\nStomp your feet\nTurn left\nTurn right\n1,2,3,4\nGoodbye, goodbye, see you again\nGoodbye, goodbye, see you my friends\nGoodbye, goodbye, I had fun today\nI had fun today, I had fun today\nI had fun today\nGoodbye!"
     },
     {
         "title": "Wake Up",
-        "videoUrl": "nursery-rhyme-en:wake_up.mp4",
+        "videoUrl": "nursery-rhyme-en-wake_up.mp4",
         "content": "Wake Up\nHere we go!\nI wake up\nI wake up\nI wash my face\nI wash my face\n\nThis is what I do when I wake up in the morning\nThis is what I do, when I wake up\n\nI brush my teeth\nI brush my teeth\nI comb my hair\nI comb my hair\n\n(chorus)\nI eat breakfast\nI eat breakfast\nI go to school\nI go to school\n(Chorus)\nI wake up\nI wash my face\nI brush my teeth\nI comb my hair\nI eat breakfast\nI go to school"
     },
     {
@@ -133,29 +133,29 @@
     {
         "id": 11,
         "title": "Head, Shoulders, Knees and Toes",
-        "image": "nursery-rhyme-en:head_shoulders_knees_and_toes.jpg",
+        "image": "nursery-rhyme-en-head_shoulders_knees_and_toes.jpg",
         "audioUrl": "head_shoulders_knees_and_toes.mp3",
         "content": "Head, shoulders, knees and toes, knees and toes. Head, shoulders, knees and toes, knees and toes. And eyes, and ears, and mouth, and nose. Head, shoulders, knees and toes, knees and toes."
     },
     {
         "title": "Counting Animals",
-        "videoUrl": "nursery-rhyme-en:counting_animals.mp4"
+        "videoUrl": "nursery-rhyme-en-counting_animals.mp4"
     },
     {
         "title": "Clothing in English",
-        "videoUrl": "nursery-rhyme-en:clothing.mp4"
+        "videoUrl": "nursery-rhyme-en-clothing.mp4"
     },
     {
         "title": "The Days of the Week",
-        "videoUrl": "nursery-rhyme-en:the_days_of_the_week.mp4"
+        "videoUrl": "nursery-rhyme-en-the_days_of_the_week.mp4"
     },
     {
         "title": "Transportation Counting",
-        "videoUrl": "nursery-rhyme-en:transportation_counting.mp4"
+        "videoUrl": "nursery-rhyme-en-transportation_counting.mp4"
     },
     {
         "title": "The People In My Family",
-        "videoUrl": "nursery-rhyme-en:the_people_in_my_family.mp4"
+        "videoUrl": "nursery-rhyme-en-the_people_in_my_family.mp4"
     },
     {
         "title": "My Family",
@@ -169,45 +169,45 @@
     },
     {
         "title": "Yes Yes Fruits",
-        "videoUrl": "nursery-rhyme-en:yes_yes_fruits.mp4"
+        "videoUrl": "nursery-rhyme-en-yes_yes_fruits.mp4"
     },
     {
         "title": "Baby Shark",
-        "videoUrl": "nursery-rhyme-en:baby_shark.mp4"
+        "videoUrl": "nursery-rhyme-en-baby_shark.mp4"
     },
     {
         "title": "Breakfast",
-        "videoUrl": "nursery-rhyme-en:breakfast.mp4"
+        "videoUrl": "nursery-rhyme-en-breakfast.mp4"
     },
     {
         "title": "Yummy Lunch",
-        "videoUrl": "nursery-rhyme-en:yummy_lunch.mp4"
+        "videoUrl": "nursery-rhyme-en-yummy_lunch.mp4"
     },
     {
         "title": "Yes Yes Vegetables",
-        "videoUrl": "nursery-rhyme-en:yes_yes_vegetables.mp4"
+        "videoUrl": "nursery-rhyme-en-yes_yes_vegetables.mp4"
     },
     {
         "title": "Jingle Bells",
-        "image": "nursery-rhyme-en:jingle_bells.jpg",
+        "image": "nursery-rhyme-en-jingle_bells.jpg",
         "audioUrl": "jingle_bells.mp3",
         "content": "Dashing through the snow,\nIn a one horse open sleigh,\nO'er the fields we go,\nLaughing all the way;\nBells on the bob-tail ring,\nMaking spirits bright;\nWhat fun it is to ride and sing\nA sleighing song tonight!\n\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\n\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!\nJingle bells! Jingle bells! Jingle all the way!\nOh, what fun it is to ride, In a one horse open sleigh!"
     },
     {
         "title": "12 Days of Christmas",
-        "videoUrl": "nursery-rhyme-en:12_days_of_christmas.mp4"
+        "videoUrl": "nursery-rhyme-en-12_days_of_christmas.mp4"
     },
     {
         "title": "We Wish You a Merry Christmas",
-        "videoUrl": "nursery-rhyme-en:we_wish_you_a_merry_christmas.mp4"
+        "videoUrl": "nursery-rhyme-en-we_wish_you_a_merry_christmas.mp4"
     },
     {
         "title": "Planets",
-        "image": "nursery-rhyme-en:planets.jpg",
+        "image": "nursery-rhyme-en-planets.jpg",
         "audioUrl": "planets.mp3"
     },
     {
         "title": "Five Senses",
-        "videoUrl": "nursery-rhyme-en:five_senses.mp4"
+        "videoUrl": "nursery-rhyme-en-five_senses.mp4"
     }
 ]

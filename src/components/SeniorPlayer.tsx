@@ -52,8 +52,8 @@ export function SeniorPlayer() {
     ];
 
     return (
-        <div className="h-screen w-screen overflow-hidden flex flex-col">
-            <div className="h-15">
+        <div className="h-screen w-screen bg-black/50 overflow-hidden fixed">
+            <div className="h-[7vh]">
                 <Menu items={menuItems} selectedItem={seniorView} onSelect={handleViewChange} />
 
                 <div className="fixed top-16 right-4 z-50">
@@ -61,7 +61,7 @@ export function SeniorPlayer() {
                 </div>
             </div>
 
-            <div className="flex-1 overflow-hidden">
+            <div className="h-[93vh] overflow-hidden">
                 {seniorView === 'opera' && (
                     <VideosPlayer
                         key={`opera_${operaType}`}

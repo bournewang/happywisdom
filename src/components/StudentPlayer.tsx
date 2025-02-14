@@ -29,10 +29,10 @@ export function StudentPlayer() {
     const menuItems = [
         { value: 'poem', label: '诗词' },
         { value: 'nursery', label: '儿歌' },
-        // { value: 'nursery-en', label: '英文歌' },
+        { value: 'nursery-en', label: '英文歌' },
         { value: 'vocabulary', label: '单词' },
         // Uncomment if you want to include deepseek
-        { value: 'deepseek', label: 'DeepSeek' }
+        // { value: 'deepseek', label: 'DeepSeek' }
     ];
 
     const getFullText = (poem: AudioVerse) => {

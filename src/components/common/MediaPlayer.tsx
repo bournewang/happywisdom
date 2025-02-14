@@ -74,14 +74,14 @@ export function MediaPlayer({ category, jsonPath, renderMedia }: MediaPlayerProp
     const currentMedia = mediaList[currentIndex];
 
     return (
-        <div {...swipeHandlers} className="flex flex-col items-center justify-center h-full">
+        <div {...swipeHandlers} className="flex flex-col h-full">
             {/* <div className="flex flex-col justify-center w-full max-w-3xl"> */}
-            <div className="flex-grow flex items-center justify-center">
+            <div className="h-[78vh] items-center justify-center">
                 {renderMedia(currentMedia, mediaRef)}
             </div>
-            <div className="flex-none text-center p-4">
+            <div className="h-[10vh] w-full bg-black/50 text-white p-2 text-center">
                 <h1 className="text-2xl font-bold mb-2">{currentMedia.title}</h1>
-                <p className="text-gray-500">上下滑动可切换</p>
+                <p className="">上下滑动可切换</p>
             </div>
             {/* </div> */}
         </div>
