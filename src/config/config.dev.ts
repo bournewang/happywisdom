@@ -3,5 +3,5 @@ export const devConfig = {
 //   meidaPrefix: "https://img.happywisdom.org/", 
 //   imagePrefix: "https://img.happywisdom.org/",
   meidaPrefix: "https://english-reader.com/media/",
-  imagePrefix: "https://english-reader.com/small/",  
+  imagePrefix: "https://english-reader.com/imgs/",  
 } 

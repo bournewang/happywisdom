@@ -1,5 +1,6 @@
 interface VideoVerse {
     title: string;
+    image?: string;
     videoUrl: string;
 }
 
