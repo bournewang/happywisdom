@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { Menu } from './common/Menu';
 import { Settings } from './common/Settings';
 import { AudioPlayer } from './common/AudioPlayer';
-import { config } from '../config';
 
 type SeniorView = 'opera' | 'dance' | 'buddhism' | 'health' | 'exercise';
 
@@ -17,6 +16,10 @@ export function SeniorPlayer() {
     const [operaType, setOperaType] = useState(() => {
         return localStorage.getItem('operaType') || 'yuju';
     });
+
+    const [streamMode, setStreamMode] = useState(() => {
+        return localStorage.getItem('streamMode') || 'audio';
+    })
 
     useEffect(() => {
         localStorage.setItem('seniorView', seniorView);
@@ -32,8 +35,10 @@ export function SeniorPlayer() {
         { value: 'dance', label: '舞曲' },
         { value: 'buddhism', label: '佛乐' },
         { value: 'health', label: '健康' },
-        { value: 'exercise', label: '养生操' }
     ];
+    if (streamMode === 'video') {
+        menuItems.push({ value: 'exercise', label: '养生操' });
+    }
 
     const settingsVariables = [
         {
@@ -47,6 +52,18 @@ export function SeniorPlayer() {
             ],
             onChange: (value: string) => {
                 setOperaType(value);
+            }
+        },
+        {
+            name: 'streamMode',
+            label: '节流模式',
+            currentSetting: 'audio',
+            options: [
+                { value: 'audio', label: '节流模式' },
+                { value: 'video', label: '视频模式' }
+            ],
+            onChange: (value: string) => {
+                setStreamMode(value);
             }
         }
     ];
@@ -63,11 +80,24 @@ export function SeniorPlayer() {
 
             <div className="h-[93vh] overflow-hidden">
                 {seniorView === 'opera' && (
-                    <VideosPlayer
-                        key={`opera_${operaType}`}
-                        category={`opera_${operaType}`}
-                        jsonPath={`/assets/opera/${operaType}.json`}
-                    />
+                    streamMode === 'video' ? 
+                        <VideosPlayer
+                            key={`opera_${operaType}`}
+                            category={`opera_${operaType}`}
+                            jsonPath={`/assets/opera/${operaType}.json`}
+                        />
+                        : 
+                        <AudioPlayer
+                            jsonPath={`/assets/opera/${operaType}.json`}
+                            renderItem={(poem) => ({
+                                title: poem?.title,
+                                subtitle: poem?.author,
+                                content: poem?.content,
+                                audioSource: poem?.audioUrl,
+                                backgroundImage: (poem?.image || 'dj1.jpg')
+                            })}
+                            isTTS={false}
+                        />    
                 )}
                 {seniorView === 'dance' && <AudioPlayer
                     jsonPath="/assets/dj.json"
@@ -75,12 +105,31 @@ export function SeniorPlayer() {
                         title: poem?.title,
                         // subtitle: poem?.author,
                         content: null,
-                        audioSource: config.meidaPrefix + poem?.audioUrl,
-                        backgroundImage: config.imagePrefix + (poem?.image || 'dj1.jpg')
+                        audioSource: poem?.audioUrl,
+                        backgroundImage: (poem?.image || 'dj1.jpg')
                     })}
                     isTTS={false}
                 />}
-                {seniorView === 'buddhism' && <VideosPlayer category="buddhism" jsonPath='/assets/buddhism.json' />}
+                {seniorView === 'buddhism' && 
+                    (streamMode === 'video' ? 
+                        <VideosPlayer 
+                            category="buddhism" 
+                            jsonPath='/assets/buddhism.json' 
+                        /> 
+                        :
+                        <AudioPlayer
+                            jsonPath="/assets/buddhism.json"
+                            renderItem={(poem) => ({
+                                title: poem?.title,
+                                subtitle: poem?.author,
+                                content: poem?.content,
+                                audioSource: poem?.audioUrl,
+                                backgroundImage: poem?.image || 'poem.jpg'
+                            })}
+                            isTTS={false}
+                        />
+                    )
+                }
                 {seniorView === 'health' && <AudioPlayer
                     jsonPath="/assets/health-tips.json"
                     renderItem={(poem) => ({
@@ -88,7 +137,7 @@ export function SeniorPlayer() {
                         // subtitle: poem?.author,
                         content: poem?.content,
                         audioSource: poem?.content,
-                        backgroundImage: config.imagePrefix + poem?.image || 'poem.jpg'
+                        backgroundImage: poem?.image || 'poem.jpg'
                     })}
                     isTTS={true}
                 />}

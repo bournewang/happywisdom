@@ -20,9 +20,9 @@ while IFS= read -r line; do
         # Get the video URL
         video_url="${BASH_REMATCH[1]}"
         # Create image URL by replacing .mp4 with .jpg
-        image_url="${video_url/.mp4/.jpg}"
+        image_url="${video_url/.mp4/.mp3}"
         # Replace the line with both video and image
-        new_line="${line%\},*}, \"image\": \"$image_url\"},"
+        new_line="${line%\},*}, \"audioUrl\": \"$image_url\"},"
         echo "$new_line"
     else
         echo "$line"

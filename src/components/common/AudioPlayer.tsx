@@ -69,7 +69,7 @@ export function AudioPlayer({
 
     useEffect(() => {
         if (audioRef.current) {
-            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (rendered.audioSource || '');
+            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (config.meidaPrefix + rendered.audioSource || '');
         }
     }, [rendered.audioSource, isTTS]);
 
@@ -116,7 +116,7 @@ export function AudioPlayer({
         trackMouse: true
     });
     return (
-        currentItem && <div {...swipeHandlers} className="w-full h-full overflow-hidden" style={{ backgroundImage: `url(${rendered.backgroundImage})`, backgroundSize: 'cover' }}>
+        currentItem && <div {...swipeHandlers} className="w-full h-full overflow-hidden" style={{ backgroundImage: `url(${config.imagePrefix + rendered.backgroundImage})`, backgroundSize: 'cover' }}>
             {/* Background Image Layer */}
             {/* <div
                 className="absolute w-full h-full bg-cover bg-center bg-no-repeat"
@@ -146,11 +146,11 @@ export function AudioPlayer({
                                         )}
                                     </div>
                                 )}
-                                {currentItem.videoUrl && (
+                                {/* {currentItem.videoUrl && (
                                     <div className="w-full h-full">
                                         <video src={config.meidaPrefix + currentItem.videoUrl} autoPlay loop playsInline controls />
                                     </div>
-                                )}
+                                )} */}
                             </div>
                             <div
                                 className="w-full text-center text-2xl drop-shadow-lg text-white"
@@ -160,7 +160,7 @@ export function AudioPlayer({
 
                             {(
                                 <div className="flex items-center justify-center gap-4 mt-6">
-                                    {rendered.audioSource && !currentItem.videoUrl && (
+                                    {rendered.audioSource && (
                                         <>
                                             <button
                                                 onClick={togglePlay}
