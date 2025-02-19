@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { FaSpinner } from 'react-icons/fa';
 import { loadJson } from '../../utils/loadJson';
 import { config } from '../../config';
 import { VideoVerse } from './types';
@@ -56,7 +57,9 @@ export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
     });
 
     if (mediaList.length === 0) {
-        return <div>No media available</div>;
+        return (<div className="flex items-center justify-center h-full">
+            <FaSpinner className="animate-spin text-white" />
+            </div>);
     }
 
     const currentVideo = mediaList[currentIndex];
