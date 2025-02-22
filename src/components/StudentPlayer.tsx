@@ -5,6 +5,7 @@ import { Menu } from './common/Menu';
 import { AudioPlayer } from './common/AudioPlayer';
 import { AudioVerse } from './common/types';
 import { DeepSeek } from './DeepSeek';
+import { VideosPlayer } from './common/VideosPlayer';
 
 type StudentView = 'poem' | 'nursery' | 'nursery-en' | 'vocabulary' | 'deepseek';
 
@@ -28,10 +29,10 @@ export function StudentPlayer() {
     const menuItems = [
         { value: 'poem', label: '诗词' },
         { value: 'nursery', label: '儿歌' },
-        // { value: 'nursery-en', label: '英文歌' },
+        { value: 'nursery-en', label: '英文歌' },
         { value: 'vocabulary', label: '单词' },
         // Uncomment if you want to include deepseek
-        { value: 'deepseek', label: 'DeepSeek' }
+        // { value: 'deepseek', label: 'DeepSeek' }
     ];
 
     const getFullText = (poem: AudioVerse) => {
@@ -82,22 +83,28 @@ export function StudentPlayer() {
                         isTTS={false}
                     />
                 }
-                {studentView === 'nursery-en' && <AudioPlayer
-                    jsonPath="/assets/nursery-rhyme-en.json"
-                    renderItem={(poem: AudioVerse) => ({
-                        title: poem?.title,
-                        //   subtitle: poem?.author,
-                        content: (
-                            <div className="text-white text-xl space-y-2">
-                                {poem?.content}
-                            </div>
-                        ),
-                        audioSource: poem?.audioUrl,
-                        backgroundImage: poem?.image || 'poem.jpg'
-                    })}
-                    isTTS={false}
-                    showRefresh={true}
-                />}
+                {studentView === 'nursery-en' && <VideosPlayer
+                    key='nursery-en'
+                    category='nursery-en'
+                    jsonPath={`/assets/nursery-rhyme-en.json`}
+                />
+                //     <AudioPlayer
+                // jsonPath="/assets/nursery-rhyme-en.json"
+                    // renderItem={(poem: AudioVerse) => ({
+                    //     title: poem?.title,
+                    //     //   subtitle: poem?.author,
+                    //     content: (
+                    //         <div className="text-white text-xl space-y-2">
+                    //             {poem?.content}
+                    //         </div>
+                    //     ),
+                    //     audioSource: poem?.audioUrl,
+                    //     backgroundImage: poem?.image || 'poem.jpg'
+                    // })
+                    // isTTS={false}
+                    // showRefresh={true}
+                    // />
+                }
                 {studentView === 'vocabulary' && <VocabularyPlayer />}
                 {/* Uncomment if you want to include deepseek */}
                 {studentView === 'deepseek' && <DeepSeek />}

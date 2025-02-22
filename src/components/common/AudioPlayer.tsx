@@ -38,6 +38,8 @@ export function AudioPlayer({
     const [itemList, setItemList] = useState([]);
     const [currentItem, setCurrentItem] = useState<AudioVerse | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [history, setHistory] = useState<number[]>([]);
+    const [historyPosition, setHistoryPosition] = useState(-1);
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
     // const contentRef = useRef<HTMLDivElement>(null);
@@ -46,7 +48,11 @@ export function AudioPlayer({
         loadJson(jsonPath)
             .then(data => {
                 setItemList(data);
-                setCurrentItem(data[Math.floor(Math.random() * data.length)]);
+                const initialIndex = Math.floor(Math.random() * data.length);
+                setCurrentIndex(initialIndex);
+                setCurrentItem(data[initialIndex]);
+                setHistory([initialIndex]);
+                setHistoryPosition(0);
             })
             .catch(error => {
                 console.error('Error loading items:', error);
@@ -60,9 +66,40 @@ export function AudioPlayer({
     }, [currentIndex]);
 
 
+    const handleSwipeUp = () => {
+        if (historyPosition < history.length - 1) {
+            // Navigate forward in history
+            setHistoryPosition(prev => prev + 1);
+            setCurrentIndex(history[historyPosition + 1]);
+        } else {
+            // At the end of history, generate random index and add to history
+            const newIndex = Math.floor(Math.random() * itemList.length);
+            setCurrentIndex(newIndex);
+            setHistory(prev => [...prev, newIndex]);
+            setHistoryPosition(prev => prev + 1);
+        }
+    };
+
+    const handleSwipeDown = () => {
+        if (historyPosition > 0) {
+            // Navigate back in history
+            setHistoryPosition(prev => prev - 1);
+            setCurrentIndex(history[historyPosition - 1]);
+        }
+    };
+
+    const swipeHandlers = useSwipeable({
+        onSwipedUp: handleSwipeUp,
+        onSwipedDown: handleSwipeDown,
+        preventScrollOnSwipe: true,
+        trackMouse: true
+    });
+
     const refreshContent = () => {
-        const newItem = itemList[Math.floor(Math.random() * itemList.length)];
-        setCurrentItem(newItem);
+        const newIndex = Math.floor(Math.random() * itemList.length);
+        setCurrentIndex(newIndex);
+        setHistory(prev => [...prev, newIndex]);
+        setHistoryPosition(prev => prev + 1);
     };
 
     const rendered = renderItem(currentItem);
@@ -101,20 +138,6 @@ export function AudioPlayer({
         medium: 'text-2xl',
         large: 'text-3xl'
     }
-    const handleSwipeUp = () => {
-        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : itemList.length - 1));
-    };
-
-    const handleSwipeDown = () => {
-        setCurrentIndex((prevIndex) => (prevIndex < itemList.length - 1 ? prevIndex + 1 : 0));
-    };
-
-    const swipeHandlers = useSwipeable({
-        onSwipedUp: handleSwipeUp,
-        onSwipedDown: handleSwipeDown,
-        preventScrollOnSwipe: true,
-        trackMouse: true
-    });
     return (
         currentItem && <div {...swipeHandlers} className="w-full h-full overflow-hidden" style={{ backgroundImage: `url(${config.imagePrefix + rendered.backgroundImage})`, backgroundSize: 'cover' }}>
             {/* Background Image Layer */}

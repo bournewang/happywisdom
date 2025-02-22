@@ -117,43 +117,43 @@
     "word": "Monday",
     "definition": "n.星期一",
     "phonetic": "",
-    "audioUrl": "Monday-uk.mp3"
+    "audioUrl": "monday-uk.mp3"
   },
   {
     "word": "Tuesday",
     "definition": "n.星期二",
     "phonetic": "",
-    "audioUrl": "Tuesday-uk.mp3"
+    "audioUrl": "tuesday-uk.mp3"
   },
   {
     "word": "Wednesday",
     "definition": "n.星期三",
     "phonetic": "",
-    "audioUrl": "Wednesday-uk.mp3"
+    "audioUrl": "wednesday-uk.mp3"
   },
   {
     "word": "Thursday",
     "definition": "n.星期四",
     "phonetic": "",
-    "audioUrl": "Thursday-uk.mp3"
+    "audioUrl": "thursday-uk.mp3"
   },
   {
     "word": "Friday",
     "definition": "n.星期五",
     "phonetic": "",
-    "audioUrl": "Friday-uk.mp3"
+    "audioUrl": "friday-uk.mp3"
   },
   {
     "word": "Saturday",
     "definition": "n.星期六",
     "phonetic": "",
-    "audioUrl": "Saturday-uk.mp3"
+    "audioUrl": "saturday-uk.mp3"
   },
   {
     "word": "Sunday",
     "definition": "n.星期日",
     "phonetic": "",
-    "audioUrl": "Sunday-uk.mp3"
+    "audioUrl": "sunday-uk.mp3"
   },
   {
     "word": "weekend",
@@ -193,7 +193,7 @@
   },
   {
     "word": "do homework",
-    "definition": "undefined.做��业",
+    "definition": "undefined.做作业",
     "phonetic": "",
     "audioUrl": "do-homework-uk.mp3"
   },
@@ -367,7 +367,7 @@
   },
   {
     "word": "dear",
-    "definition": "adj.亲爱的（用于信函抬头的名字或头��前）",
+    "definition": "adj.亲爱的（用于信函抬头的名字前）",
     "phonetic": "/dɪɹ/",
     "audioUrl": "dear-us.mp3"
   },
@@ -405,7 +405,7 @@
     "word": "kung fu",
     "definition": "undefined.功夫；武术",
     "phonetic": "/ˈkʊŋ ˈfuː/",
-    "audioUrl": "kung%20fu-us.mp3"
+    "audioUrl": "kung-fu-us.mp3"
   },
   {
     "word": "do kung fu",
@@ -571,7 +571,7 @@
   },
   {
     "word": "house",
-    "definition": "n.���屋；房子；住宅",
+    "definition": "n.房屋；房子；住宅",
     "phonetic": "/hʌʊs/",
     "audioUrl": "house-1-ca.mp3"
   },
@@ -694,12 +694,6 @@
     "definition": "abbr.不是",
     "phonetic": "",
     "audioUrl": "aren't-=-are-not-uk.mp3"
-  },
-  {
-    "word": "house",
-    "definition": "n.��屋；房子；住宅",
-    "phonetic": "/hʌʊs/",
-    "audioUrl": "house-1-ca.mp3"
   },
   {
     "word": "high",

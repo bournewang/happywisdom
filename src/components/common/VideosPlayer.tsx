@@ -13,6 +13,8 @@ interface VideosPlayerProps {
 export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mediaList, setMediaList] = useState<VideoVerse[]>([]);
+    const [history, setHistory] = useState<number[]>([]);
+    const [historyPosition, setHistoryPosition] = useState(-1);
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
@@ -20,9 +22,10 @@ export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
             .then(data => {
                 setMediaList(data);
                 const savedIndex = localStorage.getItem(`currentVideoIndex_${category}`);
-                if (savedIndex) {
-                    setCurrentIndex(parseInt(savedIndex, 10));
-                }
+                const initialIndex = savedIndex ? parseInt(savedIndex, 10) : 0;
+                setCurrentIndex(initialIndex);
+                setHistory([initialIndex]);
+                setHistoryPosition(0);
             })
             .catch(error => {
                 console.error('Error loading items:', error);
@@ -42,11 +45,25 @@ export function VideosPlayer({ category, jsonPath }: VideosPlayerProps) {
     }, [currentIndex]);
 
     const handleSwipeUp = () => {
-        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : mediaList.length - 1));
+        if (historyPosition < history.length - 1) {
+            // Navigate forward in history
+            setHistoryPosition(prev => prev + 1);
+            setCurrentIndex(history[historyPosition + 1]);
+        } else {
+            // At the end of history, generate random index and add to history
+            const newIndex = Math.floor(Math.random() * mediaList.length);
+            setCurrentIndex(newIndex);
+            setHistory(prev => [...prev, newIndex]);
+            setHistoryPosition(prev => prev + 1);
+        }
     };
 
     const handleSwipeDown = () => {
-        setCurrentIndex((prevIndex) => (prevIndex < mediaList.length - 1 ? prevIndex + 1 : 0));
+        if (historyPosition > 0) {
+            // Navigate back in history
+            setHistoryPosition(prev => prev - 1);
+            setCurrentIndex(history[historyPosition - 1]);
+        }
     };
 
     const swipeHandlers = useSwipeable({
