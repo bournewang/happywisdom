@@ -69,7 +69,7 @@ export function AudioPlayer({
 
     useEffect(() => {
         if (audioRef.current) {
-            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (config.meidaPrefix + rendered.audioSource || '');
+            audioRef.current.src = isTTS ? ttsUrl(rendered.audioSource || '', voice) : (config.mediaPrefix + rendered.audioSource || '');
         }
     }, [rendered.audioSource, isTTS]);
 

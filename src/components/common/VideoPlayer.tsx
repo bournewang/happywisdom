@@ -72,13 +72,12 @@ export function VideoPlayer({ category, jsonPath }: VideoPlayerProps) {
                     playsInline={true}
                     autoPlay={true}
                 >
-                    <source src={config.meidaPrefix + currentVideo.videoUrl} type="video/mp4" />
+                    <source src={config.mediaPrefix + currentVideo.videoUrl} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div className="h-[10vh] w-full bg-black/50 text-white p-2 text-center">
                 <h1 className="text-2xl font-bold mb-2">{currentVideo.title}</h1>
-                {/* <p className="">上下滑动可切换</p> */}
             </div>
         </SwipeContainer>
     );

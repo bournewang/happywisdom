@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { VideosPlayer } from './common/VideosPlayer';
+import { VideoPlayer } from './common/VideoPlayer';
 import { useState, useEffect } from 'react';
 import { Menu } from './common/Menu';
 import { Settings } from './common/Settings';
@@ -81,7 +81,7 @@ export function SeniorPlayer() {
             <div className="h-[93vh] overflow-hidden">
                 {seniorView === 'opera' && (
                     streamMode === 'video' ? 
-                        <VideosPlayer
+                        <VideoPlayer
                             key={`opera_${operaType}`}
                             category={`opera_${operaType}`}
                             jsonPath={`/assets/opera/${operaType}.json`}
@@ -99,20 +99,22 @@ export function SeniorPlayer() {
                             isTTS={false}
                         />    
                 )}
-                {seniorView === 'dance' && <AudioPlayer
-                    jsonPath="/assets/dj.json"
-                    renderItem={(poem) => ({
-                        title: poem?.title,
-                        // subtitle: poem?.author,
-                        content: null,
-                        audioSource: poem?.audioUrl,
-                        backgroundImage: (poem?.image || 'dj1.jpg')
-                    })}
-                    isTTS={false}
-                />}
+                {seniorView === 'dance' && 
+                    <AudioPlayer
+                        jsonPath="/assets/dj.json"
+                        renderItem={(poem) => ({
+                            title: poem?.title,
+                            subtitle: poem?.author,
+                            content: null,
+                            audioSource: poem?.audioUrl,
+                            backgroundImage: (poem?.image || 'dj1.jpg')
+                        })}
+                        isTTS={false}
+                    />
+                }
                 {seniorView === 'buddhism' && 
                     (streamMode === 'video' ? 
-                        <VideosPlayer 
+                        <VideoPlayer 
                             category="buddhism" 
                             jsonPath='/assets/buddhism.json' 
                         /> 
@@ -130,18 +132,22 @@ export function SeniorPlayer() {
                         />
                     )
                 }
-                {seniorView === 'health' && <AudioPlayer
-                    jsonPath="/assets/health-tips.json"
-                    renderItem={(poem) => ({
-                        title: poem?.title,
+                {seniorView === 'health' && 
+                    <AudioPlayer
+                        jsonPath="/assets/health-tips.json"
+                        renderItem={(poem) => ({
+                            title: poem?.title,
                         // subtitle: poem?.author,
                         content: poem?.content,
                         audioSource: poem?.content,
                         backgroundImage: poem?.image || 'poem.jpg'
                     })}
-                    isTTS={true}
-                />}
-                {seniorView === 'exercise' && <VideosPlayer category="exercise" jsonPath='/assets/exercise.json' />}
+                        isTTS={true}
+                    />
+                }
+                {seniorView === 'exercise' && 
+                    <VideoPlayer category="exercise" jsonPath='/assets/exercise.json' />
+                }
             </div>
         </div>
     );

@@ -1,14 +1,10 @@
-import { devConfig } from './config.dev'
-import { prodConfig } from './config.prod'
 
-export const config = import.meta.env.MODE === 'production' ? prodConfig : devConfig
+const serverUrl = import.meta.env.MODE === 'development' ? 
+    'https://b.english-reader.com' : 
+    'https://b.english-reader.com';
 
-// Type definition for the config
-export interface Config {
-    serverUrl: string;
-    audioUrl: string;
-    endpoints: {
-        songs: string;
-        // add other endpoints as needed
-    };
-} 
+export const config = {
+    mediaPrefix: serverUrl + '/media/',
+    imagePrefix: serverUrl + '/imgs/',
+    dictAudioPrefix: serverUrl + '/dict/'
+}
