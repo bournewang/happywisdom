@@ -35,13 +35,6 @@ export function StudentPlayer() {
         // { value: 'deepseek', label: 'DeepSeek' }
     ];
 
-    const getFullText = (poem: AudioVerse) => {
-        if (!poem) {
-            return '';
-        }
-        // addd title and author
-        return `${poem.title} ${poem.author} ${poem.paragraphs?.join('。')}`;
-    }
     return (
         <div className="h-screen w-screen overflow-hidden flex flex-col">
             <div className="h-[7vh]">
@@ -60,10 +53,10 @@ export function StudentPlayer() {
                                 ))}
                             </>
                         ),
-                        audioSource: getFullText(poem),
+                        // audioSource: getFullText(poem),
+                        audioSource: poem?.audioUrl,
                         backgroundImage: poem?.image || 'poem.jpg'
                     })}
-                    isTTS={true}
                 />}
 
                 {studentView === 'nursery' &&
@@ -83,30 +76,14 @@ export function StudentPlayer() {
                         isTTS={false}
                     />
                 }
-                {studentView === 'nursery-en' && <VideosPlayer
-                    key='nursery-en'
-                    category='nursery-en'
-                    jsonPath={`/assets/nursery-rhyme-en.json`}
-                />
-                //     <AudioPlayer
-                // jsonPath="/assets/nursery-rhyme-en.json"
-                    // renderItem={(poem: AudioVerse) => ({
-                    //     title: poem?.title,
-                    //     //   subtitle: poem?.author,
-                    //     content: (
-                    //         <div className="text-white text-xl space-y-2">
-                    //             {poem?.content}
-                    //         </div>
-                    //     ),
-                    //     audioSource: poem?.audioUrl,
-                    //     backgroundImage: poem?.image || 'poem.jpg'
-                    // })
-                    // isTTS={false}
-                    // showRefresh={true}
-                    // />
+                {studentView === 'nursery-en' && 
+                    <VideosPlayer
+                        key='nursery-en'
+                        category='nursery-en'
+                        jsonPath={`/assets/nursery-rhyme-en.json`}
+                    />
                 }
                 {studentView === 'vocabulary' && <VocabularyPlayer />}
-                {/* Uncomment if you want to include deepseek */}
                 {studentView === 'deepseek' && <DeepSeek />}
             </div>
         </div>
