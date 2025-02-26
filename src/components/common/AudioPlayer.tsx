@@ -153,7 +153,7 @@ export function AudioPlayer({
 
                                 {(
                                     <div className="flex items-center justify-center gap-4 mt-6">
-                                        {rendered.audioSource && !currentItem.videoUrl && (
+                                        {rendered.audioSource && (
                                             <>
                                                 <button
                                                     onClick={togglePlay}
