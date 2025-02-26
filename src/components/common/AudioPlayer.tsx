@@ -4,6 +4,7 @@ import { ttsUrl } from '../../api/tts';
 import { useSwipeable } from 'react-swipeable';
 import { config } from '../../config';
 import type { AudioVerse } from './types';
+import { SwipeContainer } from './SwipeContainer';
 import { loadJson } from '../../utils/loadJson';
 
 interface PlayerProps {
@@ -38,25 +39,19 @@ export function AudioPlayer({
     const [itemList, setItemList] = useState([]);
     const [currentItem, setCurrentItem] = useState<AudioVerse | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [history, setHistory] = useState<number[]>([]);
-    const [historyPosition, setHistoryPosition] = useState(-1);
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement>(null);
     // const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         loadJson(jsonPath)
-            .then(data => {
-                setItemList(data);
-                const initialIndex = Math.floor(Math.random() * data.length);
-                setCurrentIndex(initialIndex);
-                setCurrentItem(data[initialIndex]);
-                setHistory([initialIndex]);
-                setHistoryPosition(0);
+            .then(items => {
+                setItemList(items);
+                setCurrentItem(items[Math.floor(Math.random() * items.length)]);
             })
             .catch(error => {
                 console.error('Error loading items:', error);
-            });            
+            });
     }, [jsonPath]);
 
     useEffect(() => {
@@ -66,40 +61,9 @@ export function AudioPlayer({
     }, [currentIndex]);
 
 
-    const handleSwipeUp = () => {
-        if (historyPosition < history.length - 1) {
-            // Navigate forward in history
-            setHistoryPosition(prev => prev + 1);
-            setCurrentIndex(history[historyPosition + 1]);
-        } else {
-            // At the end of history, generate random index and add to history
-            const newIndex = Math.floor(Math.random() * itemList.length);
-            setCurrentIndex(newIndex);
-            setHistory(prev => [...prev, newIndex]);
-            setHistoryPosition(prev => prev + 1);
-        }
-    };
-
-    const handleSwipeDown = () => {
-        if (historyPosition > 0) {
-            // Navigate back in history
-            setHistoryPosition(prev => prev - 1);
-            setCurrentIndex(history[historyPosition - 1]);
-        }
-    };
-
-    const swipeHandlers = useSwipeable({
-        onSwipedUp: handleSwipeUp,
-        onSwipedDown: handleSwipeDown,
-        preventScrollOnSwipe: true,
-        trackMouse: true
-    });
-
     const refreshContent = () => {
-        const newIndex = Math.floor(Math.random() * itemList.length);
-        setCurrentIndex(newIndex);
-        setHistory(prev => [...prev, newIndex]);
-        setHistoryPosition(prev => prev + 1);
+        const newItem = itemList[Math.floor(Math.random() * itemList.length)];
+        setCurrentItem(newItem);
     };
 
     const rendered = renderItem(currentItem);
@@ -138,113 +102,121 @@ export function AudioPlayer({
         medium: 'text-2xl',
         large: 'text-3xl'
     }
+    const handleSwipeUp = () => {
+        setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : itemList.length - 1));
+    };
+
+    const handleSwipeDown = () => {
+        setCurrentIndex((prevIndex) => (prevIndex < itemList.length - 1 ? prevIndex + 1 : 0));
+    };
+
     return (
-        currentItem && <div {...swipeHandlers} className="w-full h-full overflow-hidden" style={{ backgroundImage: `url(${config.imagePrefix + rendered.backgroundImage})`, backgroundSize: 'cover' }}>
-            {/* Background Image Layer */}
-            {/* <div
-                className="absolute w-full h-full bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url(${rendered.backgroundImage})` }}
-            /> */}
+        currentItem && (
+            <SwipeContainer
+                onSwipeUp={handleSwipeUp}
+                onSwipeDown={handleSwipeDown}
+                className="w-full h-full overflow-hidden"
+            >
+                {/* Background Image Layer */}
+                {/* implement background image */}
+                <div
+                    className="absolute w-full h-full bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: `url(${config.imagePrefix + rendered.backgroundImage})` }}
+                />
 
-            <div className='relative w-full h-full z-10 justify-center'>
-                <div className="flex flex-col items-center justify-center h-full">
-                    <div className="flex flex-col justify-center w-full max-w-3xl bg-black/50 ">
-                        <div className="items-center justify-center p-4">
+                <div className='relative w-full h-full z-10 justify-center'>
+                    <div className="flex flex-col items-center justify-center h-full">
+                        <div className="flex flex-col justify-center w-full max-w-3xl bg-black/50 ">
+                            <div className="items-center justify-center p-4">
 
-                            {/* <div className={`max-w-3xl ${className}`}> */}
-                            <div className=" rounded-xl p-2 md:p-8 ">
-                                {(rendered.title || rendered.subtitle) && (
-                                    <div className="mb-2 text-center">
-                                        {rendered.title && (
-                                            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-amber-200 
-                                                tracking-wide drop-shadow-lg">
-                                                {rendered.title}
-                                            </h1>
+                                {/* <div className={`max-w-3xl ${className}`}> */}
+                                <div className=" rounded-xl p-2 md:p-8 ">
+                                    {(rendered.title || rendered.subtitle) && (
+                                        <div className="mb-2 text-center">
+                                            {rendered.title && (
+                                                <h1 className="text-3xl md:text-4xl font-bold mb-2 text-amber-200 
+                                                    tracking-wide drop-shadow-lg">
+                                                    {rendered.title}
+                                                </h1>
+                                            )}
+                                            {rendered.subtitle && (
+                                                <h2 className="text-lg md:text-xl text-white
+                                                    tracking-wider font-medium">
+                                                    {rendered.subtitle}
+                                                </h2>
+                                            )}
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="w-full text-center text-2xl drop-shadow-lg text-white">
+                                    {rendered.content}
+                                </div>
+
+                                {(
+                                    <div className="flex items-center justify-center gap-4 mt-6">
+                                        {rendered.audioSource && !currentItem.videoUrl && (
+                                            <>
+                                                <button
+                                                    onClick={togglePlay}
+                                                    className={`relative rounded-full 
+                                                            ${isPlaying ? 'bg-red-500 hover:bg-red-400' : 'pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 \
+                                                            transform hover:scale-105 active:scale-95 \
+                                                            transition-all duration-300 ease-in-out \
+                                                            shadow-lg hover:shadow-cyan-500/30 hover:from-blue-400 hover:to-cyan-300'}
+                                                            text-white font-medium
+                                                            transition-all duration-300 ease-in-out
+                                                            shadow-lg
+                                                            backdrop-blur-md
+                                                            flex items-center justify-center text-center
+                                                            group
+                                                            disabled:opacity-50 disabled:cursor-not-allowed
+                                                            ${sizeClasses[size]}`}
+                                                    title={isTTS ? "朗读文本" : "播放音频"}
+                                                >
+                                                    <span className="relative group-hover:scale-110 transition-transform duration-300">
+                                                        {isPlaying ?
+                                                            <FaPause className={iconSizeClasses[size]} /> :
+                                                            <FaPlay className={iconSizeClasses[size]} />
+                                                        }
+                                                    </span>
+                                                </button>
+
+                                                <audio
+                                                    ref={audioRef}
+                                                    autoPlay={true}
+                                                    onPlay={() => setIsPlaying(true)}
+                                                    onEnded={() => setIsPlaying(false)}
+                                                    onError={() => setIsPlaying(false)}
+                                                />
+                                            </>
                                         )}
-                                        {rendered.subtitle && (
-                                            <h2 className="text-lg md:text-xl text-white
-                                                tracking-wider font-medium">
-                                                {rendered.subtitle}
-                                            </h2>
+                                        {actions}
+                                        {showRefresh && (
+                                            <button
+                                                className={`relative rounded-full pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 
+                                                        transform hover:scale-105 active:scale-95 
+                                                    transition-all duration-300 ease-in-out 
+                                                    shadow-lg hover:shadow-cyan-500/30 hover:from-blue-400 hover:to-cyan-300 
+                                                    text-white font-medium
+                                                    flex items-center justify-center text-center
+                                                    group
+                                                    disabled:opacity-50 disabled:cursor-not-allowed
+                                                    ${sizeClasses[size]}`}
+                                                onClick={refreshContent}
+                                            >
+                                                <span className={`relative ${iconSizeClasses[size]} group-hover:scale-110 transition-transform duration-300`}>
+                                                    <FaSync />
+                                                </span>
+                                            </button>
                                         )}
                                     </div>
                                 )}
-                                {/* {currentItem.videoUrl && (
-                                    <div className="w-full h-full">
-                                        <video src={config.meidaPrefix + currentItem.videoUrl} autoPlay loop playsInline controls />
-                                    </div>
-                                )} */}
+
                             </div>
-                            <div
-                                className="w-full text-center text-2xl drop-shadow-lg text-white"
-                            >
-                                {rendered.content}
-                            </div>
-
-                            {(
-                                <div className="flex items-center justify-center gap-4 mt-6">
-                                    {rendered.audioSource && (
-                                        <>
-                                            <button
-                                                onClick={togglePlay}
-                                                className={`relative rounded-full 
-                                                        ${isPlaying ? 'bg-red-500 hover:bg-red-400' : 'pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 \
-                                                        transform hover:scale-105 active:scale-95 \
-                                                        transition-all duration-300 ease-in-out \
-                                                        shadow-lg hover:shadow-cyan-500/30 hover:from-blue-400 hover:to-cyan-300'}
-                                                        text-white font-medium
-                                                        transition-all duration-300 ease-in-out
-                                                        shadow-lg
-                                                        backdrop-blur-md
-                                                        flex items-center justify-center text-center
-                                                        group
-                                                        disabled:opacity-50 disabled:cursor-not-allowed
-                                                        ${sizeClasses[size]}`}
-                                                title={isTTS ? "朗读文本" : "播放音频"}
-                                            >
-                                                <span className="relative group-hover:scale-110 transition-transform duration-300">
-                                                    {isPlaying ?
-                                                        <FaPause className={iconSizeClasses[size]} /> :
-                                                        <FaPlay className={iconSizeClasses[size]} />
-                                                    }
-                                                </span>
-                                            </button>
-
-                                            <audio
-                                                ref={audioRef}
-                                                autoPlay={true}
-                                                onPlay={() => setIsPlaying(true)}
-                                                onEnded={() => setIsPlaying(false)}
-                                                onError={() => setIsPlaying(false)}
-                                            />
-                                        </>
-                                    )}
-                                    {actions}
-                                    {showRefresh && (
-                                        <button
-                                            className={`relative rounded-full pl-1 bg-gradient-to-r from-blue-500/80 to-cyan-400/80 
-                                                    transform hover:scale-105 active:scale-95 
-                                                transition-all duration-300 ease-in-out 
-                                                shadow-lg hover:shadow-cyan-500/30 hover:from-blue-400 hover:to-cyan-300 
-                                                text-white font-medium
-                                                flex items-center justify-center text-center
-                                                group
-                                                disabled:opacity-50 disabled:cursor-not-allowed
-                                                ${sizeClasses[size]}`}
-                                            onClick={refreshContent}
-                                        >
-                                            <span className={`relative ${iconSizeClasses[size]} group-hover:scale-110 transition-transform duration-300`}>
-                                                <FaSync />
-                                            </span>
-                                        </button>
-                                    )}
-                                </div>
-                            )}
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </SwipeContainer>
+        )
     );
 } 

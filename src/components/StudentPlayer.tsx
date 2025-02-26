@@ -5,7 +5,7 @@ import { Menu } from './common/Menu';
 import { AudioPlayer } from './common/AudioPlayer';
 import { AudioVerse } from './common/types';
 import { DeepSeek } from './DeepSeek';
-import { VideosPlayer } from './common/VideosPlayer';
+import { VideoPlayer } from './common/VideoPlayer';
 
 type StudentView = 'poem' | 'nursery' | 'nursery-en' | 'vocabulary' | 'deepseek';
 
@@ -77,7 +77,7 @@ export function StudentPlayer() {
                     />
                 }
                 {studentView === 'nursery-en' && 
-                    <VideosPlayer
+                    <VideoPlayer
                         key='nursery-en'
                         category='nursery-en'
                         jsonPath={`/assets/nursery-rhyme-en.json`}
