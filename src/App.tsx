@@ -10,6 +10,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<StudentPlayer />} />
                 <Route path="/student/*" element={<StudentPlayer />} />
+                <Route path="/kids" element={<StudentPlayer />} />
 
                 <Route path="/buddhism" element={<SeniorPlayer />} />
                 <Route path="/opera" element={<SeniorPlayer />} />
