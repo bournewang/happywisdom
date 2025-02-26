@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Audio } from './common/Audio';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { SwipeContainer } from './common/SwipeContainer';
 import { config } from '../config';
 

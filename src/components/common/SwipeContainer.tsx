@@ -18,11 +18,9 @@ export function SwipeContainer({ onSwipeUp, onSwipeDown, children, className = '
 
     return (
         <div {...swipeHandlers} className={`${className}`}>
-            {/* <div className="h-90%"> */}
-                {children}
-            {/* </div> */}
+            {children}
 
-            <div className="fixed bottom-5 bg-white/80 flex items-center justify-center w-full p-4 mt-12 gap-4">
+            <div className="fixed bottom-0 bg-white/80 text-center w-full p-2">
                 <p className="text-black-500">上下轻滑切换</p>
             </div>            
         </div>

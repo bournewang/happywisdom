@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, ReactNode } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { SwipeContainer } from './SwipeContainer';
 import { loadJson } from '../../utils/loadJson';
 import { config } from '../../config';

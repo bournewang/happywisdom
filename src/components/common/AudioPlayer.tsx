@@ -1,7 +1,6 @@
 import { ReactNode, useState, useRef, useEffect } from 'react';
 import { FaPlay, FaPause, FaSync } from 'react-icons/fa';
 import { ttsUrl } from '../../api/tts';
-import { useSwipeable } from 'react-swipeable';
 import { config } from '../../config';
 import type { AudioVerse } from './types';
 import { SwipeContainer } from './SwipeContainer';
