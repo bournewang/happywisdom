@@ -1,7 +1,7 @@
 
 const serverUrl = import.meta.env.MODE === 'development' ? 
-    'https://b.english-reader.com' : 
-    'https://b.english-reader.com';
+    'https://b.qingfan.wang' : 
+    'https://b.qingfan.wang';
 
 export const config = {
     mediaPrefix: serverUrl + '/media/',
